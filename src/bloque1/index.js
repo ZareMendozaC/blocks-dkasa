@@ -6,7 +6,7 @@ wp.blocks.registerBlockType("dkasa/block-1",{
         return (
             <div>
                 <p>Hello bloque 1</p>
-                <p>Hello paragraph 2</p>
+                <p>Hello paragraph 1.1</p>
             </div>
         )
     },
