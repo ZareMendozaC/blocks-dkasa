@@ -2,20 +2,25 @@ wp.blocks.registerBlockType("dkasa/block-1",{
     title: "Bloque 1",
     icon: "smiley",
     category: "custom-layout-category",
-    edit: function () {
+    attributes:{
+        skyColor: {type: "string"},
+        grassColor: {type: "string"}
+    },
+    edit: function (props) {
+        function updateSkyColor(event){
+            props.setAttributes({skyColor:event.target.value})
+        }
+        function updateGrassColor(event){
+            props.setAttributes({grassColor:event.target.value})
+        }
         return (
             <div>
-                <p>Hello bloque 1</p>
-                <p>Hello paragraph 1.1</p>
+                <input type="text" placeholder="sky color" value={props.attributes.skyColor} onChange={updateSkyColor}/>
+                <input type="text" placeholder="grass color" value={props.attributes.grassColor} onChange={updateGrassColor}/>
             </div>
         )
     },
     save: function () {
-        return (
-            <>
-            <h3>bloque1</h3>
-            <h4>dsadsa</h4>
-            </>
-        )
+        return  null
     }
 });

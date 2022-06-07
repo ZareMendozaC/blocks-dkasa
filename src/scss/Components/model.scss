@@ -1,0 +1,13 @@
+.block-editor__container img.lia-model-card__imagen{
+  height: 100px;
+  object-fit: contain;
+}
+
+.wp-core-ui .button.lia-model-card,
+.wp-core-ui .button-secondary.lia-model-card{
+  background-color: white;
+}
+
+.lia-model-card.is-active{
+  border-color: red;
+}
