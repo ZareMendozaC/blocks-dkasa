@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "landings-inmobiliarias/banner",
+  "version": "0.1.0",
+  "title": "Banner",
+  "category": "theme",
+  "icon": "building",
+  "description": "Banner - Landings Inmobiliarias",
+  "textdomain": "banner",
+  "attributes": {
+	"mediaId": {
+	  "type": "number"
+	},
+	"mediaUrl": {
+	  "type": "string",
+	  "default": ""
+	},
+	"backgroundColor": {
+	  "type": "string",
+	  "default": "blue"
+	},
+	"textColor": {
+	  "type": "string",
+	  "default": "white"
+	},
+	"title": {
+	  "type": "string",
+	  "default": ""
+	},
+	"content": {
+	  "type": "string",
+	  "default": ""
+	},
+	"alignment": {
+	  "type": "string",
+	  "default": "center"
+	}
+  }
+}
