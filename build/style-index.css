@@ -246,11 +246,9 @@ h6 {
   .lia-grid {
     flex-wrap: wrap;
   }
-
   [class*=lia-item-] {
     width: 100%;
   }
-
   [class*=lia-gap-] {
     margin-right: 0;
   }
