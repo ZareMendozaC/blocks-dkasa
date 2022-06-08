@@ -1,0 +1,58 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+:root {
+	--width_base: 1920;
+}
+
+/*THEME*/
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+	padding: 0;
+}
+
+/*SECTION*/
+
+.lia-section-spacing{
+	padding: calc(100vw * (calc(50 / var(--width_base)))) calc(100vw * (calc(30 / var(--width_base))));
+}
+
+.lia-seccion-fondo{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.lia-section-container{
+	max-width: calc(100vw * (calc(980 / var(--width_base))));
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*FORMULARIO*/
+
+.lia-form-control{
+	margin-bottom: calc(100vw * (calc(15 / var(--width_base))));
+}
+
+.lia-form-control select,
+.lia-form-control input[type="text"],
+.lia-form-control input[type="email"],
+.lia-form-control input[type="tel"],
+.lia-form-control input[type="number"],
+.lia-form-control textarea{
+	width: 100%;
+}
+
+
+.btn.is-active{
+	background-color: #198754;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 767px) {
+	:root {--width_base: 375;}
+}

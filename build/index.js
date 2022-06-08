@@ -110,6 +110,75 @@ const BannerBack = props => {
 
 /***/ }),
 
+/***/ "./src/blocks/Description/DescriptionBack.js":
+/*!***************************************************!*\
+  !*** ./src/blocks/Description/DescriptionBack.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_atoms_Text_TextEditor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/atoms/Text/TextEditor */ "./src/components/atoms/Text/TextEditor.js");
+/* harmony import */ var _components_atoms_Section_Section__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/atoms/Section/Section */ "./src/components/atoms/Section/Section.js");
+/* harmony import */ var _components_atoms_Section_SectionContainer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/atoms/Section/SectionContainer */ "./src/components/atoms/Section/SectionContainer.js");
+/* harmony import */ var _helper_eventChangeAttr__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../helper/eventChangeAttr */ "./src/helper/eventChangeAttr.js");
+/* harmony import */ var _components_molecules_ImageUpload_ImageUpload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/molecules/ImageUpload/ImageUpload */ "./src/components/molecules/ImageUpload/ImageUpload.js");
+/* harmony import */ var _components_molecules_Grid_Grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/molecules/Grid/Grid */ "./src/components/molecules/Grid/Grid.js");
+/* harmony import */ var _components_atoms_Item_Item__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/atoms/Item/Item */ "./src/components/atoms/Item/Item.js");
+
+
+
+
+
+
+
+
+
+
+const DescriptionBack = props => {
+  const {
+    attributes: attr,
+    setAttributes: setAttr
+  } = props;
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_atoms_Section_Section__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    blockProps: blockProps
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_atoms_Section_SectionContainer__WEBPACK_IMPORTED_MODULE_4__["default"], null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_molecules_Grid_Grid__WEBPACK_IMPORTED_MODULE_7__["default"], null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_atoms_Item_Item__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    percentage: 60
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_atoms_Text_TextEditor__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    tagEle: "h2",
+    eventEle: event => (0,_helper_eventChangeAttr__WEBPACK_IMPORTED_MODULE_5__["default"])(setAttr, {
+      title: event
+    }),
+    data: attr.title,
+    placeholder: "Titulo"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_atoms_Text_TextEditor__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    tagEle: "p",
+    eventEle: event => (0,_helper_eventChangeAttr__WEBPACK_IMPORTED_MODULE_5__["default"])(setAttr, {
+      content: event
+    }),
+    data: attr.content,
+    placeholder: "Texto"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_atoms_Item_Item__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    percentage: 40,
+    className: "lia-text-center"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_molecules_ImageUpload_ImageUpload__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    setAttr: setAttr,
+    mediaId: attr.mediaId,
+    mediaUrl: attr.mediaUrl
+  })))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DescriptionBack);
+
+/***/ }),
+
 /***/ "./src/bloque1/index.js":
 /*!******************************!*\
   !*** ./src/bloque1/index.js ***!
@@ -121,7 +190,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 
 wp.blocks.registerBlockType("dkasa/block-1", {
-  title: "Bloque 1",
+  title: "Bloque 11",
   icon: "smiley",
   category: "custom-layout-category",
   attributes: {
@@ -185,6 +254,38 @@ wp.blocks.registerBlockType("dkasa/block-2", {
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, "bloque2"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", null, "dsadsa"));
   }
 });
+
+/***/ }),
+
+/***/ "./src/components/atoms/Item/Item.js":
+/*!*******************************************!*\
+  !*** ./src/components/atoms/Item/Item.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+const Item = _ref => {
+  let {
+    children,
+    percentage,
+    classEle,
+    others
+  } = _ref;
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: `lia-item lia-item-${percentage} ${classEle}`
+  }, others), children);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Item);
 
 /***/ }),
 
@@ -304,6 +405,35 @@ TextEditor.defaultProps = {
   placeholder: ""
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TextEditor);
+
+/***/ }),
+
+/***/ "./src/components/molecules/Grid/Grid.js":
+/*!***********************************************!*\
+  !*** ./src/components/molecules/Grid/Grid.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const Grid = _ref => {
+  let {
+    children,
+    classEle,
+    wrapEle
+  } = _ref;
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: `lia-grid ${classEle} ${wrapEle && "lia-wrap"}`
+  }, children);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Grid);
 
 /***/ }),
 
@@ -497,6 +627,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
 /* harmony import */ var _blocks_Banner_BannerBack__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/Banner/BannerBack */ "./src/blocks/Banner/BannerBack.js");
 /* harmony import */ var _config_banner_block_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../config/banner-block.json */ "./config/banner-block.json");
+/* harmony import */ var _blocks_Description_DescriptionBack__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/Description/DescriptionBack */ "./src/blocks/Description/DescriptionBack.js");
+/* harmony import */ var _config_description_block_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../config/description-block.json */ "./config/description-block.json");
+
+
 
 
 
@@ -506,6 +640,9 @@ __webpack_require__.r(__webpack_exports__);
 
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)(_config_banner_block_json__WEBPACK_IMPORTED_MODULE_6__.name, {
   edit: _blocks_Banner_BannerBack__WEBPACK_IMPORTED_MODULE_5__["default"]
+});
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)(_config_description_block_json__WEBPACK_IMPORTED_MODULE_8__.name, {
+  edit: _blocks_Description_DescriptionBack__WEBPACK_IMPORTED_MODULE_7__["default"]
 });
 
 /***/ }),
@@ -628,6 +765,16 @@ function _extends() {
 /***/ ((module) => {
 
 module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"landings-inmobiliarias/banner","version":"0.1.0","title":"Banner","category":"theme","icon":"building","description":"Banner - Landings Inmobiliarias","textdomain":"banner","attributes":{"mediaId":{"type":"number"},"mediaUrl":{"type":"string","default":""},"backgroundColor":{"type":"string","default":"blue"},"textColor":{"type":"string","default":"white"},"title":{"type":"string","default":""},"content":{"type":"string","default":""},"alignment":{"type":"string","default":"center"}}}');
+
+/***/ }),
+
+/***/ "./config/description-block.json":
+/*!***************************************!*\
+  !*** ./config/description-block.json ***!
+  \***************************************/
+/***/ ((module) => {
+
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"landings-inmobiliarias/description","version":"0.1.0","title":"Descripción","category":"theme","icon":"building","description":"Descripción - Landings Inmobiliarias","textdomain":"description","attributes":{"mediaId":{"type":"number"},"mediaUrl":{"type":"string","default":""},"title":{"type":"string","default":""},"content":{"type":"string","default":""}}}');
 
 /***/ })
 
