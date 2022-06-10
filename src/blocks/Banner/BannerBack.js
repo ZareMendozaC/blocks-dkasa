@@ -1,4 +1,4 @@
-import {PanelBody, PanelRow} from '@wordpress/components';
+import {PanelBody, PanelRow, TextControl} from '@wordpress/components';
 import TextEditor from "../../components/atoms/Text/TextEditor";
 import SectionContainer from "../../components/atoms/Section/SectionContainer";
 import Section from "../../components/atoms/Section/Section";
@@ -13,6 +13,7 @@ import {
 	InspectorControls,
 } from '@wordpress/block-editor';
 import getPaletteColors from "../../helper/getPaletteColors";
+import { Flex, FlexItem } from '@wordpress/components';
 
 const BannerBack = (props) => {
 
@@ -24,14 +25,20 @@ const BannerBack = (props) => {
 	const blockProps = useBlockProps();
 
 	const styleBlock = {
-		backgroundColor: attr.backgroundColor,
 		color: attr.textColor,
 		backgroundImage: `url(${attr.mediaUrl})`,
 		backgroundSize: "cover",
 		backgroundRepeat: "no-repeat",
-		backgroundPosition: "center"
+		backgroundPosition: "center",
+		height: "400px"
 	};
-
+    const styleBlock2 = {
+		backgroundColor: attr.backgroundColor,
+		padding: "20px",
+		position: "absolute",
+		bottom: "0"
+	}
+	
 	return (
 		<Section blockProps={blockProps} styleEle={styleBlock}>
 
@@ -43,7 +50,7 @@ const BannerBack = (props) => {
 			</BlockControls>
 
 			<InspectorControls key="setting">
-				<PanelBody title={internationalizationText("Color de Fondo")} initialOpen={false}>
+				<PanelBody title={internationalizationText("Color Fondo bloque carácteristicas")} initialOpen={false}>
 					<PanelRow>
 						<ColorPalette
 							onChange={(event) => eventChangeAttr(setAttr, {backgroundColor: event})}
@@ -61,34 +68,66 @@ const BannerBack = (props) => {
 				</PanelBody>
 				<PanelBody title={internationalizationText('Imagen de fondo')} initialOpen={false}>
 					<PanelRow>
-						<ImageUpload
+					<ImageUpload
 							setAttr={setAttr}
-							mediaId={attr.mediaId}
-							mediaUrl={attr.mediaUrl}
+							detail={{
+								mediaUrl: attr.mediaUrl,
+								mediaId: attr.mediaId,
+								propertyUrl: "mediaUrl",
+								propertyId: "mediaId"
+							}}
 						/>
 					</PanelRow>
 				</PanelBody>
-
 			</InspectorControls>
-
-			<SectionContainer>
-				<TextEditor
-					tagEle="h2"
-					eventEle={(event) => eventChangeAttr(setAttr, {title: event})}
-					data={attr.title}
-					placeholder="Titulo"
-					styleEle={{textAlign: attr.alignment}}
-				/>
-				<TextEditor
-					tagEle="p"
-					eventEle={(event) => eventChangeAttr(setAttr, {content: event})}
-					data={attr.content}
-					styleEle={{textAlign: attr.alignment}}
-					placeholder="Texto"
-				/>
+			<div className="logo-admin">
+				<SectionContainer >
+				<ImageUpload
+							setAttr={setAttr}
+							detail={{
+								mediaUrl: attr.mediaUrlLogo,
+								mediaId: attr.mediaIdLogo,
+								propertyUrl: "mediaUrlLogo",
+								propertyId: "mediaIdLogo"
+							}}
+						/>
+				</SectionContainer>
+			</div>
+			<SectionContainer styleEle={styleBlock2}>
+				<Flex>
+					<FlexItem>
+						<TextControl 
+							label="Área total" 
+							onChange={(event) => eventChangeAttr(setAttr, {area: event})} 
+							value={attr.area}
+						/>
+					</FlexItem>
+					<FlexItem>
+						<TextControl 
+							label="Dormitorios" 
+							onChange={(event) => eventChangeAttr(setAttr, {dormitorios: event})} 
+							value={attr.dormitorios}
+						/>
+					</FlexItem>
+					<FlexItem>
+						<TextControl 
+							label="Ubicación" 
+							onChange={(event) => eventChangeAttr(setAttr, {ubicacion: event})} 
+							value={attr.ubicacion}
+						/>
+					</FlexItem>
+					<FlexItem>
+						<TextControl 
+							label="Precio" 
+							onChange={(event) => eventChangeAttr(setAttr, {precio: event})} 
+							value={attr.precio}
+						/>
+					</FlexItem>
+				</Flex>
 			</SectionContainer>
 
 		</Section>
+
 	);
 }
 

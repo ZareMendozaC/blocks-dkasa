@@ -19,16 +19,23 @@
 $title = $attributes['title'];
 $content = $attributes['content'];
 $mediaUrl = $attributes['mediaUrl'];
+$urlBtn = $attributes['urlBtn'];
+$txtBtn = $attributes['txtBtn'];
 
 ?>
-<section class="lia-section-spacing ">
-	<div class="lia-section-container row">
-		<div class="col-md-6 col-12">
-			<h2><?= $title;?></h2>
-			<p><?= $content?></p>
+<div class="my-container">
+<section class="row no-padding no-margin mrg-top-141">
+	
+        <div class="col-md-6 col-12 no-padding">
+			<img class="img-des" src="<?= $mediaUrl;?>" alt="">
 		</div>
-		<div class="col-md-6 col-12">
-			<img src="<?= $mediaUrl;?>" alt="" class="w-100">
+		<div class="col-md-6 col-12 no-padding pdt-93">
+			<h2 class="title-des"><?= $title;?></h2>
+			<p class="subtitle-des"><?= $content?></p>
+            <a href="<?= $urlBtn;?>" class="btn-quiero"><?= $txtBtn;?></a>
+		</Button>
 		</div>
-	</div>
+
+	
 </section>
+</div>

@@ -23,6 +23,15 @@
       "content": {
         "type": "string",
         "default": ""
+      },
+      "urlBtn": {
+        "type": "string",
+        "default": ""
+      },
+      "txtBtn": {
+        "type": "string",
+        "default": ""
       }
     }
   }
+

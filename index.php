@@ -11,21 +11,14 @@
 if( ! defined( 'ABSPATH' ) ) exit;
 
 define( 'DKASA_BLOCKS_URL_PLUGIN', plugin_dir_path( __FILE__ ) );
+define( 'DKASA_BLOCKS_URL_PLUGIN_FRONT', site_url().'/wp-content/plugins/blocks-dkasa/');
 
 class DkasaBlocks{
-    function enqueue_styles() {
-		wp_enqueue_style('dkasa-bootstrap', plugin_dir_url( __FILE__ ) . 'public/lib/bootstrap/css/bootstrap.min.css', array(), '0.1', 'all' );
-		wp_enqueue_style( 'dkasa-slick-slider', plugin_dir_url( __FILE__ ) . 'public/lib/slick/slick.css', array(), '0.1', 'all' );
-		wp_enqueue_style( 'dkasa-slick-theme-slider', plugin_dir_url( __FILE__ ) . 'public/lib/slick/slick-theme.css', array(), '0.1', 'all' );
-		wp_enqueue_style( 'dkasa-css', plugin_dir_url( __FILE__ ) . 'public/css/landings-inmobiliarias-public.css', array(), '0.1', 'all' );
-	}
-    function enqueue_scripts() {
-		wp_enqueue_script( 'dkasa-bootstrap', plugin_dir_url( __FILE__ ) . 'public/lib/bootstrap/js/bootstrap.bundle.min.js', array( 'jquery' ), '0.1', true );
-		wp_enqueue_script( 'dkasa-slick-slider', plugin_dir_url( __FILE__ ) . 'public/lib/slick/slick.js', array( 'jquery' ), '0.1', true );
-		wp_enqueue_script( 'dkasa-js', plugin_dir_url( __FILE__ ) . 'public/js/landings-inmobiliarias-public.js', array( 'jquery' ), '0.1', true );
-	}
+
     function __construct()
     {
+        add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
+        add_action( 'admin_enqueue_scripts', 'enqueue_scripts' );
         add_action('init', array($this, 'adminAssets'));
         add_filter( 'block_categories_all' , function( $categories ) {
 
@@ -53,7 +46,7 @@ class DkasaBlocks{
         ));
 
     }
-    
+
     function landings_inmobiliarias_banner_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/landings-inmobiliarias-public-banner.php';
@@ -64,6 +57,18 @@ class DkasaBlocks{
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/landings-inmobiliarias-public-description.php';
         return ob_get_clean();
     }
+}
+function enqueue_scripts(){
+
+    wp_enqueue_style( 'bootstrap-min', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/bootstrap/css/bootstrap.min.css', array(), '5.0.0', 'all' );
+    wp_enqueue_style( 'slick-style', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/slick/slick.css', array(), '5.0.0', 'all' );
+    wp_enqueue_style( 'slick-theme-style', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/slick/slick-theme.css', array(), '5.0.0', 'all' );
+    wp_enqueue_style( 'style-dkasa', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/css/landings-inmobiliarias-public.css', array(), '5.0.0', 'all' );
+
+    wp_enqueue_script( 'bootstrap-bundle', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/bootstrap/js/bootstrap.bundle.js', array( 'jquery' ), '5.0.0', true );
+    wp_enqueue_script( 'slick-script', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/slick/slick.min.js', array( 'jquery' ), '5.0.0', true );
+
+
 }
 
 $dkasaBlocks = new DkasaBlocks();

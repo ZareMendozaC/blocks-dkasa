@@ -6,7 +6,7 @@ import eventChangeAttr from "../../helper/eventChangeAttr";
 import ImageUpload from "../../components/molecules/ImageUpload/ImageUpload";
 import Grid from "../../components/molecules/Grid/Grid";
 import Item from "../../components/atoms/Item/Item";
-
+import {ColorPalette, InspectorControls, RichText} from '@wordpress/block-editor';
 const DescriptionBack = (props) => {
 
 	const {
@@ -33,14 +33,31 @@ const DescriptionBack = (props) => {
 							data={ attr.content }
 							placeholder="Texto"
 						/>
+						<TextEditor
+							tagEle="p"
+							eventEle={(event)=> eventChangeAttr(setAttr,{txtBtn: event})}
+							data={ attr.txtBtn }
+							placeholder="Texto botón"
+						/>
+						<TextEditor
+							tagEle="p"
+							eventEle={(event)=> eventChangeAttr(setAttr,{urlBtn: event})}
+							data={ attr.urlBtn }
+							placeholder="url botón"
+						/>
 					</Item>
 					<Item percentage={40} className="lia-text-center">
 						<ImageUpload
-							setAttr={setAttr}
-							mediaId={attr.mediaId}
-							mediaUrl={attr.mediaUrl}
-						/>
+								setAttr={setAttr}
+								detail={{
+									mediaUrl: attr.mediaUrl,
+									mediaId: attr.mediaId,
+									propertyUrl: "mediaUrl",
+									propertyId: "mediaId"
+								}}
+							/>
 					</Item>
+					
 				</Grid>
 			</SectionContainer>
 		</Section>
