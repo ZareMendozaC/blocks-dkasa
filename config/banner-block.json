@@ -24,17 +24,32 @@
 	  "type": "string",
 	  "default": "white"
 	},
-	"title": {
-	  "type": "string",
-	  "default": ""
-	},
-	"content": {
-	  "type": "string",
-	  "default": ""
-	},
 	"alignment": {
 	  "type": "string",
 	  "default": "center"
+	},
+	"area": {
+		"type": "string",
+		"default": ""
+	  },
+	"dormitorios": {
+		"type": "string",
+		"default": ""
+	},
+	"ubicacion": {
+		"type": "string",
+		"default": ""
+	},
+	"precio": {
+		"type": "string",
+		"default": ""
+	},
+	"mediaIdLogo": {
+		"type": "number"
+	},
+	"mediaUrlLogo": {
+		"type": "string",
+		"default": ""
 	}
   }
 }

@@ -1,5 +1,5 @@
 wp.blocks.registerBlockType("dkasa/block-1",{
-    title: "Bloque 1",
+    title: "Bloque 11",
     icon: "smiley",
     category: "custom-layout-category",
     attributes:{

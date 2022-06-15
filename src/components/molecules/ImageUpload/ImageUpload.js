@@ -1,61 +1,71 @@
-import * as React from "react"
-import {Button} from '@wordpress/components';
+import {Button, Icon} from '@wordpress/components';
 import {MediaUpload} from '@wordpress/block-editor';
-import internationalizationText from "../../../helper/InternationalizationText";
-import noImage from "../../../../public/image/NoImage/no-image.jpeg";
+import noImage from "../../../../public/image/NoImage/no-image2.jpg";
+import intText from "../../../helper/intText";
 
-const ImageUpload = ({setAttr, mediaId, mediaUrl}) => {
+const ImageUpload = ({setAttr, detail}) => {
+	const {
+		mediaUrl,
+		mediaId,
+		propertyUrl,
+		propertyId
+	} = detail;
 
 	const onSelectImage = (media) => {
 		setAttr({
-			mediaId: media.id,
-			mediaUrl: media.url
+			[propertyId]: media.id,
+			[propertyUrl]: media.url
 		});
 	};
 
 	const quitImage = () => {
 		setAttr({
-			mediaId: null,
-			mediaUrl: ""
+			[propertyId]: null,
+			[propertyUrl]: ""
 		});
 	}
 
 	return (
-		<div className="lia-recipe-image">
+		<div className="pda-recipe-image">
 			<MediaUpload
 				onSelect={onSelectImage}
 				allowedTypes="image"
 				value={mediaId}
 				render={({open}) => (
-					<>
-						{
-							mediaId ?
-								<img
-									className="lia-w-full"
-									src={mediaUrl}
-									alt={internationalizationText("Imagen subida")}
-								/>
-								:
-								<img
-									className="lia-w-full"
-									src={noImage}
-									alt={internationalizationText("No imagen")}
-								/>
-						}
-						<Button
-							variant="secondary"
-							onClick={open}
-						>
-							{internationalizationText("Subir imagen")}
-						</Button>
-						<Button
-							variant="secondary"
-							onClick={quitImage}
-							style={{marginLeft: "8px"}}
-						>
-							{internationalizationText("Quitar imagen")}
-						</Button>
-					</>
+					<div className="pda-recipe-image">
+						<div className="pda-image-upload pda-lheight-0">
+							{
+								mediaId ?
+									<img
+										className="pda-w-full"
+										src={mediaUrl}
+										alt={intText("Imagen subida")}
+									/>
+									:
+									<img
+										className="pda-w-full"
+										src={noImage}
+										alt={intText("No imagen")}
+									/>
+							}
+						</div>
+						<div className="pda-image-upload__hover pda-flex-center pda-lheight-0">
+							<Button
+								variant="primary"
+								onClick={open}
+							>
+								<Icon icon="upload"/>
+							</Button>
+							<Button
+								variant="primary"
+								isDestructive
+								onClick={quitImage}
+								style={{margin: "8px"}}
+							>
+								<Icon icon="trash" style={{marginLeft:"0"}}/>
+							</Button>
+						</div>
+					</div>
 				)}
 			/>
 		</div>

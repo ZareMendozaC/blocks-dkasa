@@ -1,0 +1,37 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "landings-inmobiliarias/description",
+    "version": "0.1.0",
+    "title": "Descripción",
+    "category": "theme",
+    "icon": "building",
+    "description": "Descripción - Landings Inmobiliarias",
+    "textdomain": "description",
+    "attributes": {
+      "mediaId": {
+        "type": "number"
+      },
+      "mediaUrl": {
+        "type": "string",
+        "default": ""
+      },
+      "title": {
+        "type": "string",
+        "default": ""
+      },
+      "content": {
+        "type": "string",
+        "default": ""
+      },
+      "urlBtn": {
+        "type": "string",
+        "default": ""
+      },
+      "txtBtn": {
+        "type": "string",
+        "default": ""
+      }
+    }
+  }
+

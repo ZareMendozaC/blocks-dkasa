@@ -1,11 +1,13 @@
 import * as React from "react"
 
-const SectionContainer = ({children}) => {
-
+const SectionContainer = ({styleEle, children}) => {
+  const newBlockProps = {style: styleEle};
   return(
-    <div className="lia-seccion-container">
+    <div  {...newBlockProps} className="lia-seccion-container">
 		{children}
     </div>
   )
 }
 export default SectionContainer;
+
+
