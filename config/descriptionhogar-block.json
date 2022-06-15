@@ -1,9 +1,9 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 2,
-    "name": "landings-inmobiliarias/description",
+    "name": "landings-inmobiliarias/descriptionhogar",
     "version": "0.1.0",
-    "title": "Descripción",
+    "title": "Descripción Hogar",
     "category": "theme",
     "icon": "building",
     "description": "Descripción - dkasa",
