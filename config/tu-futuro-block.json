@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "dkasa/tu-futuro",
+  "version": "1",
+  "title": "Tu Futuro",
+  "category": "dkasa",
+  "icon": "building",
+  "description": "Tu Futuro - Dkasa",
+  "attributes": {
+    "images": {
+      "type": "array",
+      "default": [
+        {
+          "mediaId": null,
+          "mediaUrl": "",
+          "estado": "",
+          "nombre": "",
+          "direccion": "",
+          "detalles": "",
+          "metraje": "",
+          "precio": "",
+          "mediaIdLogo": null,
+          "mediaUrlLogo": "",
+          "textoEnlace": ""
+        }
+      ]
+    }
+  }
+}
