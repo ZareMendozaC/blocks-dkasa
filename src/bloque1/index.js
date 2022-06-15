@@ -1,7 +1,7 @@
 wp.blocks.registerBlockType("dkasa/block-1",{
     title: "Bloque 11",
     icon: "smiley",
-    category: "custom-layout-category",
+    category: "dkasa",
     attributes:{
         skyColor: {type: "string"},
         grassColor: {type: "string"}

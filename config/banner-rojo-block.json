@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "dkasa/banner-rojo",
+  "version": "1",
+  "title": "Banner Rojo",
+  "category": "dkasa",
+  "icon": "building",
+  "description": "Banner Rojo - Dkasa",
+  "attributes": {
+	"backgroundColor": {
+	  "type": "string",
+	  "default": "#BE1521"
+	},
+	"textColor": {
+	  "type": "string",
+	  "default": "white"
+	},
+	"textoPequeño1": {
+		"type": "string",
+		"default": ""
+	  },
+	"cifraGrande1": {
+		"type": "string",
+		"default": ""
+	},
+	"textoPequeño2": {
+		"type": "string",
+		"default": ""
+	},
+	"cifraGrande2": {
+		"type": "string",
+		"default": ""
+	},
+	"textoEnlace": {
+		"type": "string",
+		"default": ""
+	},
+	"mediaIdDibujo": {
+		"type": "number"
+	},
+	"mediaUrlDibujo": {
+		"type": "string",
+		"default": ""
+	}
+  }
+}
