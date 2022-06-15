@@ -11,7 +11,7 @@
 if( ! defined( 'ABSPATH' ) ) exit;
 
 define( 'DKASA_BLOCKS_URL_PLUGIN', plugin_dir_path( __FILE__ ) );
-define( 'DKASA_BLOCKS_URL_PLUGIN_FRONT', site_url().'/wp-content/plugins/blocks-dkasa/');
+define( 'DKASA_BLOCKS_URL_PLUGIN_FRONT', site_url().'/wp-content/plugins/dkasa-plugin/');
 
 class DkasaBlocks{
 
