@@ -15,7 +15,7 @@
 	--width_base: 1920;
 }
 *{
-	outline: 1px solid red;
+/*	outline: 1px solid red;*/
 }
 .my-container{
 	max-width: calc(100vw * (calc(1482 / var(--width_base))));

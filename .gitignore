@@ -1,7 +1,4 @@
-node_modules
-build
+build/
 package-lock.json
-# Dependency directories
 node_modules/
-# Optional npm cache directory
 .npm
