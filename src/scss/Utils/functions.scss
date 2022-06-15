@@ -1,0 +1,3 @@
+@function size($medida: "") {
+    @return calc(100vw * (calc(#{$medida}/var(--width_base))));
+  }

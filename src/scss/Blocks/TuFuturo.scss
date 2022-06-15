@@ -1,0 +1,57 @@
+.tu-futuro-back-card {
+    background-color: gray;
+    .logo-field{
+        width: 50%;
+    }
+}
+
+// FRONTEND
+#banner-rojo-front{
+    font-family: 'Century Gothic',sans-serif;
+    .contenido-contenedor{
+        padding-top: size(107);
+        padding-right: size(218);
+        padding-bottom: size(99);
+        padding-left: size(259);
+        justify-content: space-between;
+        
+
+        .columna-1{
+            display: flex;
+            .image-container{
+                align-self: flex-end;
+                img{
+                    margin-right: size(33);
+                    margin-bottom: size(8);
+                }
+            }
+            p{
+                margin-bottom: 0;
+            }
+            .texto-pequeño{
+                font-weight: bold;
+                font-size: size(24);
+                line-height: size(29);
+            }
+            .texto-grande{
+                font-weight: bold;
+                font-size: size(88);
+                line-height: size(88);
+            }
+        }
+        .columna-2{
+            align-self: center;
+            a{
+                display: flex;
+                align-items: center;
+                p{
+                    font-weight: bold;
+                    font-size: size(24);
+                    line-height: size(29);
+                    margin-bottom: 0;
+                    margin-right: size(22);
+                }
+            }
+        }
+    }
+}

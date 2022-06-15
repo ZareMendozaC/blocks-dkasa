@@ -1,4 +1,5 @@
 //Utilities
+@import 'scss/Utils/functions.scss';
 @import 'scss/Utils/fonts';
 @import 'scss/Utils/text';
 @import 'scss/Utils/display';
@@ -15,3 +16,6 @@
 @import 'scss/Components/alert';
 @import 'scss/Components/quoter';
 @import 'scss/Components/grid';
+
+@import 'scss/Blocks/BannerRojo';
+@import 'scss/Blocks/TuFuturo';
