@@ -8,7 +8,7 @@
   "icon": "building",
   "description": "Tu Futuro - Dkasa",
   "attributes": {
-    "images": {
+    "projects": {
       "type": "array",
       "default": [
         {

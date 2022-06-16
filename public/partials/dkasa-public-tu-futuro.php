@@ -16,18 +16,47 @@
  * @var      array    $attributes    The ID of this plugin.
  */
 
-$images = $attributes['images'];
-
+$projects = $attributes['projects'];
+var_dump($projects);
 ?>
-<section>
-	<?php if($images) : ?>
-		<div class="lia-section-container lia-carousel">
-			<?php foreach ($images as $image): ?>
-				<div>
-					<img src="<?= $image['mediaUrl'];?>" alt="" class="w-100">
-					<h3 class="bg-black p-3 position-absolute left-0 bottom-0 right-0 w-100 mb-0 text-white"><?= $image['title'];?></h3>
-				</div>
-			<?php endforeach; ?>
+<section id="tu-futuro-front" class="container-fluid">
+	<div class="row">
+
+		<div class="col-12 px-0">
+			<h2>Tu futuro hogar</h2>
 		</div>
-	<?php endif;?>
+		<div class="col-12 px-0">
+			<div class="contenido-contenedor">
+				<?php foreach ($projects as $project) : ?>
+					<div class="tf-card">
+						<a href="#">
+							<div class="td-card-front">
+								<div>
+									<img class="" src="<?= $project["mediaUrl"]; ?>" alt="Dibujo">
+								</div>
+								<div class="estado">
+									<p><?= $project["estado"]; ?></p>
+								</div>
+							</div>
+							<div class="tf-card-back">
+								<div>
+									<p><?= $project["nombre"]; ?></p>
+									<p><?= $project["direccion"]; ?></p>
+									<p><?= $project["detalles"]; ?></p>
+									<p><?= $project["metraje"]; ?></p>
+									<p><?= $project["precio"]; ?></p>
+									<p><?= $project["estado"]; ?></p>
+									<img class="" src="<?= $project["mediaUrlLogo"]; ?>" alt="Dibujo">
+									<p><?= $project["textoEnlace"]; ?></p>
+								</div>
+							</div>
+						</a>
+					</div>
+				<?php endforeach; ?>
+			</div>
+		</div>
+		<div class="col-12 px-0">
+			<p>¡Quiero ver más!</p>
+		</div>
+	</div>
 </section>

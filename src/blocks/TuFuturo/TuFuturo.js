@@ -19,11 +19,11 @@ const TuFuturo = (props) => {
 
   const { attributes: attr, setAttributes: setAttr } = props;
 
-  const [imagesArr, setImagesArr] = useState(attr.images);
+  const [projectsArr, setProjectsArr] = useState(attr.projects);
 
   const blockProps = useBlockProps();
 
-  const addImage = () => {
+  const addProject = () => {
     const itemObj = {
       mediaId: null,
       mediaUrl: "",
@@ -38,67 +38,67 @@ const TuFuturo = (props) => {
       textoEnlace: "",
     };
 
-    const newImagesArr = [...imagesArr, itemObj];
+    const newProjectsArr = [...projectsArr, itemObj];
 
-    setImagesArr(newImagesArr);
-    setAttr({ images: newImagesArr });
-  };
-
-  const trashImage = (index) => {
-    const newImagesArr = [...imagesArr];
-    newImagesArr.splice(index, 1);
-    setImagesArr(newImagesArr);
-    setAttr({ images: newImagesArr });
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
   };
 
-  const onChangeImageEstado = (event, index) => {
-    const newImagesArr = [...imagesArr];
-    newImagesArr[index].estado = event;
-    setImagesArr(newImagesArr);
-    setAttr({ images: newImagesArr });
+  const trashProject = (index) => {
+    const newProjectsArr = [...projectsArr];
+    newProjectsArr.splice(index, 1);
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
   };
-  const onChangeImageNombre = (event, index) => {
-    const newImagesArr = [...imagesArr];
-    newImagesArr[index].nombre = event;
-    setImagesArr(newImagesArr);
-    setAttr({ images: newImagesArr });
+
+  const onChangeProjectEstado = (event, index) => {
+    const newProjectsArr = [...projectsArr];
+    newProjectsArr[index].estado = event;
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
   };
-  const onChangeImageDireccion = (event, index) => {
-    const newImagesArr = [...imagesArr];
-    newImagesArr[index].direccion = event;
-    setImagesArr(newImagesArr);
-    setAttr({ images: newImagesArr });
+  const onChangeProjectNombre = (event, index) => {
+    const newProjectsArr = [...projectsArr];
+    newProjectsArr[index].nombre = event;
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
   };
-  const onChangeImageDetalles = (event, index) => {
-    const newImagesArr = [...imagesArr];
-    newImagesArr[index].detalles = event;
-    setImagesArr(newImagesArr);
-    setAttr({ images: newImagesArr });
+  const onChangeProjectDireccion = (event, index) => {
+    const newProjectsArr = [...projectsArr];
+    newProjectsArr[index].direccion = event;
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
   };
-  const onChangeImageMetraje = (event, index) => {
-    const newImagesArr = [...imagesArr];
-    newImagesArr[index].metraje = event;
-    setImagesArr(newImagesArr);
-    setAttr({ images: newImagesArr });
+  const onChangeProjectDetalles = (event, index) => {
+    const newProjectsArr = [...projectsArr];
+    newProjectsArr[index].detalles = event;
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
   };
-  const onChangeImagePrecio = (event, index) => {
-    const newImagesArr = [...imagesArr];
-    newImagesArr[index].precio = event;
-    setImagesArr(newImagesArr);
-    setAttr({ images: newImagesArr });
+  const onChangeProjectMetraje = (event, index) => {
+    const newProjectsArr = [...projectsArr];
+    newProjectsArr[index].metraje = event;
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
   };
-  const onChangeImageTextoEnlace = (event, index) => {
-    const newImagesArr = [...imagesArr];
-    newImagesArr[index].textoEnlace = event;
-    setImagesArr(newImagesArr);
-    setAttr({ images: newImagesArr });
+  const onChangeProjectPrecio = (event, index) => {
+    const newProjectsArr = [...projectsArr];
+    newProjectsArr[index].precio = event;
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
+  };
+  const onChangeProjectTextoEnlace = (event, index) => {
+    const newProjectsArr = [...projectsArr];
+    newProjectsArr[index].textoEnlace = event;
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
   };
 
   return (
     <Section blockProps={blockProps}>
       <SectionContainer>
-        {imagesArr &&
-          imagesArr.map((imageArr, i) => (
+        {projectsArr &&
+          projectsArr.map((projectArr, i) => (
             <Grid key={i} classEle="flex-wrap lia-card__item tu-futuro-back-card">
               <div className="w-100 d-flex align-items-center">
                 <Item percentage={20} classEle="lia-gap-8">
@@ -106,12 +106,12 @@ const TuFuturo = (props) => {
                     variables={props}
                     details={{
                       index: i,
-                      datum: imageArr,
-                      setData: setImagesArr,
-                      data: imagesArr,
+                      datum: projectArr,
+                      setData: setProjectsArr,
+                      data: projectsArr,
                       namePropertyId: "mediaId",
                       namePropertyUrl: "mediaUrl",
-                      namePropertyData: "images",
+                      namePropertyData: "projects",
                     }}
                   />
                 </Item>
@@ -121,8 +121,8 @@ const TuFuturo = (props) => {
                     <strong>Estado:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeImageEstado(event, i)}
-                    value={imageArr.estado}
+                    onChange={(event) => onChangeProjectEstado(event, i)}
+                    value={projectArr.estado}
                   />
                 </Item>
               </div>
@@ -133,43 +133,43 @@ const TuFuturo = (props) => {
                     <strong>Nombre:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeImageNombre(event, i)}
-                    value={imageArr.nombre}
+                    onChange={(event) => onChangeProjectNombre(event, i)}
+                    value={projectArr.nombre}
                   />
                   <Text>
                     <strong>Direccion:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeImageDireccion(event, i)}
-                    value={imageArr.direccion}
+                    onChange={(event) => onChangeProjectDireccion(event, i)}
+                    value={projectArr.direccion}
                   />
                   <Text>
                     <strong>Detalles:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeImageDetalles(event, i)}
-                    value={imageArr.detalles}
+                    onChange={(event) => onChangeProjectDetalles(event, i)}
+                    value={projectArr.detalles}
                   />
                   <Text>
                     <strong>Metraje:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeImageMetraje(event, i)}
-                    value={imageArr.metraje}
+                    onChange={(event) => onChangeProjectMetraje(event, i)}
+                    value={projectArr.metraje}
                   />
                   <Text>
                     <strong>Precio:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeImagePrecio(event, i)}
-                    value={imageArr.precio}
+                    onChange={(event) => onChangeProjectPrecio(event, i)}
+                    value={projectArr.precio}
                   />
                   <Text>
                     <strong>Texto de Enlace:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeImageTextoEnlace(event, i)}
-                    value={imageArr.textoEnlace}
+                    onChange={(event) => onChangeProjectTextoEnlace(event, i)}
+                    value={projectArr.textoEnlace}
                   />
                   <Text>
                     <strong>Logo:</strong>
@@ -179,26 +179,26 @@ const TuFuturo = (props) => {
                     variables={props}
                     details={{
                       index: i,
-                      datum: imageArr,
-                      setData: setImagesArr,
-                      data: imagesArr,
+                      datum: projectArr,
+                      setData: setProjectsArr,
+                      data: projectsArr,
                       namePropertyId: "mediaIdLogo",
                       namePropertyUrl: "mediaUrlLogo",
-                      namePropertyData: "images",
+                      namePropertyData: "projects",
                     }}
                   />
                   </div>
                   <div className="lia-text-right">
-                    <Button isDestructive onClick={() => trashImage(i)}>
-                      Eliminar Imagen
+                    <Button isDestructive onClick={() => trashProject(i)}>
+                      Eliminar Proyecto
                     </Button>
                   </div>
                 </div>
               </div>
             </Grid>
           ))}
-        <Button onClick={addImage} variant="primary">
-          {internationalizationText("Agregar imagen")}
+        <Button onClick={addProject} variant="primary">
+          {internationalizationText("Agregar Proyecto")}
         </Button>
       </SectionContainer>
     </Section>
