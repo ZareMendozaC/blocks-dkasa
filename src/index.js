@@ -32,9 +32,6 @@ import DescriptionUbicacionJson from '../config/description-ubicacion-block.json
 	registerBlockType( DescriptionJson.name, { edit: DescriptionBack});
 	registerBlockType( BannerRojoJson.name, { edit: BannerRojoBack});
 	registerBlockType( TuFuturoJson.name, { edit: TuFuturoBack});
-<<<<<<< HEAD
 	registerBlockType( TestimoniosJson.name, { edit: Testimonios});
-=======
 	registerBlockType( DescriptionHogarJson.name, { edit: DescriptionHogarBack});
 	registerBlockType( DescriptionUbicacionJson.name, { edit: DescriptionUbicacionBack});
->>>>>>> zareDev

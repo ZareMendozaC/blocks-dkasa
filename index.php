@@ -91,11 +91,10 @@ class DkasaBlocks{
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-tu-futuro.php';
         return ob_get_clean();
     }
-<<<<<<< HEAD
     function dkasa_testimonios_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-testimonios.php';
-=======
+    }
     function dkasa_descriptionhogar_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-descriptionhogar.php';
@@ -105,7 +104,6 @@ class DkasaBlocks{
     function dkasa_descriptionubicacion_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-ubicacion-description.php';
->>>>>>> zareDev
         return ob_get_clean();
     }
 }
