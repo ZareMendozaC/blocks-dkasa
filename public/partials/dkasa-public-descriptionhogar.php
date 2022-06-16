@@ -22,7 +22,7 @@ $mediaUrl = $attributes['mediaUrl'];
 
 <div class="my-container">
 <section class="row no-padding no-margin">
-		<div class="col-md-12 col-12 no-padding">
+		<div class="col-md-12 col-12 no-padding mrg-btm-57">
 			<h2 class="subtitle-general">Tu futuro Hogar</h2>
 		</div>
 		<div class="col-md-4 col-12 no-padding mrg-35_top">
