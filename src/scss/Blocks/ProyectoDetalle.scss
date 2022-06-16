@@ -1,0 +1,14 @@
+/*FRONTEND*/
+.subtitle-general{
+    font-family: 'Century Gothic Bold';
+    font-style: normal;
+    font-size: calc(100vw * (calc(48 / var(--width_base))));
+    line-height: calc(100vw * (calc(59 / var(--width_base))));
+    color: #3C3C3A;
+    margin-bottom: 0px !important;
+  }
+  .separador{
+    margin-bottom: calc(100vw * (calc(153 / var(--width_base))));
+  }
+  
+/*BACKEND*/
