@@ -53,6 +53,10 @@ class DkasaBlocks{
             'editor_script' => 'dkasablock1',
             'render_callback' => array($this,'dkasa_descriptionhogar_render_callback'), 
         ));
+        /* Slider proyecto*/
+        register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/slider-proyecto-block.json', array(
+            'render_callback' => array($this,'dkasa_sliderproyecto_render_callback'), 
+        ));
         /* Bloque Rojo */
         register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/banner-rojo-block.json', array(
             'editor_script' => 'dkasablock1',
@@ -100,10 +104,14 @@ class DkasaBlocks{
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-descriptionhogar.php';
         return ob_get_clean();
     }
-    
     function dkasa_descriptionubicacion_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-ubicacion-description.php';
+        return ob_get_clean();
+    }
+    function dkasa_sliderproyecto_render_callback( $attributes, $content, $block_instance ) {
+        ob_start();
+        require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-slider-proyecto.php';
         return ob_get_clean();
     }
 }
@@ -117,7 +125,7 @@ function enqueue_scripts(){
 
     wp_enqueue_script( 'bootstrap-bundle', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/bootstrap/js/bootstrap.bundle.js', array( 'jquery' ), '5.0.0', true );
     wp_enqueue_script( 'slick-script', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/slick/slick.min.js', array( 'jquery' ), '5.0.0', true );
-
+    wp_enqueue_script( 'dkasa-script', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/js/landings-inmobiliarias-public.js', array( 'jquery' ), '5.0.0', true );
 
 }
 
