@@ -1,0 +1,13 @@
+.img-ubic{
+    width: calc(100vw * (calc(318 / var(--width_base))));
+    height: calc(100vw * (calc(567 / var(--width_base))));
+}
+.column-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: calc(100vw * (calc(340/ var(--width_base)))) !important;
+}
+.mrg-top-35{
+    margin-top: calc(100vw * (calc(35/ var(--width_base)))) !important;
+}

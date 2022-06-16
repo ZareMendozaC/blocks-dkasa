@@ -21,8 +21,7 @@ $content = $attributes['content'];
 $mediaUrl = $attributes['mediaUrl'];
 $urlBtn = $attributes['urlBtn'];
 $txtBtn = $attributes['txtBtn'];
-$urlBtnTwo = $attributes['urlBtnTwo'];
-$txtBtnTwo = $attributes['txtBtnTwo'];
+
 ?>
 <div class="my-container separador">
 <section class="row no-padding no-margin mrg-top-141">

@@ -53,7 +53,7 @@ const DescriptionUbicacionBack= (props) => {
 									data={ attr.txtBtn }
 									placeholder="Texto tour"
 								/>
-																<TextEditor
+								<TextEditor
 									tagEle="p"
 									eventEle={(event)=> eventChangeAttr(setAttr,{urlBtn: event})}
 									data={ attr.urlBtn }

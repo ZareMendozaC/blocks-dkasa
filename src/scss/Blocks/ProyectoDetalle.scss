@@ -10,5 +10,42 @@
   .separador{
     margin-bottom: calc(100vw * (calc(153 / var(--width_base))));
   }
+  .btn-green,   .btn-green:hover{
+    width: calc(100vw * (calc(224 / var(--width_base))));
+    height: calc(100vw * (calc(52 / var(--width_base))));
+    background: #009EA0;
+    font-family: 'Century Gothic Bold';
+    font-style: normal;
+    font-size: calc(100vw * (calc(24 / var(--width_base))));
+    line-height: calc(100vw * (calc(29 / var(--width_base))));
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: calc(100vw * (calc(9 / var(--width_base))));
+    text-decoration: none !important;
+    margin-right: calc(100vw * (calc(45 / var(--width_base))));;
+  }
+  .btn-white,   .btn-white:hover{
+    width: calc(100vw * (calc(224 / var(--width_base))));
+    height: calc(100vw * (calc(52 / var(--width_base))));
+    background: #FFFFFF;
+    font-family: 'Century Gothic Bold';
+    font-style: normal;
+    font-size: calc(100vw * (calc(24 / var(--width_base))));
+    line-height: calc(100vw * (calc(29 / var(--width_base))));
+    text-align: center;
+    color: #3C3C3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: calc(100vw * (calc(9 / var(--width_base))));
+    text-decoration: none !important;
+    border: 1px solid #3C3C3A;
+  }
+  .d-flex{
+    display: flex;
+  }
   
 /*BACKEND*/
