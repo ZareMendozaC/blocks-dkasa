@@ -16,93 +16,63 @@ import Title from "../../components/atoms/Title/Title";
 const Testimonios = (props) => {
   const { attributes: attr, setAttributes: setAttr } = props;
 
-  const [projectsArr, setProjectsArr] = useState(attr.projects);
+  const [testimoniosArr, setTestimoniosArr] = useState(attr.testimonios);
 
   const blockProps = useBlockProps();
 
-  const addProject = () => {
+  const addTestimonio = () => {
     const itemObj = {
       mediaId: null,
       mediaUrl: "",
-      estado: "",
       nombre: "",
-      direccion: "",
-      distrito: "",
-      detalles: "",
-      metraje: "",
-      precio: "",
-      mediaIdLogo: null,
-      mediaUrlLogo: "",
+      proyecto: "",
+      detalle: "",
       textoEnlace: "",
     };
 
-    const newProjectsArr = [...projectsArr, itemObj];
+    const newTestimoniosArr = [...testimoniosArr, itemObj];
 
-    setProjectsArr(newProjectsArr);
-    setAttr({ projects: newProjectsArr });
-  };
-
-  const trashProject = (index) => {
-    const newProjectsArr = [...projectsArr];
-    newProjectsArr.splice(index, 1);
-    setProjectsArr(newProjectsArr);
-    setAttr({ projects: newProjectsArr });
+    setTestimoniosArr(newTestimoniosArr);
+    setAttr({ testimonios: newTestimoniosArr });
   };
 
-  const onChangeProjectEstado = (event, index) => {
-    const newProjectsArr = [...projectsArr];
-    newProjectsArr[index].estado = event;
-    setProjectsArr(newProjectsArr);
-    setAttr({ projects: newProjectsArr });
+  const trashTestimonio = (index) => {
+    const newTestimoniosArr = [...testimoniosArr];
+    newTestimoniosArr.splice(index, 1);
+    setTestimoniosArr(newTestimoniosArr);
+    setAttr({ testimonios: newTestimoniosArr });
   };
-  const onChangeProjectNombre = (event, index) => {
-    const newProjectsArr = [...projectsArr];
-    newProjectsArr[index].nombre = event;
-    setProjectsArr(newProjectsArr);
-    setAttr({ projects: newProjectsArr });
+
+  const onChangeTestimonioNombre = (event, index) => {
+    const newTestimoniosArr = [...testimoniosArr];
+    newTestimoniosArr[index].nombre = event;
+    setTestimoniosArr(newTestimoniosArr);
+    setAttr({ testimonios: newTestimoniosArr });
   };
-  const onChangeProjectDireccion = (event, index) => {
-    const newProjectsArr = [...projectsArr];
-    newProjectsArr[index].direccion = event;
-    setProjectsArr(newProjectsArr);
-    setAttr({ projects: newProjectsArr });
+  const onChangeTestimonioProyecto = (event, index) => {
+    const newTestimoniosArr = [...testimoniosArr];
+    newTestimoniosArr[index].proyecto = event;
+    setTestimoniosArr(newTestimoniosArr);
+    setAttr({ testimonios: newTestimoniosArr });
   };
-  const onChangeProjectDistrito = (event, index) => {
-    const newProjectsArr = [...projectsArr];
-    newProjectsArr[index].distrito = event;
-    setProjectsArr(newProjectsArr);
-    setAttr({ projects: newProjectsArr });
+  const onChangeTestimonioDetalle = (event, index) => {
+    const newTestimoniosArr = [...testimoniosArr];
+    newTestimoniosArr[index].detalle = event;
+    setTestimoniosArr(newTestimoniosArr);
+    setAttr({ testimonios: newTestimoniosArr });
   };
-  const onChangeProjectDetalles = (event, index) => {
-    const newProjectsArr = [...projectsArr];
-    newProjectsArr[index].detalles = event;
-    setProjectsArr(newProjectsArr);
-    setAttr({ projects: newProjectsArr });
-  };
-  const onChangeProjectMetraje = (event, index) => {
-    const newProjectsArr = [...projectsArr];
-    newProjectsArr[index].metraje = event;
-    setProjectsArr(newProjectsArr);
-    setAttr({ projects: newProjectsArr });
-  };
-  const onChangeProjectPrecio = (event, index) => {
-    const newProjectsArr = [...projectsArr];
-    newProjectsArr[index].precio = event;
-    setProjectsArr(newProjectsArr);
-    setAttr({ projects: newProjectsArr });
-  };
-  const onChangeProjectTextoEnlace = (event, index) => {
-    const newProjectsArr = [...projectsArr];
-    newProjectsArr[index].textoEnlace = event;
-    setProjectsArr(newProjectsArr);
-    setAttr({ projects: newProjectsArr });
+  const onChangeTestimonioTextoEnlace = (event, index) => {
+    const newTestimoniosArr = [...testimoniosArr];
+    newTestimoniosArr[index].textoEnlace = event;
+    setTestimoniosArr(newTestimoniosArr);
+    setAttr({ testimonios: newTestimoniosArr });
   };
 
   return (
     <Section blockProps={blockProps}>
       <SectionContainer>
-        {projectsArr &&
-          projectsArr.map((projectArr, i) => (
+        {testimoniosArr &&
+          testimoniosArr.map((testimonioArr, i) => (
             <Grid key={i} classEle="flex-wrap lia-card__item tu-futuro-back-card">
               <div className="w-100 d-flex align-items-center">
                 <Item percentage={20} classEle="lia-gap-8">
@@ -110,106 +80,60 @@ const Testimonios = (props) => {
                     variables={props}
                     details={{
                       index: i,
-                      datum: projectArr,
-                      setData: setProjectsArr,
-                      data: projectsArr,
+                      datum: testimonioArr,
+                      setData: setTestimoniosArr,
+                      data: testimoniosArr,
                       namePropertyId: "mediaId",
                       namePropertyUrl: "mediaUrl",
-                      namePropertyData: "projects",
+                      namePropertyData: "testimonios",
                     }}
                   />
                 </Item>
                 <Item percentage={80}>
-                  <Title tagEle="h4" data="Detalle" className="lia-mb-0" />
-                  <Text>
-                    <strong>Estado:</strong>
-                  </Text>
-                  <TextControl
-                    onChange={(event) => onChangeProjectEstado(event, i)}
-                    value={projectArr.estado}
-                  />
-                </Item>
-              </div>
-              <div class="w-100">
-                <Title tagEle="h4" data="Datos" className="lia-mb-0" />
-                <div>
+                  <Title tagEle="h4" data="Detalles" className="lia-mb-0" />
                   <Text>
                     <strong>Nombre:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeProjectNombre(event, i)}
-                    value={projectArr.nombre}
+                    onChange={(event) => onChangeTestimonioNombre(event, i)}
+                    value={testimonioArr.nombre}
                   />
                   <Text>
-                    <strong>Direccion:</strong>
+                    <strong>Proyecto:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeProjectDireccion(event, i)}
-                    value={projectArr.direccion}
+                    onChange={(event) => onChangeTestimonioProyecto(event, i)}
+                    value={testimonioArr.proyecto}
                   />
+                </Item>
+              </div>
+              <div class="w-100">
+                <div>
                   <Text>
-                    <strong>Distrito:</strong>
+                    <strong>Testimonio:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeProjectDistrito(event, i)}
-                    value={projectArr.distrito}
-                  />
-                  <Text>
-                    <strong>Detalles:</strong>
-                  </Text>
-                  <TextControl
-                    onChange={(event) => onChangeProjectDetalles(event, i)}
-                    value={projectArr.detalles}
-                  />
-                  <Text>
-                    <strong>Metraje:</strong>
-                  </Text>
-                  <TextControl
-                    onChange={(event) => onChangeProjectMetraje(event, i)}
-                    value={projectArr.metraje}
-                  />
-                  <Text>
-                    <strong>Precio:</strong>
-                  </Text>
-                  <TextControl
-                    onChange={(event) => onChangeProjectPrecio(event, i)}
-                    value={projectArr.precio}
+                    onChange={(event) => onChangeTestimonioDetalle(event, i)}
+                    value={testimonioArr.detalle}
                   />
                   <Text>
                     <strong>Texto de Enlace:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeProjectTextoEnlace(event, i)}
-                    value={projectArr.textoEnlace}
+                    onChange={(event) => onChangeTestimonioTextoEnlace(event, i)}
+                    value={testimonioArr.textoEnlace}
                   />
-                  <Text>
-                    <strong>Logo:</strong>
-                  </Text>
-                  <div class="logo-field">
-                  <ImageUploadRepeater
-                    variables={props}
-                    details={{
-                      index: i,
-                      datum: projectArr,
-                      setData: setProjectsArr,
-                      data: projectsArr,
-                      namePropertyId: "mediaIdLogo",
-                      namePropertyUrl: "mediaUrlLogo",
-                      namePropertyData: "projects",
-                    }}
-                  />
-                  </div>
                   <div className="lia-text-right">
-                    <Button isDestructive onClick={() => trashProject(i)}>
-                      Eliminar Proyecto
+                    <Button isDestructive onClick={() => trashTestimonio(i)}>
+                      Eliminar Testimonio
                     </Button>
                   </div>
                 </div>
               </div>
             </Grid>
           ))}
-        <Button onClick={addProject} variant="primary">
-          {internationalizationText("Agregar Proyecto")}
+        <Button onClick={addTestimonio} variant="primary">
+          {internationalizationText("Agregar Testimonio")}
         </Button>
       </SectionContainer>
     </Section>

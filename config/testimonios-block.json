@@ -8,21 +8,15 @@
   "icon": "building",
   "description": "Testimonios - Dkasa",
   "attributes": {
-    "projects": {
+    "testimonios": {
       "type": "array",
       "default": [
         {
           "mediaId": null,
           "mediaUrl": "",
-          "estado": "",
           "nombre": "",
-          "direccion": "",
-          "distrito":"",
-          "detalles": "",
-          "metraje": "",
-          "precio": "",
-          "mediaIdLogo": null,
-          "mediaUrlLogo": "",
+          "proyecto": "",
+          "detalle": "",
           "textoEnlace": ""
         }
       ]
