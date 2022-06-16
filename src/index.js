@@ -23,10 +23,11 @@ import DescriptionJson from '../config/description-block.json';
 import DescriptionHogarBack from './blocks/DescriptionHogar/DescriptionHogarBack';
 import DescriptionHogarJson from '../config/descriptionhogar-block.json'; 
 
-
 import DescriptionUbicacionBack from './blocks/DescriptionUbicacion/DescriptionUbicacionBack';
 import DescriptionUbicacionJson from '../config/description-ubicacion-block.json'; 
 
+import SliderProyectoBack from './blocks/SliderProyecto/SliderProyectos';
+import SliderProyectoJson from '../config/slider-proyecto-block.json'; 
 
 	registerBlockType( BannerJson.name, { edit: BannerBack });
 	registerBlockType( DescriptionJson.name, { edit: DescriptionBack});
@@ -35,3 +36,4 @@ import DescriptionUbicacionJson from '../config/description-ubicacion-block.json
 	registerBlockType( TestimoniosJson.name, { edit: Testimonios});
 	registerBlockType( DescriptionHogarJson.name, { edit: DescriptionHogarBack});
 	registerBlockType( DescriptionUbicacionJson.name, { edit: DescriptionUbicacionBack});
+	registerBlockType( SliderProyectoJson.name, { edit: SliderProyectoBack});

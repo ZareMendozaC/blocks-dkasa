@@ -1,0 +1,14 @@
+.container-slider-proyecto{
+    width: calc(100vw * (calc(1241 / var(--width_base))));
+    margin: auto;
+}
+
+.img-litle{
+  width: calc(100vw * (calc(237 / var(--width_base)))) !important;
+  
+  margin-right: calc(100vw * (calc(14 / var(--width_base))));
+  
+}
+.container-slider-proyecto .slider-nav{
+    margin-top: calc(100vw * (calc(13 / var(--width_base))));
+}

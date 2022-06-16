@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "dkasa/slider",
+    "version": "0.1.0",
+    "title": "Slider Proyecto",
+    "category": "theme",
+    "icon": "building",
+    "description": "Slider - dkasa",
+    "textdomain": "slider",
+    "attributes": {
+      "images": {
+        "type": "array",
+        "default": [
+          {
+            "mediaId": null,
+            "mediaUrl": "",
+            "title": ""
+          }
+        ]
+      }
+    }
+  }

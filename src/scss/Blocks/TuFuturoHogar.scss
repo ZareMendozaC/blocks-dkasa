@@ -26,3 +26,10 @@
 .mrg-35_top{
     margin-top: calc(100vw * (calc(35 / var(--width_base))));
 }
+.into-carac  img{
+    width: calc(100vw * (calc(72 / var(--width_base))));
+    height: calc(100vw * (calc(72 / var(--width_base))));
+}
+.mrg-btm-57{
+    margin-bottom:  calc(100vw * (calc(57 / var(--width_base)))) !important;
+}

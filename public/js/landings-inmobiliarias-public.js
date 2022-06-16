@@ -90,5 +90,22 @@
 		pauseOnHover: false,
 		cssEase: 'linear'
 	});
-
+	$('.slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		// fade: true,
+		variableWidth: true,
+		autoplay: true,
+		asNavFor: '.slider-nav'
+	  });
+	  $('.slider-nav').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		dots: false,
+		centerMode: true,
+		variableWidth: true,
+		focusOnSelect: true
+	  });
 })( jQuery );
