@@ -1,0 +1,28 @@
+
+.subtitle-carac{
+    font-family: 'Century Gothic Bold';
+    font-style: normal;
+    font-size: calc(100vw * (calc(24 / var(--width_base))));
+    line-height: calc(100vw * (calc(29 / var(--width_base))));
+    color: #3C3C3A;
+}
+.box-carac{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    margin-right: calc(100vw * (calc(85 / var(--width_base))));
+}
+.box-carac_1{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: calc(100vw * (calc(23 / var(--width_base))));
+    align-items: center;
+}
+.img-carac{
+    width: 100%;
+    height: auto;
+}
+.mrg-35_top{
+    margin-top: calc(100vw * (calc(35 / var(--width_base))));
+}

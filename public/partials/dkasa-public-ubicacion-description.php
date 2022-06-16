@@ -33,7 +33,10 @@ $txtBtnTwo = $attributes['txtBtnTwo'];
 		<div class="col-md-6 col-12 no-padding pdt-93">
 			<h2 class="title-des"><?= $title;?></h2>
 			<p class="subtitle-des"><?= $content?></p>
-            <a href="<?= $urlBtn;?>" class="btn-quiero"><?= $txtBtn;?></a>
+            <div class="col-md-12 col-12 no-padding">
+			<a href="<?= $urlBtn;?>" class="btn-quiero"><?= $txtBtn;?></a>
+			<a href="<?= $urlBtnTwo;?>" class="btn-quiero"><?= $txtBtnTwo;?></a>
+			</div>
 		</Button>
 		</div>
 

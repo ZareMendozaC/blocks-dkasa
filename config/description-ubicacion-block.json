@@ -1,12 +1,12 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 2,
-    "name": "landings-inmobiliarias/description",
+    "name": "dkasa/descriptionubicacion",
     "version": "0.1.0",
-    "title": "Descripción",
+    "title": "Descripción Ubicación",
     "category": "theme",
     "icon": "building",
-    "description": "Descripción - dkasa",
+    "description": "Descripción Ubicación- dkasa",
     "textdomain": "description",
     "attributes": {
       "mediaId": {
@@ -29,6 +29,14 @@
         "default": ""
       },
       "txtBtn": {
+        "type": "string",
+        "default": ""
+      },
+      "urlBtnTwo": {
+        "type": "string",
+        "default": ""
+      },
+      "txtBtnTwo": {
         "type": "string",
         "default": ""
       }

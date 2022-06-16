@@ -44,7 +44,15 @@ class DkasaBlocks{
         register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/description-block.json', array(
             'render_callback' => array($this,'landings_inmobiliarias_description_render_callback'), 
         ));
-
+        /* Descripcion Ubicacion */
+        register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/description-ubicacion-block.json', array(
+            'render_callback' => array($this,'dkasa_descriptionubicacion_render_callback'), 
+        ));
+        /* Bloque tu hogar */
+        register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/descriptionhogar-block.json', array(
+            'editor_script' => 'dkasablock1',
+            'render_callback' => array($this,'dkasa_descriptionhogar_render_callback'), 
+        ));
         /* Bloque Rojo */
         register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/banner-rojo-block.json', array(
             'editor_script' => 'dkasablock1',
@@ -83,9 +91,21 @@ class DkasaBlocks{
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-tu-futuro.php';
         return ob_get_clean();
     }
+<<<<<<< HEAD
     function dkasa_testimonios_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-testimonios.php';
+=======
+    function dkasa_descriptionhogar_render_callback( $attributes, $content, $block_instance ) {
+        ob_start();
+        require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-descriptionhogar.php';
+        return ob_get_clean();
+    }
+    
+    function dkasa_descriptionubicacion_render_callback( $attributes, $content, $block_instance ) {
+        ob_start();
+        require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-ubicacion-description.php';
+>>>>>>> zareDev
         return ob_get_clean();
     }
 }

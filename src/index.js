@@ -20,9 +20,21 @@ import TestimoniosJson from '../config/testimonios-block.json';
 import DescriptionBack from './blocks/Description/DescriptionBack';
 import DescriptionJson from '../config/description-block.json'; 
 
+import DescriptionHogarBack from './blocks/DescriptionHogar/DescriptionHogarBack';
+import DescriptionHogarJson from '../config/descriptionhogar-block.json'; 
+
+
+import DescriptionUbicacionBack from './blocks/DescriptionUbicacion/DescriptionUbicacionBack';
+import DescriptionUbicacionJson from '../config/description-ubicacion-block.json'; 
+
 
 	registerBlockType( BannerJson.name, { edit: BannerBack });
 	registerBlockType( DescriptionJson.name, { edit: DescriptionBack});
 	registerBlockType( BannerRojoJson.name, { edit: BannerRojoBack});
 	registerBlockType( TuFuturoJson.name, { edit: TuFuturoBack});
+<<<<<<< HEAD
 	registerBlockType( TestimoniosJson.name, { edit: Testimonios});
+=======
+	registerBlockType( DescriptionHogarJson.name, { edit: DescriptionHogarBack});
+	registerBlockType( DescriptionUbicacionJson.name, { edit: DescriptionUbicacionBack});
+>>>>>>> zareDev
