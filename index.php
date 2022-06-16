@@ -55,6 +55,11 @@ class DkasaBlocks{
             'editor_script' => 'dkasablock1',
             'render_callback' => array($this,'dkasa_tu_futuro_render_callback'), 
         ));
+        /* Testimonios */
+        register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/testimonios-block.json', array(
+            'editor_script' => 'dkasablock1',
+            'render_callback' => array($this,'dkasa_testimonios_render_callback'), 
+        ));
 
     }
 
@@ -76,6 +81,11 @@ class DkasaBlocks{
     function dkasa_tu_futuro_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-tu-futuro.php';
+        return ob_get_clean();
+    }
+    function dkasa_testimonios_render_callback( $attributes, $content, $block_instance ) {
+        ob_start();
+        require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-testimonios.php';
         return ob_get_clean();
     }
 }

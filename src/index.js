@@ -14,6 +14,9 @@ import BannerRojoJson from '../config/banner-rojo-block.json';
 import TuFuturoBack from './blocks/TuFuturo/TuFuturo';
 import TuFuturoJson from '../config/tu-futuro-block.json';
 
+import Testimonios from './blocks/Testimonios/Testimonios';
+import TestimoniosJson from '../config/testimonios-block.json';
+
 import DescriptionBack from './blocks/Description/DescriptionBack';
 import DescriptionJson from '../config/description-block.json'; 
 
@@ -22,3 +25,4 @@ import DescriptionJson from '../config/description-block.json';
 	registerBlockType( DescriptionJson.name, { edit: DescriptionBack});
 	registerBlockType( BannerRojoJson.name, { edit: BannerRojoBack});
 	registerBlockType( TuFuturoJson.name, { edit: TuFuturoBack});
+	registerBlockType( TestimoniosJson.name, { edit: Testimonios});

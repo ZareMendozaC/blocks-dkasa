@@ -1,12 +1,12 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "dkasa/tu-futuro",
+  "name": "dkasa/testimonios",
   "version": "1",
-  "title": "Tu Futuro",
+  "title": "Testimonios",
   "category": "dkasa",
   "icon": "building",
-  "description": "Tu Futuro - Dkasa",
+  "description": "Testimonios - Dkasa",
   "attributes": {
     "projects": {
       "type": "array",

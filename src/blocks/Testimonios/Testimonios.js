@@ -5,7 +5,7 @@ import SectionContainer from "../../components/atoms/Section/SectionContainer";
 import {
   Button,
   __experimentalText as Text,
-  TextControl,
+  TextControl,TextareaControl 
 } from "@wordpress/components";
 import internationalizationText from "../../helper/InternationalizationText";
 import ImageUploadRepeater from "../../components/molecules/ImageUpload/ImageUploadRepeater";
@@ -13,7 +13,7 @@ import Grid from "../../components/molecules/Grid/Grid";
 import Item from "../../components/atoms/Item/Item";
 import Title from "../../components/atoms/Title/Title";
 
-const TuFuturo = (props) => {
+const Testimonios = (props) => {
   const { attributes: attr, setAttributes: setAttr } = props;
 
   const [projectsArr, setProjectsArr] = useState(attr.projects);
@@ -216,4 +216,4 @@ const TuFuturo = (props) => {
   );
 };
 
-export default TuFuturo;
+export default Testimonios;
