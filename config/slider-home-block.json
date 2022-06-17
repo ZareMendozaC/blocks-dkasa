@@ -14,9 +14,11 @@
         {
           "mediaId": null,
           "mediaUrl": "",
-          "nombre": "",
-          "proyecto": "",
+          "mediaIdLogo": null,
+          "mediaUrlLogo": "",
+          "cifra": "",
           "descripcion": "",
+          "distrito": "",
           "textoEnlace": ""
         }
       ]
