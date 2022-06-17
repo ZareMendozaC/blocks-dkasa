@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "dkasa/informacion",
+    "version": "0.1.0",
+    "title": "Informacion planos",
+    "category": "theme",
+    "icon": "building",
+    "description": "Informacion Planos - dkasa",
+    "textdomain": "gallery",
+    "attributes": {
+      "images": {
+        "type": "array",
+        "default": [
+          {
+            "mediaId": null,
+            "mediaUrl": "",
+            "title": ""
+          }
+        ]
+      }
+    }
+  }

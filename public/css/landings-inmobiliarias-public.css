@@ -86,6 +86,7 @@
   font-size: calc(100vw * (calc(40 / var(--width_base))));
   line-height: calc(100vw * (calc(49 / var(--width_base))));
   color: #3c3c3a;
+  margin-bottom: calc(100vw * (calc(23 / var(--width_base)))) !important;
 }
 .subtitle-des {
   font-family: "Century Gothic" !important;

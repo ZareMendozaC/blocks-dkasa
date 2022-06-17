@@ -1,0 +1,77 @@
+.banner-color{
+    width: 100%;
+    height: 144px;
+    background: #009EA0;
+}
+.banner-color p{ 
+    font-family: 'Century Gothic Bold';
+    font-style: normal; 
+    font-size: calc(100vw * (calc(48 / var(--width_base))));
+    line-height: calc(100vw * (calc(59 / var(--width_base))));
+    color: #FFFFFF;
+    margin-bottom: 0px !important
+    ; 
+}
+.banner-color .my-container{
+    height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.btn-green-lg,   .btn-green-lg:hover{
+    width: calc(100vw * (calc(274 / var(--width_base))));
+    height: calc(100vw * (calc(52 / var(--width_base))));
+    background: #009EA0;
+    font-family: 'Century Gothic Bold';
+    font-style: normal;
+    font-size: calc(100vw * (calc(24 / var(--width_base))));
+    line-height: calc(100vw * (calc(29 / var(--width_base))));
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: calc(100vw * (calc(9 / var(--width_base))));
+    text-decoration: none !important;
+    margin-bottom: calc(100vw * (calc(28 / var(--width_base))));;
+  }
+  .btn-white-lg,   .btn-white-lg:hover{
+    width: calc(100vw * (calc(274 / var(--width_base))));
+    height: calc(100vw * (calc(52 / var(--width_base))));
+    background: #FFFFFF;
+    font-family: 'Century Gothic Bold';
+    font-style: normal;
+    font-size: calc(100vw * (calc(24 / var(--width_base))));
+    line-height: calc(100vw * (calc(29 / var(--width_base))));
+    text-align: center;
+    color: #3C3C3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: calc(100vw * (calc(9 / var(--width_base))));
+    text-decoration: none !important;
+    border: 1px solid #3C3C3A;
+  }
+  .mrg-18-p{
+    margin-bottom: calc(100vw * (calc(18 / var(--width_base)))) !important;
+  }
+  .img-plano{
+    width: calc(100vw * (calc(742 / var(--width_base)))) !important;
+    margin: auto;
+    height: auto;
+  }
+  .carousel-planos{
+    width: calc(100vw * (calc(742 / var(--width_base)))) !important;
+  }
+  .center-btn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .separador-87{
+    margin-top: calc(100vw * (calc(87 / var(--width_base))));
+    margin-bottom: calc(100vw * (calc(105 / var(--width_base))));
+  }
+  .pdt-34{
+    padding-top: calc(100vw * (calc(34 / var(--width_base))));
+  }
