@@ -118,6 +118,8 @@ class DkasaBlocks{
     function dkasa_sliderproyecto_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-slider-proyecto.php';
+        return ob_get_clean();
+    }
     function dkasa_slider_home_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-slider-home.php';
@@ -135,10 +137,7 @@ function enqueue_scripts(){
     wp_enqueue_script( 'bootstrap-bundle', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/bootstrap/js/bootstrap.bundle.js', array( 'jquery' ), '5.0.0', true );
     wp_enqueue_script( 'slick-script', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/slick/slick.min.js', array( 'jquery' ), '5.0.0', true );
     wp_enqueue_script( 'dkasa-script', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/js/landings-inmobiliarias-public.js', array( 'jquery' ), '5.0.0', true );
-<<<<<<< HEAD
 
-=======
->>>>>>> gsotoDev
 }
 
 $dkasaBlocks = new DkasaBlocks();
