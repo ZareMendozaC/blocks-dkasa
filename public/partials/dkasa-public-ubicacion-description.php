@@ -37,9 +37,6 @@ $txtBtnTwo = $attributes['txtBtnTwo'];
 			<a href="<?= $urlBtn;?>" class="btn-green"><?= $txtBtn;?></a>
 			<a href="<?= $urlBtnTwo;?>" class="btn-white"><?= $txtBtnTwo;?></a>
 			</div>
-		</Button>
 		</div>
-
-	
 </section>
 </div>

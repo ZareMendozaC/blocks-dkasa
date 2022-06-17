@@ -82,13 +82,11 @@
 	$('.lia-carousel').slick({
 		dots: true,
 		infinite: true,
-		speed: 500,
-		fade: false,
 		autoplay: true,
-		autoplaySpeed: 2000,
-		pauseOnFocus: false,
-		pauseOnHover: false,
-		cssEase: 'linear'
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		centerMode: true,
+		variableWidth: true
 	});
 	$('.slider-for').slick({
 		slidesToShow: 1,

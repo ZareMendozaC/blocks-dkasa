@@ -24,18 +24,14 @@ $txtBtn = $attributes['txtBtn'];
 
 ?>
 <div class="my-container separador">
-<section class="row no-padding no-margin mrg-top-141">
-	
-        <div class="col-md-6 col-12 no-padding">
-			<img class="img-des" src="<?= $mediaUrl;?>" alt="">
-		</div>
-		<div class="col-md-6 col-12 no-padding pdt-93">
-			<h2 class="title-des"><?= $title;?></h2>
-			<p class="subtitle-des"><?= $content?></p>
-            <a href="<?= $urlBtn;?>" class="btn-quiero"><?= $txtBtn;?></a>
-		</Button>
-		</div>
-
-	
-</section>
+	<section class="row no-padding no-margin mrg-top-141">
+			<div class="col-md-6 col-12 no-padding">
+				<img class="img-des" src="<?= $mediaUrl;?>" alt="">
+			</div>
+			<div class="col-md-6 col-12 no-padding pdt-93">
+				<h2 class="title-des"><?= $title;?></h2>
+				<p class="subtitle-des"><?= $content?></p>
+				<a href="<?= $urlBtn;?>" class="btn-quiero"><?= $txtBtn;?></a>
+			</div>
+	</section>
 </div>
