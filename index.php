@@ -67,10 +67,15 @@ class DkasaBlocks{
             'editor_script' => 'dkasablock1',
             'render_callback' => array($this,'dkasa_tu_futuro_render_callback'), 
         ));
-        /* Testimonios */
+        /** Testimonios */
         register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/testimonios-block.json', array(
             'editor_script' => 'dkasablock1',
             'render_callback' => array($this,'dkasa_testimonios_render_callback'), 
+        ));
+        /** Slider Home */
+        register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/slider-home-block.json', array(
+            'editor_script' => 'dkasablock1',
+            'render_callback' => array($this,'dkasa_slider_home_render_callback'), 
         ));
 
     }
@@ -98,6 +103,7 @@ class DkasaBlocks{
     function dkasa_testimonios_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-testimonios.php';
+        return ob_get_clean();
     }
     function dkasa_descriptionhogar_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
@@ -112,6 +118,9 @@ class DkasaBlocks{
     function dkasa_sliderproyecto_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-slider-proyecto.php';
+    function dkasa_slider_home_render_callback( $attributes, $content, $block_instance ) {
+        ob_start();
+        require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-slider-home.php';
         return ob_get_clean();
     }
 }
@@ -126,7 +135,10 @@ function enqueue_scripts(){
     wp_enqueue_script( 'bootstrap-bundle', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/bootstrap/js/bootstrap.bundle.js', array( 'jquery' ), '5.0.0', true );
     wp_enqueue_script( 'slick-script', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/lib/slick/slick.min.js', array( 'jquery' ), '5.0.0', true );
     wp_enqueue_script( 'dkasa-script', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/js/landings-inmobiliarias-public.js', array( 'jquery' ), '5.0.0', true );
+<<<<<<< HEAD
 
+=======
+>>>>>>> gsotoDev
 }
 
 $dkasaBlocks = new DkasaBlocks();
