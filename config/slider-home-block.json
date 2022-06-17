@@ -1,14 +1,14 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "dkasa/testimonios",
+  "name": "dkasa/slider-home",
   "version": "1",
-  "title": "Testimonios",
+  "title": "Slider Home",
   "category": "dkasa",
   "icon": "building",
-  "description": "Testimonios",
+  "description": "Slider Home",
   "attributes": {
-    "testimonials": {
+    "slides": {
       "type": "array",
       "default": [
         {
