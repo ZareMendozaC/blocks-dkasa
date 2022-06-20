@@ -32,7 +32,7 @@ $slides = $attributes['slides'];
                                     <div class="position-relative d-flex align-items-center">
                                         <img src="<?= $slide['mediaUrlLogo'] ?>" alt="">
                                         <div class="datos position-absolute">
-                                            <div class="datos-principales" style="background-color:<?= $slide['backgroundColor'] ?>; margin-bottom: <?php if ($slide['textoEnlace'] > 0 ) echo "22px"?>;">
+                                            <div class="datos-principales" style="background-color:<?= $slide['backgroundColor'] ?>;">
                                                 <img src="<?= $slide['mediaUrl'] ?>" alt="">
                                                 <p class="cifra"><?= $slide['cifra'] ?></p>
                                                 <p class="descripcion"><?= $slide['descripcion'] ?></p>
