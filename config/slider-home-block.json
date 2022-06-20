@@ -19,7 +19,11 @@
           "cifra": "",
           "descripcion": "",
           "distrito": "",
-          "textoEnlace": ""
+          "textoEnlace": "",
+          "backgroundColor": {
+            "type": "string",
+            "default": "#aeaeae"
+          }
         }
       ]
     }

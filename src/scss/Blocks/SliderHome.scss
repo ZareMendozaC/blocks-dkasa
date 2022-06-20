@@ -1,0 +1,81 @@
+.slider-home-back-card {
+  background-color: #acacac;
+  margin-bottom: size(10);
+}
+.slide-home-card__item > div {
+  padding-left: size(15);
+  padding-right: size(15);
+}
+
+#slider-home-front {
+    margin-bottom: size(57);
+  .contenido-contenedor {
+    #slider-home-slider {
+      .slider-home-slide {
+        .slider-container {
+          .columna-1 {
+            .datos {
+              left: size(148);
+              .datos-principales {
+                width: size(454);
+                color: white;
+                padding-top: size(42);
+                padding-bottom: size(42);
+                border-radius: size(76);
+                text-align: center;
+                img {
+                  margin: auto;
+                  margin-bottom: size(30);
+                }
+                .cifra {
+                  margin-bottom: size(19);
+                  font-weight: 700;
+                  font-size: size(24);
+                  line-height: size(29);
+                }
+                .descripcion {
+                  margin-bottom: size(19);
+                  font-size: size(20);
+                  line-height: size(25);
+                  padding-left: size(70);
+                  padding-right: size(70);
+                }
+                .distrito {
+                    justify-content: center;
+                    svg{
+                        margin-right: size(7);
+                    }
+                    p{
+                        margin-bottom: 0;
+                        font-weight: 700;
+                        font-size: size(24);
+                        line-height: size(29);
+                        text-decoration: underline;
+                        text-underline-position: under;
+                        text-underline-offset: size(4);
+                        text-decoration-thickness: size(1.5);
+                    }
+                }
+              }
+              .enlace {
+                a{
+                    margin: auto;
+                    width: size(221);
+                    height: size(54);
+                    border-radius: size(16);
+                    font-weight: 700;
+                    background-color: white;
+font-size: size(24);
+line-height: size(29);
+display: flex;
+justify-content: center;
+align-items: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
