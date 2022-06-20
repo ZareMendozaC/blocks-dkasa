@@ -17,7 +17,6 @@
  */
 
 $slides = $attributes['slides'];
-var_dump($slides)
 ?>
 <section id="slider-home-front" class="container-fluid">
     <div class="row">
