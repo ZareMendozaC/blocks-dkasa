@@ -35,6 +35,12 @@ import SliderProyectoJson from '../config/slider-proyecto-block.json';
 import BannerInformacionBack from './blocks/BannerInformacion/BannerInformacionBack';
 import BannerInformacionJson from '../config/informacion-block.json'; 
 
+import BannerSimpleBack from './blocks/BannerSimple/BannerSimpleBack';
+import BannerSimpleJson from '../config/banner-simple-block.json'; 
+
+import MapaBack from './blocks/Mapa/MapaBack';
+import MapaJson from '../config/mapa-block.json';
+
 	registerBlockType( BannerJson.name, { edit: BannerBack });
 	registerBlockType( DescriptionJson.name, { edit: DescriptionBack});
 	registerBlockType( BannerRojoJson.name, { edit: BannerRojoBack});
@@ -45,3 +51,5 @@ import BannerInformacionJson from '../config/informacion-block.json';
 	registerBlockType( TestimoniosJson.name, { edit: TestimoniosBack });
 	registerBlockType( SliderHomeJson.name, { edit:SliderHomeBack });
 	registerBlockType( BannerInformacionJson.name, { edit: BannerInformacionBack});
+	registerBlockType( BannerSimpleJson.name, { edit: BannerSimpleBack});
+	registerBlockType( MapaJson.name, { edit: MapaBack});

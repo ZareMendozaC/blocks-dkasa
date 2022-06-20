@@ -1,0 +1,7 @@
+.center-text{
+    text-align: center;
+}
+.separadores{
+    margin-top: calc(100vw * (calc(161 / var(--width_base))));
+    margin-bottom: calc(100vw * (calc(124 / var(--width_base))));
+}

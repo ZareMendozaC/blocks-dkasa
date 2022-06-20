@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "dkasa/bannersimple",
+    "version": "0.1.0",
+    "title": "Banner Simple",
+    "category": "theme",
+    "icon": "building",
+    "description": "Banner Sinple- dkasa",
+    "textdomain": "banner",
+    "attributes": {
+      "nombreproyecto": {
+          "type": "string",
+          "default": ""
+        },
+      "frase": {
+            "type": "string",
+            "default": ""
+          }
+    }
+  }
+  
