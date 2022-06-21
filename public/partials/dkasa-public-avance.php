@@ -21,7 +21,7 @@ $images = $attributes['images'];
 ?>
 
 
-<div class="my-container">
+<div class="my-container separador-avance">
     <section class="row no-padding no-margin">
             <div class="col-md-4 col-6 no-padding">
                 <h2 class="subtitle-general">Avance de obra</h2>
