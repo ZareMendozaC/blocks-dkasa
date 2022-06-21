@@ -29,6 +29,9 @@ import DescriptionUbicacionJson from '../config/description-ubicacion-block.json
 import SliderHomeBack from './blocks/SliderHome/SliderHomeBack';
 import SliderHomeJson from '../config/slider-home-block.json'
 
+import SliderArchiveProyectosBack from './blocks/SliderArchiveProyectos/SliderArchiveProyectosBack';
+import SliderArchiveProyectosJson from '../config/slider-archive-proyectos-block.json'
+
 import SliderProyectoBack from './blocks/SliderProyecto/SliderProyectos';
 import SliderProyectoJson from '../config/slider-proyecto-block.json'; 
 
@@ -53,3 +56,4 @@ import MapaJson from '../config/mapa-block.json';
 	registerBlockType( BannerInformacionJson.name, { edit: BannerInformacionBack});
 	registerBlockType( BannerSimpleJson.name, { edit: BannerSimpleBack});
 	registerBlockType( MapaJson.name, { edit: MapaBack});
+	registerBlockType( SliderArchiveProyectosJson.name, { edit: SliderArchiveProyectosBack});

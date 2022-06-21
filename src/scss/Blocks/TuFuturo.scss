@@ -8,6 +8,13 @@
 // FRONTEND
 #tu-futuro-front {
   font-family: "Century Gothic", sans-serif;
+  .row{
+    background-image: url(http://dkasa-local.local/wp-content/uploads/2022/06/fondo1-1.png), url(http://dkasa-local.local/wp-content/uploads/2022/06/Fondo-1-2.png);
+background-repeat: no-repeat;
+background-position-x: 0, size(1616);
+background-position-y: size(444),size(13);
+background-size: size(265) size(421),size(235) size(218);
+  }
   .titulo {
     margin-left: size(207);
     font-weight: 700;
@@ -38,6 +45,18 @@
       width: size(318);
       height: size(567);
       overflow: hidden;
+      &:hover{
+        .td-card-front{
+          .estado{
+            transition: 0.75s all;
+            opacity: 0;
+          }
+        }
+        .tf-card-back{
+          transition: 0.75s all;
+          transform: translateY(calc(100vw * (-567/var(--width_base))));
+        }
+      }
       &:first-child {
         margin-left: 0;
       }

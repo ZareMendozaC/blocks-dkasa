@@ -18,13 +18,18 @@
       #testimonios-slider {
         display: flex;
         margin-bottom: size(49);
-        .slick-arrow{
-            display: flex;
-            align-items: center;
+        .slick-arrow {
+          display: flex;
+          align-items: center;
         }
         .slider-container {
           display: flex;
           justify-content: center;
+          background-image: url(http://dkasa-local.local/wp-content/uploads/2022/06/testimonio-back.png);
+          background-repeat: no-repeat;
+          background-size: size(780) size(382);
+          background-position-x: size(392);
+          padding-top: size(61);
           .columna-1 {
             width: size(333);
 
@@ -95,40 +100,40 @@
           position: static;
           line-height: 0;
           li {
+            width: size(15);
+            height: size(15);
+            margin-right: size(4);
+            margin-left: size(4);
+            &:first-child {
+              margin-left: 0;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+            button {
+              padding: 0;
               width: size(15);
               height: size(15);
-              margin-right: size(4);
-              margin-left: size(4);
-              &:first-child{
-                margin-left: 0;
-              }
-              &:last-child{
-                margin-right: 0;
-              }
-              button {
-                padding: 0;
-                width: size(15);
-              height: size(15);
-              &:hover{
-                &::before{
-                    background: #3C3C3A;
+              &:hover {
+                &::before {
+                  background: #3c3c3a;
                 }
               }
               &::before {
                 width: size(15);
-              height: size(15);
-              opacity: 1;
-              border-radius: 50%;
-              border: size(0.5) solid #3C3C3A;
+                height: size(15);
+                opacity: 1;
+                border-radius: 50%;
+                border: size(0.5) solid #3c3c3a;
                 background-color: transparent;
-                content: '';
+                content: "";
               }
             }
             &.slick-active {
               button {
                 &::before {
-                    opacity: 1;
-                    background: #3C3C3A;
+                  opacity: 1;
+                  background: #3c3c3a;
                 }
               }
             }

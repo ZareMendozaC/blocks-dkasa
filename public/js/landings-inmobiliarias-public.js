@@ -152,5 +152,22 @@
             }
         }]
     });
+	$("#slider-archive-slider").slick({
+		slidesToShow: 1,
+        slidesToScroll: 1,			
+        arrows: false,
+        dots: false,
+        autoplay: false,
+        autoplaySpeed: 2500,
+        speed: 2500,
+        infinite: true,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                arrows: false,
+                dots: true
+            }
+        }]
+    });
 	
 })( jQuery );
