@@ -44,6 +44,10 @@ import BannerSimpleJson from '../config/banner-simple-block.json';
 import MapaBack from './blocks/Mapa/MapaBack';
 import MapaJson from '../config/mapa-block.json';
 
+
+import AvanceBack from './blocks/Avance/AvanceBack';
+import AvanceJson from '../config/avance-block.json';
+
 	registerBlockType( BannerJson.name, { edit: BannerBack });
 	registerBlockType( DescriptionJson.name, { edit: DescriptionBack});
 	registerBlockType( BannerRojoJson.name, { edit: BannerRojoBack});
@@ -56,4 +60,8 @@ import MapaJson from '../config/mapa-block.json';
 	registerBlockType( BannerInformacionJson.name, { edit: BannerInformacionBack});
 	registerBlockType( BannerSimpleJson.name, { edit: BannerSimpleBack});
 	registerBlockType( MapaJson.name, { edit: MapaBack});
+<<<<<<< HEAD
 	registerBlockType( SliderArchiveProyectosJson.name, { edit: SliderArchiveProyectosBack});
+=======
+	registerBlockType( AvanceJson.name, { edit: AvanceBack});
+>>>>>>> zareDev
