@@ -30,7 +30,7 @@ $slides = $attributes['slides'];
                             <div class="slider-container">
                                 <div class="columna-1">
                                     <div class="position-relative d-flex align-items-center">
-                                        <img src="<?= $slide['mediaUrlLogo'] ?>" alt="">
+                                        <img class="w-100" src="<?= $slide['mediaUrlLogo'] ?>" alt="">
                                         <div class="datos position-absolute">
                                             <div class="datos-principales" style="background-color:<?= $slide['backgroundColor'] ?>e0;">
                                                 <p class="nombre"><?= $slide['nombre'] ?></p>
