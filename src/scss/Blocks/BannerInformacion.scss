@@ -51,6 +51,7 @@
     border-radius: calc(100vw * (calc(9 / var(--width_base))));
     text-decoration: none !important;
     border: 1px solid #3C3C3A;
+    cursor: pointer;
   }
   .btn-white-lg:hover{
     width: calc(100vw * (calc(274 / var(--width_base))));

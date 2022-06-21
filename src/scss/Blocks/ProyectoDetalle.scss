@@ -5,7 +5,7 @@
     font-size: calc(100vw * (calc(48 / var(--width_base))));
     line-height: calc(100vw * (calc(59 / var(--width_base))));
     color: #3C3C3A;
-    margin-bottom: 0px !important;
+    margin-bottom: calc(100vw * (calc(18 / var(--width_base)))) !important;
   }
   .separador{
     margin-bottom: calc(100vw * (calc(153 / var(--width_base))));
@@ -25,7 +25,7 @@
     align-items: center;
     border-radius: calc(100vw * (calc(9 / var(--width_base))));
     text-decoration: none !important;
-    margin-right: calc(100vw * (calc(45 / var(--width_base))));;
+    margin-right: calc(100vw * (calc(45 / var(--width_base))));
   }
   .btn-white,   .btn-white:hover{
     width: calc(100vw * (calc(224 / var(--width_base))));

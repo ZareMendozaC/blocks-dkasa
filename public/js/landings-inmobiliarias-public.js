@@ -82,6 +82,16 @@
 	$('.lia-carousel').slick({
 		dots: true,
 		infinite: true,
+		autoplay: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		centerMode: true,
+		variableWidth: true
+	});
+	
+	$('.slider-obra').slick({
+		dots: true,
+		infinite: true,
 		autoplay: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,

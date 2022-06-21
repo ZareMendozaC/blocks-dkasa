@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "dkasa/avance",
+    "version": "0.1.0",
+    "title": "Avance de Obra",
+    "category": "theme",
+    "icon": "building",
+    "description": "Avance de obra- dkasa",
+    "textdomain": "banner",
+    "attributes": {
+        "images": {
+          "type": "array",
+          "default": [
+            {
+              "mediaId": null,
+              "mediaUrl": "",
+              "fecha": ""
+            }
+          ]
+        }
+      }
+    }
+  

@@ -44,6 +44,10 @@ class DkasaBlocks{
         register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/description-block.json', array(
             'render_callback' => array($this,'landings_inmobiliarias_description_render_callback'), 
         ));
+        /*Avance */
+        register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/avance-block.json', array(
+            'render_callback' => array($this,'dkasa_avance_render_callback'), 
+        ));
         /*Mapa */
         register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/mapa-block.json', array(
             'render_callback' => array($this,'dkasa_mapa_render_callback'), 
@@ -139,6 +143,11 @@ class DkasaBlocks{
     function dkasa_mapa_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-mapa.php';
+        return ob_get_clean();
+    }
+    function dkasa_avance_render_callback( $attributes, $content, $block_instance ) {
+        ob_start();
+        require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-avance.php';
         return ob_get_clean();
     }
 }
