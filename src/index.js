@@ -60,8 +60,5 @@ import AvanceJson from '../config/avance-block.json';
 	registerBlockType( BannerInformacionJson.name, { edit: BannerInformacionBack});
 	registerBlockType( BannerSimpleJson.name, { edit: BannerSimpleBack});
 	registerBlockType( MapaJson.name, { edit: MapaBack});
-<<<<<<< HEAD
 	registerBlockType( SliderArchiveProyectosJson.name, { edit: SliderArchiveProyectosBack});
-=======
 	registerBlockType( AvanceJson.name, { edit: AvanceBack});
->>>>>>> zareDev
