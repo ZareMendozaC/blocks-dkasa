@@ -39,6 +39,10 @@
       "txtBtnTwo": {
         "type": "string",
         "default": ""
+      },
+      "formulario": {
+        "type": "string",
+        "default": ""
       }
     }
   }
