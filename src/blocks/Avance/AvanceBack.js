@@ -8,6 +8,7 @@ import ImageUploadRepeater from "../../components/molecules/ImageUpload/ImageUpl
 import Grid from "../../components/molecules/Grid/Grid";
 import Item from "../../components/atoms/Item/Item";
 import Title from "../../components/atoms/Title/Title";
+import eventChangeAttr from "../../helper/eventChangeAttr";
 
 const AvanceBack = (props) => {
 
@@ -27,7 +28,8 @@ const AvanceBack = (props) => {
 		const itemObj = {
 			mediaId: null,
 			mediaUrl: "",
-			fecha: ""
+			fecha: "",
+			videoUrl: ""
 		}
 
 		const newImagesArr = [...imagesArr, itemObj];
@@ -49,6 +51,12 @@ const AvanceBack = (props) => {
 		setImagesArr(newImagesArr);
 		setAttr({images: newImagesArr});
 	}
+	const onChangeVideo = (event,index) =>{
+		const newImagesArr = [...imagesArr];
+		newImagesArr[index].videoUrl = event;
+		setImagesArr(newImagesArr);
+		setAttr({images: newImagesArr});
+	}
 
 	return (
 		<Section blockProps={blockProps}>
@@ -56,35 +64,25 @@ const AvanceBack = (props) => {
 				{
 					imagesArr && imagesArr.map((imageArr, i)=>(
 						<Grid key={i} classEle="lia-section-repeater lia-card__item">
-							<Item percentage={20} classEle="lia-gap-8">
-								<ImageUploadRepeater
-									variables={props}
-									details ={{
-										index: i,
-										datum: imageArr,
-										setData: setImagesArr,
-										data: imagesArr,
-										namePropertyId: "mediaId",
-										namePropertyUrl: "mediaUrl",
-										namePropertyData: "images"
-
-									}}
-								/>
-							</Item>
 							<Item percentage={80}>
 								<Title tagEle="h4" data="Detalle" className="lia-mb-0"/>
+								
 								<Text><strong>Fecha:</strong></Text>
 								<TextControl onChange={(event)=>onChangeImageTitle(event,i)} value={imageArr.fecha}/>
+								
+								<Text><strong>Video Url:</strong></Text>
+								<TextControl onChange={(event)=>onChangeVideo(event,i)} value={imageArr.videoUrl}/>
+								
 								<div className="lia-text-right">
 									<Button isDestructive onClick={()=>trashImage(i)}>
-										Eliminar Imagen
+										Eliminar fecha
 									</Button>
 								</div>
 							</Item>
 						</Grid>
 					))
 				}
-				<Button onClick={addImage} variant="primary">{internationalizationText("Agregar imagen")}</Button>
+				<Button onClick={addImage} variant="primary">{internationalizationText("Agregar Fecha de obra")}</Button>
 			</SectionContainer>
 		</Section>
 	);

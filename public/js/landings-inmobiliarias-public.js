@@ -88,7 +88,7 @@
 		centerMode: true,
 		variableWidth: true
 	});
-	
+	/*
 	$('.slider-obra').slick({
 		dots: true,
 		infinite: true,
@@ -97,7 +97,7 @@
 		slidesToScroll: 1,
 		centerMode: true,
 		variableWidth: true
-	});
+	});*/
 	$('.slider-for').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -117,6 +117,38 @@
 		focusOnSelect: true
 	  });
 
+
+	  $('.slider-for-avance').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav-avance'
+	  });
+	  $('.slider-nav-avance').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for-avance',
+		dots: false,
+		infinite: true,
+		centerMode: true,
+		vertical: true,
+		arrows: true,
+		focusOnSelect: true,
+		prevArrow: `<div class="" role="button" aria-label="Previous">
+        <svg width="49" height="30" viewBox="0 0 49 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.77896 30L-2.13885e-07 25.1069L24.5 2.74377e-06L49 25.1069L44.221 30L24.5 9.80764L4.77896 30Z" fill="#BE1521"/>
+</svg>
+
+        </div>`,
+        nextArrow: `<div class="" role="button" aria-label="Next">
+		<svg width="49" height="30" viewBox="0 0 49 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M44.221 -2.08895e-07L49 4.89312L24.5 30L-2.13885e-07 4.89312L4.77896 -1.93296e-06L24.5 20.1924L44.221 -2.08895e-07Z" fill="#BE1521"/>
+		</svg>
+		
+        </div>`
+	  });
+				  
 	$("#testimonios-slider").slick({
 		slidesToShow: 1,
         slidesToScroll: 1,			
@@ -208,4 +240,6 @@
         }]
     });
 	
+	let numero= jQuery('.slick-vertical .slick-slide').not('.slick-cloned').children().length;
+	jQuery('.indice-'+numero).click();
 })( jQuery );
