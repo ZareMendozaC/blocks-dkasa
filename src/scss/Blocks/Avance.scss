@@ -37,3 +37,9 @@
 .my-video{
   height:  calc(100vw * (calc(486 / var(--width_base)))) ;
 }
+.width-card-100{
+    width: 100%;
+}
+.flex-wrap-admin{
+    flex-wrap: wrap;
+}

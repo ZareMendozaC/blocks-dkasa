@@ -32,12 +32,27 @@ const MapaBack = (props) => {
 	return (
 		<Section blockProps={blockProps} styleEle={styleBlock}>
 			<SectionContainer>
-				<Flex>
-					<FlexItem >
+				<Flex className='lia-card__item flex-wrap-admin'>
+					<FlexItem className='width-card-100'>
+						<h4>Detalles Mapa</h4>
+					</FlexItem>
+					<FlexItem className='width-card-100'>
 						<TextControl 
 							label="Shortcode mapa" 
 							onChange={(event) => eventChangeAttr(setAttr, {shortcodemapa: event})} 
 							value={attr.shortcodemapa}
+						/>
+
+						<TextControl 
+							label="Link Waze" 
+							onChange={(event) => eventChangeAttr(setAttr, {linkwaze: event})} 
+							value={attr.linkwaze}
+						/>
+
+<TextControl 
+							label="Link quiero visitarlo" 
+							onChange={(event) => eventChangeAttr(setAttr, {linkvisita: event})} 
+							value={attr.linkvisita}
 						/>
 					</FlexItem>
 				</Flex>

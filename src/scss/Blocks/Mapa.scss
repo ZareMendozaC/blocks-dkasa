@@ -1,0 +1,30 @@
+.link-waze{
+    position: absolute;
+    bottom: calc(100vw * (calc(35 / var(--width_base))));
+    left: calc(100vw * (calc(81 / var(--width_base))));
+    z-index: 1;
+}
+.wpgmp_map_container{
+    position: relative;
+}
+.btn-mapa, .btn-mapa:hover{
+    width: calc(100vw * (calc(153 / var(--width_base))));
+    height: calc(100vw * (calc(36 / var(--width_base))));
+    background: #be1521 !important;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Century Gothic Bold" !important;
+    font-style: normal;
+    font-size: calc(100vw * (calc(16 / var(--width_base))));
+    line-height: calc(100vw * (calc(20 / var(--width_base))));
+    text-align: center;
+    color: #ffffff;
+    border: none !important;
+    position: absolute;
+    z-index: 1;
+    bottom: calc(100vw * (calc(56 / var(--width_base))));
+    left: calc(100vw * (calc(176 / var(--width_base))));
+    text-decoration: none;
+}

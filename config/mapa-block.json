@@ -12,6 +12,14 @@
       "shortcodemapa": {
           "type": "string",
           "default": ""
+        },
+      "linkwaze": {
+          "type": "string",
+          "default": ""
+        },
+      "linkvisita": {
+          "type": "string",
+          "default": ""
         }
     }
   }
