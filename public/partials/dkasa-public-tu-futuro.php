@@ -29,7 +29,7 @@ $projects = $attributes['projects'];
 				<div id="slider-tu-futuro">
 				<?php foreach ($projects as $project) : ?>
 						<div class="tf-card">
-							<a href="#">
+							<a href="<?= $project["enlace"]; ?>">
 								<div class="td-card-front">
 									<div>
 										<img class="" src="<?= $project["mediaUrl"]; ?>" alt="Dibujo">

@@ -34,6 +34,7 @@ const TuFuturo = (props) => {
       mediaIdLogo: null,
       mediaUrlLogo: "",
       textoEnlace: "",
+      enlace: "",
     };
 
     const newProjectsArr = [...projectsArr, itemObj];
@@ -94,6 +95,12 @@ const TuFuturo = (props) => {
   const onChangeProjectTextoEnlace = (event, index) => {
     const newProjectsArr = [...projectsArr];
     newProjectsArr[index].textoEnlace = event;
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
+  };
+  const onChangeProjectEnlace = (event, index) => {
+    const newProjectsArr = [...projectsArr];
+    newProjectsArr[index].enlace = event;
     setProjectsArr(newProjectsArr);
     setAttr({ projects: newProjectsArr });
   };
@@ -181,6 +188,13 @@ const TuFuturo = (props) => {
                   <TextControl
                     onChange={(event) => onChangeProjectTextoEnlace(event, i)}
                     value={projectArr.textoEnlace}
+                  />
+                  <Text>
+                    <strong>Enlace:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeProjectEnlace(event, i)}
+                    value={projectArr.enlace}
                   />
                   <Text>
                     <strong>Logo:</strong>
