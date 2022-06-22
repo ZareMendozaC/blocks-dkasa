@@ -17,9 +17,13 @@
  */
 
 $images = $attributes['images'];
-
+$backgroundColor2 = $attributes['backgroundColor'];
 ?>
-
+<style>
+	.btn-avance.slick-slide.slick-current p {
+    background-color:<?= $backgroundColor2; ?>;
+}
+</style>
 
 <div class="my-container separador-avance">
     <section class="row no-padding no-margin">

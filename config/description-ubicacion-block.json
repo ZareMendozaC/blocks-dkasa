@@ -40,10 +40,10 @@
         "type": "string",
         "default": ""
       },
-      "formulario": {
-        "type": "string",
-        "default": ""
-      }
+      "backgroundColor": {
+          "type": "string",
+          "default": "blue"
+        }
     }
   }
 

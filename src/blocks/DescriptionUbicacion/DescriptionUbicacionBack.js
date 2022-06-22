@@ -1,4 +1,4 @@
-import { useBlockProps } from '@wordpress/block-editor';
+import {useBlockProps} from '@wordpress/block-editor';
 import TextEditor from "../../components/atoms/Text/TextEditor";
 import Section from "../../components/atoms/Section/Section";
 import SectionContainer from "../../components/atoms/Section/SectionContainer";
@@ -8,6 +8,7 @@ import Grid from "../../components/molecules/Grid/Grid";
 import Item from "../../components/atoms/Item/Item";
 import { Flex, FlexItem } from '@wordpress/components';
 import {ColorPalette, InspectorControls, RichText} from '@wordpress/block-editor';
+import getPaletteColors from "../../helper/getPaletteColors";
 const DescriptionUbicacionBack= (props) => {
 
 	const {
@@ -58,6 +59,11 @@ const DescriptionUbicacionBack= (props) => {
 									eventEle={(event)=> eventChangeAttr(setAttr,{urlBtn: event})}
 									data={ attr.urlBtn }
 									placeholder="url tour"
+								/>
+							<ColorPalette
+									onChange={(event) => eventChangeAttr(setAttr, {backgroundColor: event})}
+									colors={getPaletteColors}
+									value={attr.backgroundColor}
 								/>
 							</Item>
 							<Item percentage={50}>
