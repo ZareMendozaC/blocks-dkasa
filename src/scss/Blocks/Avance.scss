@@ -17,3 +17,14 @@
     margin-top: calc(100vw * (calc(158 / var(--width_base))));
     margin-bottom: calc(100vw * (calc(212 / var(--width_base))));
 }
+.btn-avance.slick-slide.slick-current p{
+    background: #009EA0;
+    color: #FFFFFF;
+    border-radius: calc(100vw * (calc(9 / var(--width_base))));
+    text-decoration: none !important;
+    border: none !important;
+}
+.slider-nav-avance, .slider-nav-avance .slick-list.draggable{
+    height: calc(100vw * (calc(220 / var(--width_base)))) !important;
+    padding: calc(100vw * (calc(10 / var(--width_base)))) 0px !important;
+}

@@ -88,7 +88,7 @@
 		centerMode: true,
 		variableWidth: true
 	});
-	
+	/*
 	$('.slider-obra').slick({
 		dots: true,
 		infinite: true,
@@ -97,7 +97,7 @@
 		slidesToScroll: 1,
 		centerMode: true,
 		variableWidth: true
-	});
+	});*/
 	$('.slider-for').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -116,4 +116,26 @@
 		variableWidth: true,
 		focusOnSelect: true
 	  });
+
+
+	  $('.slider-for-avance').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav-avance'
+	  });
+	  $('.slider-nav-avance').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for-avance',
+		dots: false,
+		infinite: true,
+		centerMode: true,
+		vertical: true,
+
+		arrows: true,
+		focusOnSelect: true
+	  });
+				  
 })( jQuery );
