@@ -20,6 +20,7 @@
           "descripcion": "",
           "distrito": "",
           "textoEnlace": "",
+          "enlace": "",
           "backgroundColor": {
             "type": "string",
             "default": "#aeaeae"

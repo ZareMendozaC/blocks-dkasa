@@ -30,6 +30,7 @@ const SliderArchiveProyectosBack = (props) => {
       nombre: "",
       descripcion: "",
       textoEnlace: "",
+      enlace: "",
       backgroundColor: ""
     };
 
@@ -62,6 +63,13 @@ const SliderArchiveProyectosBack = (props) => {
   const onChangeImageTextoEnlace = (event, index) => {
     const newImagesArr = [...imagesArr];
     newImagesArr[index].textoEnlace = event;
+    setImagesArr(newImagesArr);
+    setAttr({ images: newImagesArr });
+  };
+
+  const onChangeImageEnlace = (event, index) => {
+    const newImagesArr = [...imagesArr];
+    newImagesArr[index].enlace = event;
     setImagesArr(newImagesArr);
     setAttr({ images: newImagesArr });
   };
@@ -101,6 +109,13 @@ const SliderArchiveProyectosBack = (props) => {
                   <TextControl
                     onChange={(event) => onChangeImageTextoEnlace(event, i)}
                     value={imageArr.textoEnlace}
+                  />
+                  <Text>
+                    <strong>Enlace:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeImageEnlace(event, i)}
+                    value={imageArr.enlace}
                   />
                   <ColorPalette
               onChange={(event) => onChangeBackgroundColor(event, i)}

@@ -17,6 +17,7 @@
           "nombre": "",
           "descripcion": "",
           "textoEnlace": "",
+          "enlace": "",
           "backgroundColor": {
             "type": "string",
             "default": "#aeaeae"

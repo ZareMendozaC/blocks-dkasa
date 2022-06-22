@@ -20,6 +20,7 @@ $backgroundColor = $attributes['backgroundColor'];
 $textColor = $attributes['textColor'];
 $mediaUrlDibujo = $attributes['mediaUrlDibujo'];
 $textoEnlace = $attributes['textoEnlace'];
+$enlace = $attributes['enlace'];
 $textoPequeño1 = $attributes['textoPequeño1'];
 $cifraGrande1 = $attributes['cifraGrande1'];
 $textoPequeño2 = $attributes['textoPequeño2'];
@@ -42,7 +43,7 @@ $cifraGrande2 = $attributes['cifraGrande2'];
                     </div>
                 </div>
                 <div class="columna-2">
-                    <a class="text-decoration-none" href="#">
+                    <a class="text-decoration-none" href="<?= $enlace ?>">
                         <p style="color: <?= $textColor ?>"><?= $textoEnlace ?></p>
                         <img src="<?= site_url("/").'wp-content/uploads/2022/06/enlace-banner-rojo.png' ?>" alt="">
                     </a>

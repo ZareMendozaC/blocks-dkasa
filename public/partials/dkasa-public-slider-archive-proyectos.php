@@ -27,24 +27,26 @@ $slides = $attributes['slides'];
                 <div id="slider-archive-slider">
                     <?php foreach ($slides as $slide) : ?>
                         <div class="slider-archive-slide">
-                            <div class="slider-container">
-                                <div class="columna-1">
-                                    <div class="position-relative d-flex align-items-center">
-                                        <img class="w-100" src="<?= $slide['mediaUrlLogo'] ?>" alt="">
-                                        <div class="datos position-absolute">
-                                            <div class="datos-principales" style="background-color:<?= $slide['backgroundColor'] ?>e0;">
-                                                <p class="nombre"><?= $slide['nombre'] ?></p>
-                                                <p class="descripcion"><?= $slide['descripcion'] ?></p>
-                                            </div>
-                                            <div class="enlace">
-                                                <a style="color:<?= $slide['backgroundColor'] ?>;" href="#">
-                                                <?= $slide['textoEnlace'] ?>
-                                                </a>
+                            <a href="<?= $slide['enlace'] ?>">
+                                <div class="slider-container">
+                                    <div class="columna-1">
+                                        <div class="position-relative d-flex align-items-center">
+                                            <img class="w-100" src="<?= $slide['mediaUrlLogo'] ?>" alt="">
+                                            <div class="datos position-absolute">
+                                                <div class="datos-principales" style="background-color:<?= $slide['backgroundColor'] ?>e0;">
+                                                    <p class="nombre"><?= $slide['nombre'] ?></p>
+                                                    <p class="descripcion"><?= $slide['descripcion'] ?></p>
+                                                </div>
+                                                <div class="enlace">
+                                                    <div style="color:<?= $slide['backgroundColor'] ?>;">
+                                                    <?= $slide['textoEnlace'] ?>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     <?php endforeach; ?>
                 </div>
