@@ -54,17 +54,16 @@ const BannerInformacionBack = (props) => {
 
 	return (
 		<Section blockProps={blockProps}>
-
 						<TextControl 
 							label="Formulario Quiero mas informacion" 
 							onChange={(event) => eventChangeAttr(setAttr, {formulario: event})} 
 							value={attr.formulario}
 						/>
 						<PanelBody title={internationalizationText("Color Fondo bloque carácteristicas")} initialOpen={false}>
-					
 						<ColorPalette
 							onChange={(event) => eventChangeAttr(setAttr, {backgroundColor: event})}
 							colors={getPaletteColors}
+							value={attr.backgroundColor}
 						/>
 					
 				</PanelBody>

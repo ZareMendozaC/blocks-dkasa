@@ -32,7 +32,6 @@ $backgroundColor = $attributes['backgroundColor'];
 ?>
 
 <div class="separador-87">
-   
         <div class="accordion" id="accordionInfo">
                 <div class="card">
                     <div class="card-header banner-color " id="heading" style="background-color:<?= $backgroundColor; ?>">
@@ -50,7 +49,6 @@ $backgroundColor = $attributes['backgroundColor'];
                     </div>
                     </div>
                 </div>
-   
     </div>
 
 
