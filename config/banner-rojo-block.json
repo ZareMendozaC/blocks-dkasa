@@ -36,6 +36,10 @@
 		"type": "string",
 		"default": ""
 	},
+	"enlace": {
+		"type": "string",
+		"default": ""
+	},
 	"mediaIdDibujo": {
 		"type": "number"
 	},

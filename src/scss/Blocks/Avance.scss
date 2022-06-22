@@ -1,6 +1,8 @@
 
 .btn-avance{
-
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 .btn-avance-on{
 
@@ -27,4 +29,11 @@
 .slider-nav-avance, .slider-nav-avance .slick-list.draggable{
     height: calc(100vw * (calc(220 / var(--width_base)))) !important;
     padding: calc(100vw * (calc(10 / var(--width_base)))) 0px !important;
+}
+.slider-nav-avance .slick-list.draggable{
+    margin-top: calc(100vw * (calc(24 / var(--width_base)))) ;
+    margin-bottom: calc(100vw * (calc(24 / var(--width_base)))) ;
+}
+.my-video{
+  height:  calc(100vw * (calc(486 / var(--width_base)))) ;
 }

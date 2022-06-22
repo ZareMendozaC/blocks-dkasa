@@ -1,130 +1,143 @@
-.tu-futuro-back-card {
-  background-color: #eaeaea;
-  .logo-field {
-    width: 50%;
-  }
-}
-
-// FRONTEND
-#tu-futuro-front {
+#testimonios-front {
   font-family: "Century Gothic", sans-serif;
-  .titulo {
-    margin-left: size(207);
-    font-weight: 700;
-    font-size: size(48);
-    line-height: size(59);
-    color: #3c3c3a;
-    margin-bottom: size(63);
-  }
-  .texo-enlace-general {
-    margin-right: size(342);
-    margin-bottom: size(63);
-    p{
-      font-weight: 700;
-      font-size: size(20);
-      line-height: size(25);
-      color: #3c3c3a;
-      margin-bottom: 0;
+  margin-bottom: size(88);
+  .columna-1 {
+    img {
+      margin-left: size(218);
+      margin-top: size(62);
+      margin-bottom: size(61);
+      width: size(247);
     }
   }
-  .contenido-contenedor {
-    display: flex;
-    justify-content: center;
-    margin-bottom: size(32);
-    .tf-card {
-      margin-right: size(47);
-      margin-left: size(47);
-      position: relative;
-      width: size(318);
-      height: size(567);
-      overflow: hidden;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-      a {
-        text-decoration: none;
-      }
-      .td-card-front {
-        width: size(318);
-        height: size(567);
-        .estado {
-          height: size(44);
+
+  .columna-2 {
+    .contenido-contenedor {
+      margin-left: size(277);
+      margin-right: size(277);
+
+      #testimonios-slider {
+        display: flex;
+        margin-bottom: size(49);
+        .slick-arrow {
+          display: flex;
+          align-items: center;
+        }
+        .slider-container {
           display: flex;
           justify-content: center;
-          align-items: center;
-          position: absolute;
-          bottom: 0;
-          background-color: #3c3c3a;
-          width: 100%;
-          p {
-            font-weight: bold;
-            font-size: size(20);
-            line-height: size(25);
-            margin: 0;
-            color: #fff;
+          background-image: url("/public/image/Background/testimonio-back.png");
+          background-repeat: no-repeat;
+          background-size: size(780) size(382);
+          background-position-x: size(392);
+          padding-top: size(61);
+          .columna-1 {
+            width: size(333);
+
+            img {
+              width: 100%;
+              margin: 0;
+            }
+            .nombre {
+              background: #be1521;
+              width: size(287);
+              height: size(56);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              top: auto;
+              bottom: 0;
+              margin-right: size(6);
+              margin-left: size(40);
+              border-bottom-right-radius: size(45);
+              p {
+                font-weight: 700;
+                font-size: size(24);
+                line-height: size(29);
+                margin: 0;
+                color: #ffffff;
+              }
+            }
+            .proyecto {
+              font-weight: 700;
+              font-size: size(20);
+              line-height: size(25);
+              color: #3c3c3a;
+              margin: 0;
+              margin-left: size(76);
+            }
+          }
+
+          .columna-2 {
+            width: size(504);
+            margin-left: size(45);
+            padding-top: size(51);
+            .descripcion {
+              font-size: size(20);
+              line-height: size(25);
+              color: #000000;
+              margin-bottom: size(25);
+            }
+            .texto-enlace {
+              margin: 0;
+              background: #3c3c3a;
+              border-radius: 16px;
+              height: 36px;
+              width: 134px;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 20px;
+              color: #ffffff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: auto;
+            }
           }
         }
       }
-      .tf-card-back {
-        width: size(318);
-        height: size(567);
-        background: #3c3c3acc;
-        color: white;
-        padding-top: size(67);
-        padding-right: size(32);
-        padding-bottom: size(32);
-        padding-left: size(39);
-        .nombre {
-          font-weight: 700;
-          font-size: size(24);
-          line-height: size(29);
-          margin: 0;
-        }
-        .direccion {
-          font-size: size(16);
-          line-height: size(20);
-          margin: 0;
-        }
-        .distrito {
-          font-size: size(16);
-          line-height: size(20);
-          text-decoration: underline;
-          text-underline-position: under;
-          text-underline-offset: size(4);
-          text-decoration-thickness: size(1.5);
-          margin-bottom: size(64);
-        }
-        .detalles {
-          font-size: size(20);
-          line-height: size(25);
-          margin: 0;
-        }
-        .metraje {
-          font-size: size(20);
-          line-height: size(25);
-          margin: 0;
-        }
-        .precio {
-          font-size: size(20);
-          line-height: size(25);
-          margin-bottom: size(54);
-        }
-        .estado {
-          font-size: size(16);
-          line-height: size(20);
-          margin-bottom: size(12);
-        }
-        .logo {
-          margin-bottom: size(92);
-        }
-        .texto-enlace {
-          font-size: size(16);
-          line-height: size(20);
-          margin-bottom: 0;
-          margin-right: size(2);
+      #testimonios-dots {
+        .slick-dots {
+          position: static;
+          line-height: 0;
+          li {
+            width: size(15);
+            height: size(15);
+            margin-right: size(4);
+            margin-left: size(4);
+            &:first-child {
+              margin-left: 0;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+            button {
+              padding: 0;
+              width: size(15);
+              height: size(15);
+              &:hover {
+                &::before {
+                  background: #3c3c3a;
+                }
+              }
+              &::before {
+                width: size(15);
+                height: size(15);
+                opacity: 1;
+                border-radius: 50%;
+                border: size(0.5) solid #3c3c3a;
+                background-color: transparent;
+                content: "";
+              }
+            }
+            &.slick-active {
+              button {
+                &::before {
+                  opacity: 1;
+                  background: #3c3c3a;
+                }
+              }
+            }
+          }
         }
       }
     }

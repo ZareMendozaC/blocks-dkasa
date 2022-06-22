@@ -6,23 +6,17 @@
   "title": "Testimonios",
   "category": "dkasa",
   "icon": "building",
-  "description": "Testimonios - Dkasa",
+  "description": "Testimonios",
   "attributes": {
-    "projects": {
+    "testimonials": {
       "type": "array",
       "default": [
         {
           "mediaId": null,
           "mediaUrl": "",
-          "estado": "",
           "nombre": "",
-          "direccion": "",
-          "distrito":"",
-          "detalles": "",
-          "metraje": "",
-          "precio": "",
-          "mediaIdLogo": null,
-          "mediaUrlLogo": "",
+          "proyecto": "",
+          "descripcion": "",
           "textoEnlace": ""
         }
       ]

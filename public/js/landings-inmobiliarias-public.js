@@ -133,9 +133,84 @@
 		infinite: true,
 		centerMode: true,
 		vertical: true,
-
 		arrows: true,
-		focusOnSelect: true
+		focusOnSelect: true,
+		prevArrow: `<div class="" role="button" aria-label="Previous">
+        <svg width="49" height="30" viewBox="0 0 49 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.77896 30L-2.13885e-07 25.1069L24.5 2.74377e-06L49 25.1069L44.221 30L24.5 9.80764L4.77896 30Z" fill="#BE1521"/>
+</svg>
+
+        </div>`,
+        nextArrow: `<div class="" role="button" aria-label="Next">
+		<svg width="49" height="30" viewBox="0 0 49 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M44.221 -2.08895e-07L49 4.89312L24.5 30L-2.13885e-07 4.89312L4.77896 -1.93296e-06L24.5 20.1924L44.221 -2.08895e-07Z" fill="#BE1521"/>
+		</svg>
+		
+        </div>`
 	  });
 				  
+	$("#testimonios-slider").slick({
+		slidesToShow: 1,
+        slidesToScroll: 1,			
+        arrows: true,
+        appendDots: $("#testimonios-dots"),
+        dots: true,
+        autoplay: false,
+        autoplaySpeed: 2500,
+        speed: 2500,
+        infinite: true,
+        prevArrow: `<div class="" role="button" aria-label="Previous">
+        <svg width="35" height="58" viewBox="0 0 35 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M34.0602 51.7565L28.5008 57.3157L0 28.8157L28.5008 0.291504L34.0602 5.8507L11.1187 28.8157L34.0602 51.7565Z" fill="#BE1521"/>
+        </svg>
+        </div>`,
+        nextArrow: `<div class="" role="button" aria-label="Next">
+        <svg width="35" height="58" viewBox="0 0 35 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 6.01403L5.5593 0.454834L34.0844 28.9548L5.5593 57.4547L0 51.8955L22.9415 28.9548L0 6.01403Z" fill="#BE1521"/>
+        </svg>
+        </div>`,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                arrows: false,
+                dots: true
+            }
+        }]
+    });
+	$("#slider-home-slider").slick({
+		slidesToShow: 1,
+        slidesToScroll: 1,			
+        arrows: false,
+        dots: false,
+        autoplay: false,
+        autoplaySpeed: 2500,
+        speed: 2500,
+        infinite: true,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                arrows: false,
+                dots: true
+            }
+        }]
+    });
+	$("#slider-archive-slider").slick({
+		slidesToShow: 1,
+        slidesToScroll: 1,			
+        arrows: false,
+        dots: false,
+        autoplay: false,
+        autoplaySpeed: 2500,
+        speed: 2500,
+        infinite: true,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                arrows: false,
+                dots: true
+            }
+        }]
+    });
+	let numero= jQuery('.slick-vertical .slick-slide').not('.slick-cloned').children().length;
+	jQuery('.indice-'+numero).click();
 })( jQuery );

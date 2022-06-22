@@ -130,6 +130,15 @@ const BannerRojoBack = (props) => {
               value={attr.textoEnlace}
             />
           </FlexItem>
+          <FlexItem>
+            <TextControl
+              label="Enlace"
+              onChange={(event) =>
+                eventChangeAttr(setAttr, { enlace: event })
+              }
+              value={attr.enlace}
+            />
+          </FlexItem>
         </Flex>
       </SectionContainer>
     </Section>
