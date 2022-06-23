@@ -98,6 +98,11 @@ class DkasaBlocks{
             'editor_script' => 'dkasablock1',
             'render_callback' => array($this,'dkasa_slider_archive_proyectos_render_callback'), 
         ));
+        /** Listado Archive Proyectos */
+        register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/slider-archive-proyectos-single-block.json', array(
+            'editor_script' => 'dkasablock1',
+            'render_callback' => array($this,'dkasa_slider_archive_proyectos_single_render_callback'), 
+        ));
 
     }
 
@@ -164,6 +169,11 @@ class DkasaBlocks{
     function dkasa_slider_archive_proyectos_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-slider-archive-proyectos.php';
+        return ob_get_clean();
+    }
+    function dkasa_slider_archive_proyectos_render_single_callback( $attributes, $content, $block_instance ) {
+        ob_start();
+        require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-slider-archive-proyectos-single.php';
         return ob_get_clean();
     }
     function dkasa_avance_render_callback( $attributes, $content, $block_instance ) {

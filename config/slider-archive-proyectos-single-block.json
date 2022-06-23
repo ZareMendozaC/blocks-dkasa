@@ -1,12 +1,12 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "dkasa/slider-archive-proyectos",
+  "name": "dkasa/slider-archive-proyectos-single",
   "version": "1",
-  "title": "Slider Listado",
+  "title": "Listado Proyectos",
   "category": "dkasa",
   "icon": "building",
-  "description": "Slider Listado de Proyectos",
+  "description": "Listado de Proyectos",
   "attributes": {
     "titulo": {
       "type": "string",
