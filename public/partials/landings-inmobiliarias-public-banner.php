@@ -29,7 +29,8 @@
 	$ubicacion=$attributes['ubicacion'];
 	$precio=$attributes['precio'];
 ?>
-<div class="sub-menu">
+
+<div class="sub-menu" style="background-color:<?= $bgColor;?>">
 	<div class="box-sub-menu">
 		<a href="#galeria-proyecto">Galería</a>
 		<a href="#planos-proyecto">Planos</a>
