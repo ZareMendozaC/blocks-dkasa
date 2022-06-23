@@ -8,6 +8,10 @@
   "icon": "building",
   "description": "Tu Futuro - Dkasa",
   "attributes": {
+    "titulo": {
+      "type": "string",
+      "default": ""
+    },
     "projects": {
       "type": "array",
       "default": [

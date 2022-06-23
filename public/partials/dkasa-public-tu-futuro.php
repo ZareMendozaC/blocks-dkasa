@@ -16,13 +16,14 @@
  * @var      array    $attributes    The ID of this plugin.
  */
 
+$titulo = $attributes['titulo'];
 $projects = $attributes['projects'];
 ?>
 <section id="tu-futuro-front" class="container-fluid">
 	<div class="row">
 
 		<div class="col-12 px-0">
-			<h2 class="titulo">Tu futuro hogar</h2>
+			<h2 class="titulo"><?= $titulo ?></h2>
 		</div>
 		<div class="col-12 px-0">
 			<div class="contenido-contenedor">
