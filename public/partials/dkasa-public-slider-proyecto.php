@@ -19,7 +19,7 @@
 $images = $attributes['images'];
 
 ?>
-<section>
+<section id="galeria-proyecto">
 	<?php if($images) : ?>
 		<div class="container-slider-proyecto">
             <div class="slider-for">

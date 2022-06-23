@@ -30,6 +30,14 @@
 	$precio=$attributes['precio'];
 ?>
 
+<div class="sub-menu" style="background-color:<?= $bgColor;?>">
+	<div class="box-sub-menu">
+		<a href="#galeria-proyecto">Galería</a>
+		<a href="#planos-proyecto">Planos</a>
+		<a href="#ubicacion-proyecto">Ubicación</a>
+		<a href="#avance-proyecto">Avance de obra</a>
+	</div>
+</div>
 <section class="lia-seccion-fondo hero" style="background-image: url(<?= $mediaUrl;?>);">
 	<div class="lia-section-container text-<?=$alignment;?>">
 		<h2 class=""><?= $title;?></h2>
