@@ -223,6 +223,35 @@
             }
         }]
     });
+	$("#slider-tu-futuro").slick({
+		slidesToShow: 3,
+        slidesToScroll: 1,			
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 150,
+        speed: 1250,
+        infinite: true,
+		variableWidth: true,
+		prevArrow: `<div class="prev" role="button" aria-label="Previous">
+        <svg width="35" height="58" viewBox="0 0 35 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M34.0602 51.7565L28.5008 57.3157L0 28.8157L28.5008 0.291504L34.0602 5.8507L11.1187 28.8157L34.0602 51.7565Z" fill="#BE1521"/>
+        </svg>
+        </div>`,
+        nextArrow: `<div class="next" role="button" aria-label="Next">
+        <svg width="35" height="58" viewBox="0 0 35 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 6.01403L5.5593 0.454834L34.0844 28.9548L5.5593 57.4547L0 51.8955L22.9415 28.9548L0 6.01403Z" fill="#BE1521"/>
+        </svg>
+        </div>`,
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                arrows: false,
+                dots: true
+            }
+        }]
+    });
+	
 	let numero= jQuery('.slick-vertical .slick-slide').not('.slick-cloned').children().length;
 	jQuery('.indice-'+numero).click();
 })( jQuery );

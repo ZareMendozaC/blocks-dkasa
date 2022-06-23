@@ -12,6 +12,8 @@ import ImageUploadRepeater from "../../components/molecules/ImageUpload/ImageUpl
 import Grid from "../../components/molecules/Grid/Grid";
 import Item from "../../components/atoms/Item/Item";
 import Title from "../../components/atoms/Title/Title";
+import eventChangeAttr from "../../helper/eventChangeAttr";
+
 
 const TuFuturo = (props) => {
   const { attributes: attr, setAttributes: setAttr } = props;
@@ -34,6 +36,7 @@ const TuFuturo = (props) => {
       mediaIdLogo: null,
       mediaUrlLogo: "",
       textoEnlace: "",
+      enlace: "",
     };
 
     const newProjectsArr = [...projectsArr, itemObj];
@@ -97,10 +100,26 @@ const TuFuturo = (props) => {
     setProjectsArr(newProjectsArr);
     setAttr({ projects: newProjectsArr });
   };
+  const onChangeProjectEnlace = (event, index) => {
+    const newProjectsArr = [...projectsArr];
+    newProjectsArr[index].enlace = event;
+    setProjectsArr(newProjectsArr);
+    setAttr({ projects: newProjectsArr });
+  };
 
   return (
     <Section blockProps={blockProps}>
       <SectionContainer>
+      <Title tagEle="h4" data="Detalle" className="lia-mb-0" />
+                  <Text>
+                    <strong>Titulo:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) =>
+                      eventChangeAttr(setAttr, { titulo: event })
+                    }
+                    value={attr.titulo}
+                  />
         {projectsArr &&
           projectsArr.map((projectArr, i) => (
             <Grid key={i} classEle="flex-wrap lia-card__item tu-futuro-back-card">
@@ -181,6 +200,13 @@ const TuFuturo = (props) => {
                   <TextControl
                     onChange={(event) => onChangeProjectTextoEnlace(event, i)}
                     value={projectArr.textoEnlace}
+                  />
+                  <Text>
+                    <strong>Enlace:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeProjectEnlace(event, i)}
+                    value={projectArr.enlace}
                   />
                   <Text>
                     <strong>Logo:</strong>

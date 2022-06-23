@@ -32,12 +32,27 @@ background-size: size(265) size(421),size(235) size(218);
       line-height: size(25);
       color: #3c3c3a;
       margin-bottom: 0;
+      margin-right: size(12);
     }
   }
   .contenido-contenedor {
-    display: flex;
+    display: block;
     justify-content: center;
     margin-bottom: size(32);
+    margin-left: size(277);
+      margin-right: size(277);
+    #slider-tu-futuro{
+      display: flex;
+      justify-content: space-between;
+      .slick-arrow {
+        display: flex;
+        align-items: center;
+        
+      }
+      .slick-list{
+        width: size(1142);
+      }
+    }
     .tf-card {
       margin-right: size(47);
       margin-left: size(47);

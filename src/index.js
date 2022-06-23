@@ -32,6 +32,9 @@ import SliderHomeJson from '../config/slider-home-block.json'
 import SliderArchiveProyectosBack from './blocks/SliderArchiveProyectos/SliderArchiveProyectosBack';
 import SliderArchiveProyectosJson from '../config/slider-archive-proyectos-block.json'
 
+import SliderArchiveProyectosSingleBack from './blocks/SliderArchiveProyectosSingle/SliderArchiveProyectosSingleBack';
+import SliderArchiveProyectosSingleJson from '../config/slider-archive-proyectos-single-block.json'
+
 import SliderProyectoBack from './blocks/SliderProyecto/SliderProyectos';
 import SliderProyectoJson from '../config/slider-proyecto-block.json'; 
 
@@ -62,3 +65,4 @@ import AvanceJson from '../config/avance-block.json';
 	registerBlockType( MapaJson.name, { edit: MapaBack});
 	registerBlockType( SliderArchiveProyectosJson.name, { edit: SliderArchiveProyectosBack});
 	registerBlockType( AvanceJson.name, { edit: AvanceBack});
+	registerBlockType( SliderArchiveProyectosSingleJson.name, { edit: SliderArchiveProyectosSingleBack});

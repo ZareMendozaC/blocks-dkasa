@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "dkasa/slider-archive-proyectos-single",
+  "version": "1",
+  "title": "Listado Proyectos",
+  "category": "dkasa",
+  "icon": "building",
+  "description": "Listado de Proyectos",
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#BE1521"
+    },
+    "slides": {
+      "type": "array",
+      "default": [
+        {
+          "mediaId": null,
+          "mediaUrl": "",
+          "nombre": "",
+          "area": "",
+          "dormitorios": "",
+          "ubicacion": "",
+          "precio": "",
+          "textoEnlace": "",
+          "enlace": "",
+          "estado": "",
+          "botones": {
+            "type": "array",
+            "default": [{
+              "nombre": ""
+            }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
