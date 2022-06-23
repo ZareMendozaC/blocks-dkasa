@@ -23,6 +23,7 @@ $urlBtn = $attributes['urlBtn'];
 $txtBtn = $attributes['txtBtn'];
 $urlBtnTwo = $attributes['urlBtnTwo'];
 $txtBtnTwo = $attributes['txtBtnTwo'];
+$backgroundColor = $attributes['backgroundColor'];
 ?>
 <div class="my-container separador">
 <section class="row no-padding no-margin mrg-top-141">
@@ -34,7 +35,7 @@ $txtBtnTwo = $attributes['txtBtnTwo'];
 			<h2 class="title-des"><?= $title;?></h2>
 			<p class="subtitle-des"><?= $content?></p>
             <div class="col-md-12 col-12 no-padding d-flex mrg-top-35 ">
-			<a href="<?= $urlBtn;?>" class="btn-green"><?= $txtBtn;?></a>
+			<a href="<?= $urlBtn;?>" class="btn-green" style="background-color:<?= $backgroundColor; ?>"><?= $txtBtn;?></a>
 			<a href="<?= $urlBtnTwo;?>" class="btn-white"><?= $txtBtnTwo;?></a>
 			</div>
 		</div>

@@ -25,12 +25,33 @@ $txtBtn = $attributes['txtBtn'];
 
 $urlBtnTwo = $attributes['urlBtnTwo'];
 $txtBtnTwo = $attributes['txtBtnTwo'];
+
+$formulario = $attributes['formulario'];
+
+$backgroundColor = $attributes['backgroundColor'];
 ?>
 
-<div class="banner-color separador-87">
-    <div class="my-container">
-        <p>Quiero más información</p>
+<div class="separador-87">
+        <div class="accordion" id="accordionInfo">
+                <div class="card">
+                    <div class="card-header banner-color " id="heading" style="background-color:<?= $backgroundColor; ?>">
+                        <h2 class="mb-0 my-container">
+                            <button class="btn btn-link  text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <p>Quiero más información</p>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse color-form" aria-labelledby="heading" data-parent="#accordionInfo">
+                    <div class="my-container">
+                        <div class="card-body-form">
+                            <?= $formulario;?>
+                        </div>
+                    </div>
+                    </div>
+                </div>
     </div>
+
+
 </div>
 <div class="my-container">
 	<section class="row no-padding no-margin">
@@ -53,5 +74,7 @@ $txtBtnTwo = $attributes['txtBtnTwo'];
                     </div>
                 <?php endif;?>
 			</div>
+
+
 	</section>
 </div>

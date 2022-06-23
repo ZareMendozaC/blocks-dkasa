@@ -1,13 +1,15 @@
 import {useState} from "@wordpress/element"
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps,ColorPalette } from '@wordpress/block-editor';
 import Section from "../../components/atoms/Section/Section";
 import SectionContainer from "../../components/atoms/Section/SectionContainer";
-import { Button, __experimentalText as Text, TextControl} from '@wordpress/components';
+import { Button, __experimentalText as Text, TextControl, PanelBody, PanelRow} from '@wordpress/components';
 import internationalizationText from "../../helper/InternationalizationText";
 import ImageUploadRepeater from "../../components/molecules/ImageUpload/ImageUploadRepeater";
 import Grid from "../../components/molecules/Grid/Grid";
 import Item from "../../components/atoms/Item/Item";
 import Title from "../../components/atoms/Title/Title";
+import eventChangeAttr from "../../helper/eventChangeAttr";
+import getPaletteColors from "../../helper/getPaletteColors";
 
 const BannerInformacionBack = (props) => {
 
@@ -52,6 +54,19 @@ const BannerInformacionBack = (props) => {
 
 	return (
 		<Section blockProps={blockProps}>
+						<TextControl 
+							label="Formulario Quiero mas informacion" 
+							onChange={(event) => eventChangeAttr(setAttr, {formulario: event})} 
+							value={attr.formulario}
+						/>
+						<PanelBody title={internationalizationText("Color Fondo bloque carácteristicas")} initialOpen={false}>
+						<ColorPalette
+							onChange={(event) => eventChangeAttr(setAttr, {backgroundColor: event})}
+							colors={getPaletteColors}
+							value={attr.backgroundColor}
+						/>
+					
+				</PanelBody>
 			<SectionContainer>
 				{
 					imagesArr && imagesArr.map((imageArr, i)=>(

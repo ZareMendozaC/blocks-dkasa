@@ -1,5 +1,5 @@
 import {useState} from "@wordpress/element"
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, ColorPalette} from '@wordpress/block-editor';
 import Section from "../../components/atoms/Section/Section";
 import SectionContainer from "../../components/atoms/Section/SectionContainer";
 import { Button, __experimentalText as Text, TextControl} from '@wordpress/components';
@@ -9,6 +9,7 @@ import Grid from "../../components/molecules/Grid/Grid";
 import Item from "../../components/atoms/Item/Item";
 import Title from "../../components/atoms/Title/Title";
 import eventChangeAttr from "../../helper/eventChangeAttr";
+import getPaletteColors from "../../helper/getPaletteColors";
 
 const AvanceBack = (props) => {
 
@@ -60,6 +61,14 @@ const AvanceBack = (props) => {
 
 	return (
 		<Section blockProps={blockProps}>
+			<SectionContainer>
+						<h4>Color boton fecha actual</h4>
+						<ColorPalette
+							onChange={(event) => eventChangeAttr(setAttr, {backgroundColor: event})}
+							colors={getPaletteColors}
+							value={attr.backgroundColor}
+						/>
+			</SectionContainer>
 			<SectionContainer>
 				{
 					imagesArr && imagesArr.map((imageArr, i)=>(
