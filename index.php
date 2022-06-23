@@ -171,7 +171,7 @@ class DkasaBlocks{
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-slider-archive-proyectos.php';
         return ob_get_clean();
     }
-    function dkasa_slider_archive_proyectos_render_single_callback( $attributes, $content, $block_instance ) {
+    function dkasa_slider_archive_proyectos_single_render_callback( $attributes, $content, $block_instance ) {
         ob_start();
         require DKASA_BLOCKS_URL_PLUGIN . 'public/partials/dkasa-public-slider-archive-proyectos-single.php';
         return ob_get_clean();

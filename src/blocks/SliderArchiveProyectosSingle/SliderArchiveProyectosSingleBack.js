@@ -13,6 +13,7 @@ import Grid from "../../components/molecules/Grid/Grid";
 import Item from "../../components/atoms/Item/Item";
 import Title from "../../components/atoms/Title/Title";
 import getPaletteColors from "../../helper/getPaletteColors";
+import eventChangeAttr from "../../helper/eventChangeAttr";
 
 const SliderArchiveProyectosSingleBack = (props) => {
   console.log("props", props);
@@ -25,13 +26,20 @@ const SliderArchiveProyectosSingleBack = (props) => {
 
   const addImage = () => {
     const itemObj = {
-      mediaIdLogo: null,
-      mediaUrlLogo: "",
+      mediaId: null,
+      mediaUrl: "",
       nombre: "",
-      descripcion: "",
+      area: "",
+      dormitorios: "",
+      ubicacion: "",
+      precio: "",
       textoEnlace: "",
       enlace: "",
-      backgroundColor: ""
+      estado: "",
+      backgroundColor: "",
+      video: "",
+      panoramica: "",
+      tour: ""
     };
 
     const newImagesArr = [...imagesArr, itemObj];
@@ -46,34 +54,73 @@ const SliderArchiveProyectosSingleBack = (props) => {
     setImagesArr(newImagesArr);
     setAttr({ images: newImagesArr });
   };
-
   const onChangeImageNombre = (event, index) => {
     const newImagesArr = [...imagesArr];
     newImagesArr[index].nombre = event;
     setImagesArr(newImagesArr);
     setAttr({ images: newImagesArr });
   };
-  const onChangeImageDescripcion = (event, index) => {
+  const onChangeImageArea = (event, index) => {
     const newImagesArr = [...imagesArr];
-    newImagesArr[index].descripcion = event;
+    newImagesArr[index].area = event;
     setImagesArr(newImagesArr);
     setAttr({ images: newImagesArr });
   };
-
+  const onChangeImageDormitorios = (event, index) => {
+    const newImagesArr = [...imagesArr];
+    newImagesArr[index].dormitorios = event;
+    setImagesArr(newImagesArr);
+    setAttr({ images: newImagesArr });
+  };
+  const onChangeImageUbicacion = (event, index) => {
+    const newImagesArr = [...imagesArr];
+    newImagesArr[index].ubicacion = event;
+    setImagesArr(newImagesArr);
+    setAttr({ images: newImagesArr });
+  };
+  const onChangeImagePrecio = (event, index) => {
+    const newImagesArr = [...imagesArr];
+    newImagesArr[index].precio = event;
+    setImagesArr(newImagesArr);
+    setAttr({ images: newImagesArr });
+  };
   const onChangeImageTextoEnlace = (event, index) => {
     const newImagesArr = [...imagesArr];
     newImagesArr[index].textoEnlace = event;
     setImagesArr(newImagesArr);
     setAttr({ images: newImagesArr });
   };
-
   const onChangeImageEnlace = (event, index) => {
     const newImagesArr = [...imagesArr];
     newImagesArr[index].enlace = event;
     setImagesArr(newImagesArr);
     setAttr({ images: newImagesArr });
   };
-  const onChangeBackgroundColor = (event, index) => {
+  const onChangeImageEstado = (event, index) => {
+    const newImagesArr = [...imagesArr];
+    newImagesArr[index].estado = event;
+    setImagesArr(newImagesArr);
+    setAttr({ images: newImagesArr });
+  };
+  const onChangeImageVideo = (event, index) => {
+    const newImagesArr = [...imagesArr];
+    newImagesArr[index].video = event;
+    setImagesArr(newImagesArr);
+    setAttr({ images: newImagesArr });
+  };
+  const onChangeImagePanoramica = (event, index) => {
+    const newImagesArr = [...imagesArr];
+    newImagesArr[index].panoramica = event;
+    setImagesArr(newImagesArr);
+    setAttr({ images: newImagesArr });
+  };
+  const onChangeImageTour = (event, index) => {
+    const newImagesArr = [...imagesArr];
+    newImagesArr[index].tour = event;
+    setImagesArr(newImagesArr);
+    setAttr({ images: newImagesArr });
+  };
+  const onChangeImageBackgroundColor = (event, index) => {
     const newImagesArr = [...imagesArr];
     newImagesArr[index].backgroundColor = event;
     setImagesArr(newImagesArr);
@@ -83,10 +130,25 @@ const SliderArchiveProyectosSingleBack = (props) => {
   return (
     <Section blockProps={blockProps}>
       <SectionContainer>
+        <Text>
+          <strong>Titulo:</strong>
+        </Text>
+        <TextControl
+                    onChange={(event) =>
+                      eventChangeAttr(setAttr, { titulo: event })
+                    }
+                    value={attr.titulo}
+                  />
         {imagesArr &&
           imagesArr.map((imageArr, i) => (
-            <Grid key={i} classEle="flex-wrap slide-home-card__item slider-home-back-card background-color" >
-              <div className="w-100 d-flex align-items-center" style={{backgroundColor: imageArr.backgroundColor}}>                
+            <Grid
+              key={i}
+              classEle="flex-wrap slide-home-card__item slider-home-back-card"
+            >
+              <div
+                className="w-100 d-flex align-items-center"
+                style={{ backgroundColor: imageArr.backgroundColor }}
+              >
                 <Item percentage={80}>
                   <Title tagEle="h4" data="Detalle" className="lia-mb-0" />
                   <Text>
@@ -97,14 +159,35 @@ const SliderArchiveProyectosSingleBack = (props) => {
                     value={imageArr.nombre}
                   />
                   <Text>
-                    <strong>Descripcion:</strong>
+                    <strong>Área:</strong>
                   </Text>
                   <TextControl
-                    onChange={(event) => onChangeImageDescripcion(event, i)}
-                    value={imageArr.descripcion}
+                    onChange={(event) => onChangeImageArea(event, i)}
+                    value={imageArr.area}
                   />
                   <Text>
-                    <strong>Texto de Enlace:</strong>
+                    <strong>Dormitorios:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeImageDormitorios(event, i)}
+                    value={imageArr.dormitorios}
+                  />
+                  <Text>
+                    <strong>Ubicacion:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeImageUbicacion(event, i)}
+                    value={imageArr.ubicacion}
+                  />
+                  <Text>
+                    <strong>Precio:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeImagePrecio(event, i)}
+                    value={imageArr.precio}
+                  />
+                  <Text>
+                    <strong>Texto Enlace:</strong>
                   </Text>
                   <TextControl
                     onChange={(event) => onChangeImageTextoEnlace(event, i)}
@@ -117,13 +200,47 @@ const SliderArchiveProyectosSingleBack = (props) => {
                     onChange={(event) => onChangeImageEnlace(event, i)}
                     value={imageArr.enlace}
                   />
+                  <Text>
+                    <strong>Estado:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeImageEstado(event, i)}
+                    value={imageArr.estado}
+                  />
+                  <Text>
+                    <strong>Video:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeImageVideo(event, i)}
+                    value={imageArr.video}
+                  />
+                  <Text>
+                    <strong>Panoramica:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeImagePanoramica(event, i)}
+                    value={imageArr.panoramica}
+                  />
+                  <Text>
+                    <strong>Tour:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeImageTour(event, i)}
+                    value={imageArr.tour}
+                  />
+                  <Text>
+                    <strong>Color:</strong>
+                  </Text>
                   <ColorPalette
-              onChange={(event) => onChangeBackgroundColor(event, i)}
-              colors={getPaletteColors}
-            />
+                    onChange={(event) => onChangeImageBackgroundColor(event, i)}
+                    colors={getPaletteColors}
+                  />
                 </Item>
               </div>
-              <div class="w-100" style={{backgroundColor: imageArr.backgroundColor}}>
+              <div
+                class="w-100"
+                style={{ backgroundColor: imageArr.backgroundColor }}
+              >
                 <div>
                   <Text>
                     <strong>Imagen de Fondo:</strong>

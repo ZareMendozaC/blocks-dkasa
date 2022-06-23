@@ -12,10 +12,6 @@
       "type": "string",
       "default": ""
     },
-    "backgroundColor": {
-      "type": "string",
-      "default": "#BE1521"
-    },
     "slides": {
       "type": "array",
       "default": [
@@ -30,13 +26,13 @@
           "textoEnlace": "",
           "enlace": "",
           "estado": "",
-          "botones": {
-            "type": "array",
-            "default": [{
-              "nombre": ""
-            }
-            ]
-          }
+          "backgroundColor": {
+            "type": "string",
+            "default": "#BE1521"
+          },
+          "video": "",
+          "tour": "",
+          "panoramica": ""
         }
       ]
     }
