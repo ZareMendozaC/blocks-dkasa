@@ -32,7 +32,7 @@ $backgroundColor2 = $attributes['backgroundColor'];
 
 </style>
 
-<div class="my-container separador-avance">
+<div class="my-container separador-avance" id="avance-proyecto">
     <section class="row no-padding no-margin">
             <div class="col-md-4 col-6 no-padding">
                 <h2 class="subtitle-general">Avance de obra</h2>

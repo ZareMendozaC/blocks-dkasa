@@ -22,7 +22,7 @@
 	
 ?>
 
-<div class="my-container">
+<div class="my-container" id="ubicacion-proyecto">
     <section class="row no-padding no-margin">
             <div class="col-md-12 col-12 no-padding">
             <a href="<?= $linkwaze;?>" ><img class="link-waze" src="https://apros-qa.net.pe/dkasa/wp-content/uploads/2022/06/Frame.png" alt="waze"></a>
