@@ -14,7 +14,7 @@ import Item from "../../components/atoms/Item/Item";
 import Title from "../../components/atoms/Title/Title";
 import getPaletteColors from "../../helper/getPaletteColors";
 
-const SliderArchiveProyectosBack = (props) => {
+const SliderArchiveProyectosSingleBack = (props) => {
   console.log("props", props);
 
   const { attributes: attr, setAttributes: setAttr } = props;
@@ -159,4 +159,4 @@ const SliderArchiveProyectosBack = (props) => {
   );
 };
 
-export default SliderArchiveProyectosBack;
+export default SliderArchiveProyectosSingleBack;

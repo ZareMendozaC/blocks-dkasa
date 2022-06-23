@@ -8,19 +8,34 @@
   "icon": "building",
   "description": "Slider Listado de Proyectos",
   "attributes": {
+    "titulo": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#BE1521"
+    },
     "slides": {
       "type": "array",
       "default": [
         {
-          "mediaIdLogo": null,
-          "mediaUrlLogo": "",
+          "mediaId": null,
+          "mediaUrl": "",
           "nombre": "",
-          "descripcion": "",
+          "area": "",
+          "dormitorios": "",
+          "ubicacion": "",
+          "precio": "",
           "textoEnlace": "",
           "enlace": "",
-          "backgroundColor": {
-            "type": "string",
-            "default": "#aeaeae"
+          "estado": "",
+          "botones": {
+            "type": "array",
+            "default": [{
+              "nombre": ""
+            }
+            ]
           }
         }
       ]

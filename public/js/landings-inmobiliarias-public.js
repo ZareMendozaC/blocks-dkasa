@@ -216,9 +216,9 @@
         slidesToScroll: 1,			
         arrows: true,
         dots: false,
-        autoplay: false,
-        autoplaySpeed: 2500,
-        speed: 2500,
+        autoplay: true,
+        autoplaySpeed: 150,
+        speed: 1250,
         infinite: true,
 		variableWidth: true,
 		prevArrow: `<div class="prev" role="button" aria-label="Previous">
