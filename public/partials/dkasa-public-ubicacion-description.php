@@ -26,7 +26,7 @@ $txtBtnTwo = $attributes['txtBtnTwo'];
 $backgroundColor = $attributes['backgroundColor'];
 $vistapano = $attributes['vistapano'];
 ?>
-<div class="my-container separador">
+<div class="my-container separador bg-ubicacion">
 <section class="row no-padding no-margin mrg-top-141">
 	
         <div class="col-md-6 col-12 no-padding column-img">

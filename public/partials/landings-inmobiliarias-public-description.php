@@ -23,7 +23,7 @@ $urlBtn = $attributes['urlBtn'];
 $txtBtn = $attributes['txtBtn'];
 
 ?>
-<div class="my-container separador">
+<div class="my-container separador first-bloque">
 	<section class="row no-padding no-margin mrg-top-141">
 			<div class="col-md-6 col-12 no-padding">
 				<img class="img-des" src="<?= $mediaUrl;?>" alt="">

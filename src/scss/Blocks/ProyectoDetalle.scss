@@ -61,4 +61,48 @@
     bottom: 50%;
     cursor: pointer;
   }
+  .page-child .entry-content, .entry-content{
+    background-image: 
+                      url("/public/image/Background/cubo.png"), 
+                      url("/public/image/Background/Fondo-1-2.png"),
+                      url("/public/image/Background/cubo.png"), 
+                      url("/public/image/Background/cubo.png"),
+                      url("/public/image/Background/Fondo-1-2.png");
+                     
+    background-repeat: no-repeat;
+    background-position-x: 
+                          size(120), 
+                          size(1616),
+                          size(31),
+                          size(1616),
+                          size(230);
+                         
+    background-position-y: 
+                          size(860),
+                          size(1360),
+                          size(1860),
+                          size(2150),
+                          size(4750);
+    background-size:  
+                          size(154) size(154),
+                          size(235) size(218),
+                          size(154) size(154),
+                          size(154) size(154),
+                          size(235) size(218);
+  }
+
+  .bg-ubicacion{
+    background-image: url("/public/image/Background/Fondo-1-2.png");
+    background-repeat: no-repeat;
+    background-position-x: size(20);
+    background-position-y: size(352);
+    background-size: size(235) size(218);
+  }
+  .bg-simple{
+    background-image: url("/public/image/Background/cubo.png");
+    background-repeat: no-repeat;
+    background-position-x: size(820);
+    background-position-y: size(50);
+    background-size: size(154) size(154);
+  }
 /*BACKEND*/

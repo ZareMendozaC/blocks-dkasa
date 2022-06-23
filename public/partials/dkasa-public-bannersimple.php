@@ -21,7 +21,7 @@
 	
 ?>
 
-<div class="my-container separadores">
+<div class="my-container separadores bg-simple">
     <section class="row no-padding no-margin">
             <div class="col-md-12 col-12 no-padding">
             <h2 class="subtitle-general center-text"><?= $nombreproyecto;?></h2>
