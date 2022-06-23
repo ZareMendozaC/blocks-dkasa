@@ -49,7 +49,7 @@ const MapaBack = (props) => {
 							value={attr.linkwaze}
 						/>
 
-<TextControl 
+						<TextControl 
 							label="Link quiero visitarlo" 
 							onChange={(event) => eventChangeAttr(setAttr, {linkvisita: event})} 
 							value={attr.linkvisita}

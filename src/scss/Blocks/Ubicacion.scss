@@ -11,3 +11,28 @@
 .mrg-top-35{
     margin-top: calc(100vw * (calc(35/ var(--width_base)))) !important;
 }
+.btn-pano, .btn-pano:hover{
+    position: absolute;
+    width: calc(100vw * (calc(276 / var(--width_base))));
+    height: calc(100vw * (calc(52 / var(--width_base))));
+    left: 49%;
+    bottom: calc(100vw * (calc(11 / var(--width_base))));  
+    background: #3C3C3A;
+    border-radius: 9px;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(100vw * (calc(20 / var(--width_base))));
+    line-height: calc(100vw * (calc(25 / var(--width_base))));
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+}
+.icon-eye-pano{
+    width: calc(100vw * (calc(22.02 / var(--width_base))));
+    height:  calc(100vw * (calc(15.03 / var(--width_base))));
+    margin-left:  calc(100vw * (calc(10 / var(--width_base))));
+}

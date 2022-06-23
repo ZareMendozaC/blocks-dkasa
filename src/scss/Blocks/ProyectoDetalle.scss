@@ -47,5 +47,18 @@
   .d-flex{
     display: flex;
   }
-  
+  .arrow-slider-prev{
+    position: absolute;
+    z-index: 1;
+    left: calc(100vw * (calc(-54 / var(--width_base))));
+    bottom: 50%;
+    cursor: pointer;
+  }
+  .arrow-slider-next{
+    position: absolute;
+    z-index: 1;
+    right: calc(100vw * (calc(-54 / var(--width_base))));
+    bottom: 50%;
+    cursor: pointer;
+  }
 /*BACKEND*/

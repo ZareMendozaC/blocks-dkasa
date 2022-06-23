@@ -6,7 +6,7 @@ import eventChangeAttr from "../../helper/eventChangeAttr";
 import ImageUpload from "../../components/molecules/ImageUpload/ImageUpload";
 import Grid from "../../components/molecules/Grid/Grid";
 import Item from "../../components/atoms/Item/Item";
-import { Flex, FlexItem } from '@wordpress/components';
+import { Flex, FlexItem, TextControl, Text } from '@wordpress/components';
 import {ColorPalette, InspectorControls, RichText} from '@wordpress/block-editor';
 import getPaletteColors from "../../helper/getPaletteColors";
 const DescriptionUbicacionBack= (props) => {
@@ -22,7 +22,7 @@ const DescriptionUbicacionBack= (props) => {
 		<Section blockProps={blockProps}>
 			<SectionContainer>
 				<Grid>
-				<Item percentage={40} className="lia-text-center">
+					<Item percentage={40} className="lia-text-center">
 						<ImageUpload
 								setAttr={setAttr}
 								detail={{
@@ -32,6 +32,11 @@ const DescriptionUbicacionBack= (props) => {
 									propertyId: "mediaId"
 								}}
 							/>
+					<TextControl 
+							label="Link button vista panoramica" 
+							onChange={(event) => eventChangeAttr(setAttr, {vistapano: event})} 
+							value={attr.vistapano}
+						/>
 					</Item>
 					<Item percentage={60}>
 						<TextEditor

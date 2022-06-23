@@ -21,8 +21,15 @@ $backgroundColor2 = $attributes['backgroundColor'];
 ?>
 <style>
 	.btn-avance.slick-slide.slick-current p {
-    background-color:<?= $backgroundColor2; ?>;
-}
+        background-color:<?= $backgroundColor2; ?>;
+    }
+    .btn-white-lg:hover{
+    background: <?= $backgroundColor2; ?>;
+    color: #FFFFFF;
+    text-decoration: none !important;
+    border: 0px !important;
+  }
+
 </style>
 
 <div class="my-container separador-avance">

@@ -24,12 +24,19 @@ $txtBtn = $attributes['txtBtn'];
 $urlBtnTwo = $attributes['urlBtnTwo'];
 $txtBtnTwo = $attributes['txtBtnTwo'];
 $backgroundColor = $attributes['backgroundColor'];
+$vistapano = $attributes['vistapano'];
 ?>
 <div class="my-container separador">
 <section class="row no-padding no-margin mrg-top-141">
 	
         <div class="col-md-6 col-12 no-padding column-img">
 			<img class="img-ubic" src="<?= $mediaUrl;?>" alt="">
+			<?php if($vistapano) : ?>
+				<a class="btn-pano" href="<?= $vistapano;?>">
+					Vista panorámica
+					<img class="icon-eye-pano" src="<?= site_url("/") . 'wp-content/uploads/2022/06/ojo.png' ?>" alt="">
+				</a>
+			<?php endif;?>
 		</div>
 		<div class="col-md-6 col-12 no-padding ">
 			<h2 class="title-des"><?= $title;?></h2>

@@ -43,7 +43,11 @@
       "backgroundColor": {
           "type": "string",
           "default": "blue"
-        }
+      },
+      "vistapano": {
+          "type": "string",
+          "default": ""
+      }
     }
   }
 
