@@ -57,9 +57,9 @@ $backgroundColor = $attributes['backgroundColor'];
 
 
 </div>
-<div class="my-container" id="planos-proyecto">
+<div class="my-container mrg-r-l" id="planos-proyecto">
 	<section class="row no-padding no-margin">
-			<div class="col-md-4 col-12 no-padding mrg-35_top">
+			<div class="col-md-4 col-12 no-padding mrg-35_top padt-r-l-30">
                     <h2 class="subtitle-general">Tu sueño inicia aquí </h2>
                     <p class="subtitle-des">Selecciona la cantidad de dormitorios que necesitas.</p>
                     <div class="col-md-12 col-12 no-padding">

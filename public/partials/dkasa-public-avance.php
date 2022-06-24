@@ -34,11 +34,11 @@ $backgroundColor2 = $attributes['backgroundColor'];
 
 <div class="my-container separador-avance" id="avance-proyecto">
     <section class="row no-padding no-margin">
-            <div class="col-md-4 col-6 no-padding">
+            <div class="col-md-4 col-12 no-padding">
                 <h2 class="subtitle-general">Avance de obra</h2>
                 <p class="subtitle-des">Sé parte del día a día en el proceso de construcción de tu hogar. </p>
 
-                    <div class="center-btn slider-nav-avance">
+                    <div id="slider-nav-avance" class="center-btn slider-nav-avance">
                         <?php
                             $num=1; 
                         ?>
@@ -56,7 +56,7 @@ $backgroundColor2 = $attributes['backgroundColor'];
                     </div>
 
             </div>
-            <div class="col-md-8 col-6 no-padding column-slider">
+            <div class="col-md-8 col-12 no-padding column-slider mrg-r-l">
                 <div class="slider-obra slider-for-avance">
                         <?php if($images) : ?>
                                 <?php foreach ($images as $image): ?>
