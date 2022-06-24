@@ -29,7 +29,7 @@ $vistapano = $attributes['vistapano'];
 <div class="my-container separador bg-ubicacion">
 <section class="row no-padding no-margin mrg-top-141">
 	
-        <div class="col-md-6 col-12 no-padding column-img">
+        <div class="col-md-6 col-12 column-img" id="column-img">
 			<img class="img-ubic" src="<?= $mediaUrl;?>" alt="">
 			<?php if($vistapano) : ?>
 				<a class="btn-pano" href="<?= $vistapano;?>">
@@ -38,7 +38,7 @@ $vistapano = $attributes['vistapano'];
 				</a>
 			<?php endif;?>
 		</div>
-		<div class="col-md-6 col-12 no-padding ">
+		<div class="col-md-6 col-12 no-padding only-desk-b">
 			<h2 class="title-des"><?= $title;?></h2>
 			<p class="subtitle-des"><?= $content?></p>
             <div class="col-md-12 col-12 no-padding d-flex mrg-top-35 ">
