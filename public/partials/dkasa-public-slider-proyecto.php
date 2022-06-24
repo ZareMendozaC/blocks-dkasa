@@ -21,7 +21,7 @@ $images = $attributes['images'];
 ?>
 <section id="galeria-proyecto">
 	<?php if($images) : ?>
-		<div class="container-slider-proyecto">
+		<div class="container-slider-proyecto mrg-r-l">
             <div class="slider-for">
                 <?php foreach ($images as $image): ?>
                         <img src="<?= $image['mediaUrl'];?>" alt="" class="img-big">

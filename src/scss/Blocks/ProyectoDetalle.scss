@@ -296,7 +296,7 @@
 }
 .container-slider-proyecto {
   height: size(191) !important;
-  width: 100% !important;
+  width: calc(100% - 32px) !important
 }
 .container-slider-proyecto .slider-for img{
   height: size(191) !important;
@@ -386,9 +386,9 @@
   width:  size(340) !important;
 }
 .btn-pano, .btn-pano:hover {
-  width: size(147) !important;
+  width: size(200) !important;
   height:  size(35) !important;
-  left: 49%;
+  left: 25%  !important;
   bottom: calc(100vw * 11 / var(--width_base));
 
   border-radius: 9px;
@@ -419,5 +419,52 @@
 .btn-green-lg, .btn-green-lg:hover{
   width: size(211) !important;
   height:  size(46) !important;
+}
+.column-slider {
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: center;
+  margin-top: size(40);
+}
+#column-img{
+  display: flex;
+    justify-content: center !important;
+    padding: 0px;
+}
+.color-form .wpcf7-form label {
+  font-size: size(14) !important;
+  line-height: size(17) !important;
+  margin-bottom: 0 !important;
+}
+.color-form .wpcf7-form input[type=tel], .color-form .wpcf7-form input[type=text], .color-form .wpcf7-form input[type=email], .color-form .wpcf7-form select {
+  font-size: size(16) !important;
+  line-height: size(20) !important;
+  width: 100% !important;
+}
+#collapseTwo form{
+  margin: 0px 40px;
+}
+.mb-md-45, .my-md-45, .mb-md-45-movil {
+  margin-bottom: calc(100vw * (calc(29/ var(--width_base)))) !important;
+}
+.w-md-631 {
+  width: 100%;
+  flex-wrap: wrap;
+}
+#acceptance-form-footer .wpcf7-list-item-label {
+  width: 100% !important;
+}
+#avance-proyecto .subtitle-des{
+  margin-right: size(30) !important;
+  margin-left: size(30) !important;
+  margin-bottom: size(28) !important;
+}
+.slick-arrow svg{
+  width: 14px;
+  height: 23px;
+}
+#slider-nav-avance .slick-arrow svg{
+  width: 23px;
+  height: 14px;
 }
 }

@@ -123,7 +123,8 @@
 						  breakpoint: 768,
 						  settings: {
 							arrows: true,
-							slidesToShow: 1
+							slidesToShow: 1,
+							variableWidth: true,
 						  }
 						}
 					  ]
@@ -138,7 +139,7 @@
 		focusOnSelect: true,
 		responsive: [
 			{
-			  breakpoint: 768,
+			  breakpoint: 345,
 			  settings: {
 				arrows: false,
 				centerMode: true,
