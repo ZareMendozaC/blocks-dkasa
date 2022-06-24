@@ -2,11 +2,21 @@
   font-family: "Century Gothic", sans-serif;
   margin-bottom: size(88);
   .columna-1 {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
     img {
       margin-left: size(218);
       margin-top: size(62);
       margin-bottom: size(61);
       width: size(247);
+      @media screen and (max-width: 767px) {
+        width: size(191);
+        margin-top: size(25);
+        margin-bottom: size(42);
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
   }
 
@@ -14,13 +24,22 @@
     .contenido-contenedor {
       margin-left: size(277);
       margin-right: size(277);
-
+      @media screen and (max-width: 767px) {
+        margin-left: size(23);
+        margin-right: size(23);
+      }
       #testimonios-slider {
         display: flex;
         margin-bottom: size(49);
         .slick-arrow {
           display: flex;
           align-items: center;
+          @media screen and (max-width: 767px) {
+            svg{
+              width: size(14);
+              height: size(23);
+            }
+          }
         }
         .slider-container {
           display: flex;
@@ -30,9 +49,15 @@
           background-size: size(780) size(382);
           background-position-x: size(392);
           padding-top: size(61);
+          @media screen and (max-width: 767px) {
+            padding-top: 0;
+            flex-wrap: wrap;
+          }
           .columna-1 {
             width: size(333);
-
+            @media screen and (max-width: 767px) {
+              width: 100%;
+            }
             img {
               width: 100%;
               margin: 0;
@@ -49,12 +74,24 @@
               margin-right: size(6);
               margin-left: size(40);
               border-bottom-right-radius: size(45);
+              @media screen and (max-width: 767px) {
+                width: size(174);
+                height: size(34);
+                left: 0;
+                right: 0;
+                margin: auto;
+              }
               p {
                 font-weight: 700;
                 font-size: size(24);
                 line-height: size(29);
                 margin: 0;
                 color: #ffffff;
+                @media screen and (max-width: 767px) {
+                  font-size: size(16);
+                  line-height: size(20);
+                  margin: 0;
+                }
               }
             }
             .proyecto {
@@ -64,18 +101,34 @@
               color: #3c3c3a;
               margin: 0;
               margin-left: size(76);
+              @media screen and (max-width: 767px) {
+                font-size: size(14);
+                line-height: size(17);
+                margin: auto;
+                left: 0;
+                right: 0;
+              }
             }
           }
-
+          
           .columna-2 {
             width: size(504);
             margin-left: size(45);
             padding-top: size(51);
+            @media screen and (max-width: 767px) {
+              margin: 0;
+              padding-top: size(25);
+            }
             .descripcion {
               font-size: size(20);
               line-height: size(25);
               color: #000000;
               margin-bottom: size(25);
+              @media screen and (max-width: 767px) {
+                font-size: size(12);
+                text-align: center;
+                line-height: size(20);
+              }
             }
             .texto-enlace {
               margin: 0;
@@ -91,6 +144,10 @@
               align-items: center;
               justify-content: center;
               margin-left: auto;
+              @media screen and (max-width: 767px) {
+                @include text-movil-3;
+                margin: auto;
+              }
             }
           }
         }

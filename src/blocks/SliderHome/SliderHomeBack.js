@@ -27,6 +27,8 @@ const SliderHomeBack = (props) => {
     const itemObj = {
       mediaId: null,
       mediaUrl: "",
+      mediaIdMovil: null,
+      mediaUrlMovil: "",
       mediaIdLogo: null,
       mediaUrlLogo: "",
       cifra: "",
@@ -34,7 +36,7 @@ const SliderHomeBack = (props) => {
       distrito: "",
       textoEnlace: "",
       enlace: "",
-      backgroundColor: ""
+      backgroundColor: "",
     };
 
     const newImagesArr = [...imagesArr, itemObj];
@@ -92,10 +94,16 @@ const SliderHomeBack = (props) => {
       <SectionContainer>
         {imagesArr &&
           imagesArr.map((imageArr, i) => (
-            <Grid key={i} classEle="flex-wrap slide-home-card__item slider-home-back-card background-color" >
-              <div className="w-100 d-flex align-items-center" style={{backgroundColor: imageArr.backgroundColor}}>
+            <Grid
+              key={i}
+              classEle="flex-wrap slide-home-card__item slider-home-back-card background-color"
+            >
+              <div
+                className="w-100 d-flex align-items-center"
+                style={{ backgroundColor: imageArr.backgroundColor }}
+              >
                 <Item percentage={20} classEle="lia-gap-8">
-                <Text>
+                  <Text>
                     <strong>Logo:</strong>
                   </Text>
                   <ImageUploadRepeater
@@ -149,17 +157,20 @@ const SliderHomeBack = (props) => {
                     value={imageArr.enlace}
                   />
                   <ColorPalette
-              onChange={(event) => onChangeBackgroundColor(event, i)}
-              colors={getPaletteColors}
-            />
+                    onChange={(event) => onChangeBackgroundColor(event, i)}
+                    colors={getPaletteColors}
+                  />
                 </Item>
               </div>
-              <div class="w-100" style={{backgroundColor: imageArr.backgroundColor}}>
-                <div>
+              <div
+                class="w-100"
+                style={{ backgroundColor: imageArr.backgroundColor }}
+              >
+                <div class="d-flex">
+                  <Item percentage={50} classEle="lia-gap-8">
                   <Text>
                     <strong>Imagen de Fondo:</strong>
                   </Text>
-                  <Item percentage={100} classEle="lia-gap-8">
                     <ImageUploadRepeater
                       variables={props}
                       details={{
@@ -169,6 +180,23 @@ const SliderHomeBack = (props) => {
                         data: imagesArr,
                         namePropertyId: "mediaIdLogo",
                         namePropertyUrl: "mediaUrlLogo",
+                        namePropertyData: "slides",
+                      }}
+                    />
+                  </Item>
+                  <Item percentage={50} classEle="lia-gap-8">
+                  <Text>
+                    <strong>Imagen de Fondo Movil:</strong>
+                  </Text>
+                    <ImageUploadRepeater
+                      variables={props}
+                      details={{
+                        index: i,
+                        datum: imageArr,
+                        setData: setImagesArr,
+                        data: imagesArr,
+                        namePropertyId: "mediaIdMovil",
+                        namePropertyUrl: "mediaUrlMovil",
                         namePropertyData: "slides",
                       }}
                     />

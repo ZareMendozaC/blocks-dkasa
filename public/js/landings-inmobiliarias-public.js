@@ -203,8 +203,8 @@
         responsive: [{
             breakpoint: 767,
             settings: {
-                arrows: false,
-                dots: true
+                arrows: true,
+                dots: false
             }
         }]
     });
@@ -248,8 +248,8 @@
         arrows: true,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 150,
-        speed: 1250,
+        autoplaySpeed: 1750,
+        speed: 1750,
         infinite: true,
 		variableWidth: true,
 		prevArrow: `<div class="prev" role="button" aria-label="Previous">
@@ -264,10 +264,7 @@
         </div>`,
         responsive: [{
             breakpoint: 767,
-            settings: {
-                arrows: false,
-                dots: true
-            }
+            settings: "unslick"
         }]
     });
 	$("#slider-archive-single-slider").slick({

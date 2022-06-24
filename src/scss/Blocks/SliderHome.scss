@@ -9,13 +9,66 @@
 
 #slider-home-front {
   margin-bottom: size(57);
+  @media screen and (max-width: 767px) {
+    margin-bottom: size(34);
+  }
   .contenido-contenedor {
     #slider-home-slider {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 0;
+        .slick-dots {
+          bottom: size(8);
+          line-height: 0;
+          li {
+            width: size(15);
+            height: size(15);
+            margin-right: size(4);
+            margin-left: size(4);
+            &:first-child {
+              margin-left: 0;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+            button {
+              padding: 0;
+              width: size(15);
+              height: size(15);
+              &:hover {
+                &::before {
+                  background: #fff;
+                }
+              }
+              &::before {
+                width: size(15);
+                height: size(15);
+                opacity: 1;
+                border-radius: 50%;
+                border: size(0.5) solid #fff;
+                background-color: transparent;
+                content: "";
+              }
+            }
+            &.slick-active {
+              button {
+                &::before {
+                  opacity: 1;
+                  background: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
       .slider-home-slide {
         .slider-container {
           .columna-1 {
             .datos {
               left: size(148);
+              @media screen and (max-width: 767px) {
+                top: size(264);
+                left: size(16);
+              }
               .datos-principales {
                 width: size(454);
                 color: white;
@@ -24,15 +77,30 @@
                 border-radius: size(76);
                 text-align: center;
                 margin-bottom: size(22);
+                @media screen and (max-width: 767px) {
+                  //do Smth
+                  width: size(219);
+                  padding-top: size(22);
+                  padding-bottom: size(22);
+                  border-radius: size(41);
+                  margin-bottom: size(18);
+                }
                 img {
                   margin: auto;
                   margin-bottom: size(30);
+                  @media screen and (max-width: 767px) {
+                    margin-bottom: size(11);
+                  }
                 }
                 .cifra {
                   margin-bottom: size(19);
                   font-weight: 700;
                   font-size: size(24);
                   line-height: size(29);
+                  @media screen and (max-width: 767px) {
+                    @include text-movil-1;
+                    margin-bottom: size(18);
+                  }
                 }
                 .descripcion {
                   margin-bottom: size(19);
@@ -40,10 +108,18 @@
                   line-height: size(25);
                   padding-left: size(70);
                   padding-right: size(70);
+                  @media screen and (max-width: 767px) {
+                    @include text-movil-2;
+                    margin-bottom: size(11);
+                    padding-left: size(20);
+                    padding-right: size(20);
+                  }
                 }
                 .distrito {
                   justify-content: center;
                   svg {
+                    width: size(9);
+                    height: size(13);
                     margin-right: size(7);
                   }
                   p {
@@ -55,6 +131,11 @@
                     text-underline-position: under;
                     text-underline-offset: size(4);
                     text-decoration-thickness: size(1.5);
+                    @media screen and (max-width: 767px) {
+                      @include text-movil-2;
+                      text-underline-offset: size(3);
+                      text-decoration-thickness: size(1);
+                    }
                   }
                 }
               }
@@ -71,6 +152,12 @@
                   display: flex;
                   justify-content: center;
                   align-items: center;
+                  @media screen and (max-width: 767px) {
+                    @include text-movil-2;
+                    width: size(105);
+                    height: size(25);
+                    border-radius: size(7);
+                  }
                 }
               }
             }

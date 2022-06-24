@@ -23,3 +23,16 @@ h6{
 .lia-lheight-0{
   line-height: 0;
 }
+
+@mixin text-movil-1 {
+  font-size: size(16);
+line-height: size(20);
+}
+@mixin text-movil-2 {
+  font-size: size(12);
+line-height: size(15);
+}
+@mixin text-movil-3 {
+  font-size: size(14);
+line-height: size(17);
+}

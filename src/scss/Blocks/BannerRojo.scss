@@ -17,15 +17,33 @@
         padding-bottom: size(99);
         padding-left: size(259);
         justify-content: space-between;
-        
+        @media screen and (max-width: 767px) {
+            padding: 0;
+            flex-wrap: wrap;
+        }
 
         .columna-1{
             display: flex;
+            @media screen and (max-width: 767px) {
+                margin-left: size(16);
+                margin-right:size(16);
+                flex-wrap: wrap;
+                padding-top: size(47);
+            }
             .image-container{
                 align-self: flex-end;
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    margin-bottom: size(38);
+                }
                 img{
                     margin-right: size(33);
                     margin-bottom: size(8);
+                    @media screen and (max-width: 767px) {
+                        width: size(76);
+                        height: size(76);
+                        margin: 0;
+                    }
                 }
             }
             p{
@@ -35,24 +53,51 @@
                 font-weight: bold;
                 font-size: size(24);
                 line-height: size(29);
+                @media screen and (max-width: 767px) {
+                    @include text-movil-1;
+                    font-weight: 400;
+                }
             }
             .texto-grande{
                 font-weight: bold;
                 font-size: size(88);
                 line-height: size(88);
+                @media screen and (max-width: 767px) {
+                    font-size: size(56);
+                    line-height: size(69);
+                }
             }
         }
         .columna-2{
             align-self: center;
+            @media screen and (max-width: 767px) {
+                margin-left: size(16);
+                margin-right:size(16);
+                flex-wrap: wrap;
+                padding-top: size(46);
+                width: 100%;
+                margin-bottom: size(58);
+            }
             a{
                 display: flex;
                 align-items: center;
+                @media screen and (max-width: 767px) {
+                    justify-content: end;
+                    img{
+                        width: size(44);
+                    }
+                }
                 p{
                     font-weight: bold;
                     font-size: size(24);
                     line-height: size(29);
                     margin-bottom: 0;
                     margin-right: size(22);
+                    @media screen and (max-width: 767px) {
+                        font-size: size(14);
+                        line-height: size(17);
+                        flex-wrap: wrap;
+                    }
                 }
             }
         }
