@@ -117,7 +117,16 @@
 					</svg></div>`,
         nextArrow: `<div class="arrow-slider-next"><svg width="35" height="57" viewBox="0 0 35 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M0 5.55919L5.5593 0L34.0844 28.4999L5.5593 56.9999L0 51.4407L22.9415 28.4999L0 5.55919Z" fill="#BE1521"/>
-					</svg></div>`
+					</svg></div>`,
+					responsive: [
+						{
+						  breakpoint: 768,
+						  settings: {
+							arrows: true,
+							slidesToShow: 1
+						  }
+						}
+					  ]
 	  });
 	  $('.slider-nav').slick({
 		slidesToShow: 5,
@@ -126,7 +135,17 @@
 		dots: false,
 		centerMode: true,
 		variableWidth: true,
-		focusOnSelect: true
+		focusOnSelect: true,
+		responsive: [
+			{
+			  breakpoint: 768,
+			  settings: {
+				arrows: false,
+				centerMode: true,
+				slidesToShow: 4
+			  }
+			}
+		  ]
 	  });
 
 

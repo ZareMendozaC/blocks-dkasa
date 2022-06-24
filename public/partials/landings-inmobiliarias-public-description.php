@@ -23,15 +23,16 @@ $urlBtn = $attributes['urlBtn'];
 $txtBtn = $attributes['txtBtn'];
 
 ?>
-<div class="my-container separador first-bloque">
-	<section class="row no-padding no-margin mrg-top-141">
-			<div class="col-md-6 col-12 no-padding">
-				<img class="img-des" src="<?= $mediaUrl;?>" alt="">
+<div class="my-container separador first-bloque mrg-r-l">
+	<section id="descripcion" class="row no-padding no-margin mrg-top-141">
+			<div class="col-md-6 col-12 no-padding order-2-res">
+				<img class="img-des space-img" src="<?= $mediaUrl;?>" alt="">
+				<a href="<?= $urlBtn;?>" class="btn-quiero only-mobile-f"><?= $txtBtn;?></a>
 			</div>
-			<div class="col-md-6 col-12 no-padding pdt-93">
-				<h2 class="title-des"><?= $title;?></h2>
-				<p class="subtitle-des"><?= $content?></p>
-				<a href="<?= $urlBtn;?>" class="btn-quiero"><?= $txtBtn;?></a>
+			<div class="col-md-6 col-12 no-padding pdt-93 order-1-res">
+				<h2 class="title-des per-res-one"><?= $title;?></h2>
+				<p class="subtitle-des  per-res-two"><?= $content?></p>
+				<a href="<?= $urlBtn;?>" class="btn-quiero only-desk-f"><?= $txtBtn;?></a>
 			</div>
 	</section>
 </div>

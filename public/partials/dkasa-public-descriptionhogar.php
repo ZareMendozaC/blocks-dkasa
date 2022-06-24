@@ -20,14 +20,14 @@ $images = $attributes['images'];
 $mediaUrl = $attributes['mediaUrl'];
 ?>
 
-<div class="my-container">
+<div class="my-container mrg-r-l">
 	<section class="row no-padding no-margin">
 			<div class="col-md-12 col-12 no-padding mrg-btm-57">
 				<h2 class="subtitle-general">Tu futuro Hogar</h2>
 			</div>
-			<div class="col-md-4 col-12 no-padding mrg-35_top">
+			<div class="col-md-4 col-12 no-padding mrg-35_top order-2-res center-icons-f">
 			<?php foreach ($images as $image): ?>
-					<div class="col-md-12 col-12 box-carac_1"> 
+					<div class="col-md-12 col-6  box-carac_1"> 
 						<div class="into-carac box-carac">
 							<img src="<?= $image['mediaUrl'];?>" alt="" class="">
 							<h3 class="subtitle-carac"><?= $image['title'];?></h3>
@@ -35,7 +35,7 @@ $mediaUrl = $attributes['mediaUrl'];
 					</div>
 				<?php endforeach; ?>
 			</div>
-			<div class="col-md-8 col-12 no-padding">
+			<div class="col-md-8 col-12 no-padding order-1-res">
 			<img class="img-carac" src="<?= $mediaUrl;?>" alt="">
 			</div>
 	</section>
