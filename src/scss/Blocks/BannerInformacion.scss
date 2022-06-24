@@ -1,6 +1,6 @@
 .banner-color{
     width: 100%;
-    height: calc(100vw * (calc(144 / var(--width_base)))) !important;
+   /* height: calc(100vw * (calc(144 / var(--width_base)))) !important;*/
     background: #009EA0;
 }
 .banner-color p, .banner-color p:hover{ 
@@ -51,6 +51,9 @@
     border: 1px solid #3C3C3A;
     cursor: pointer;
   }
+  .slider-nav-avance .btn-white-lg{
+    margin-bottom: calc(100vw * (calc(18 / var(--width_base))));
+  }
   .btn-white-lg:hover{
     width: calc(100vw * (calc(274 / var(--width_base))));
     height: calc(100vw * (calc(52 / var(--width_base))));
@@ -72,12 +75,12 @@
     margin-bottom: calc(100vw * (calc(18 / var(--width_base)))) !important;
   }
   .img-plano{
-    width: calc(100vw * (calc(742 / var(--width_base)))) !important;
+    /*width: calc(100vw * (calc(742 / var(--width_base)))) !important;*/
     margin: auto;
     height: auto;
   }
   .carousel-planos{
-    width: calc(100vw * (calc(742 / var(--width_base)))) !important;
+    width: calc(100vw * (calc(742 / var(--width_base))));
   }
   .center-btn{
     display: flex;
