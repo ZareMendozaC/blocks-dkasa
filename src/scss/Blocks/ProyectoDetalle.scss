@@ -476,4 +476,12 @@
   text-align: right;
   margin-top: size(0) !important;
 }
+.btn-link svg{
+  width: size(25);
+  height: size(15);
+  margin-top: size(-24);
+}
+.accordion>.card .card-header{
+  height: size(72) !important;
+}
 }
