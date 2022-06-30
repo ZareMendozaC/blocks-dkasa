@@ -248,8 +248,8 @@
         arrows: true,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 1750,
-        speed: 1750,
+        autoplaySpeed: 5000,
+        speed: 5000,
         infinite: true,
 		variableWidth: true,
 		prevArrow: `<div class="prev" role="button" aria-label="Previous">

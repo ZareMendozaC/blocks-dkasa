@@ -88,8 +88,10 @@
                 img {
                   margin: auto;
                   margin-bottom: size(30);
+                  max-width: size(292);
                   @media screen and (max-width: 767px) {
                     margin-bottom: size(11);
+                    max-width: fit-content;
                   }
                 }
                 .cifra {
@@ -118,9 +120,13 @@
                 .distrito {
                   justify-content: center;
                   svg {
-                    width: size(9);
-                    height: size(13);
+                    width: size(18);
+                    height: size(26);
                     margin-right: size(7);
+                    @media screen and (max-width: 767px) {
+                      width: size(9);
+                    height: size(13);
+                    }
                   }
                   p {
                     margin-bottom: 0;
