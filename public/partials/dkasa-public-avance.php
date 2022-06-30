@@ -18,6 +18,7 @@
 
 $images = $attributes['images'];
 $backgroundColor2 = $attributes['backgroundColor'];
+$link_transparencia = $attributes['link_transparencia'];
 ?>
 <style>
 	.btn-avance.slick-slide.slick-current p {
@@ -67,6 +68,7 @@ $backgroundColor2 = $attributes['backgroundColor'];
                                 <?php endforeach; ?>
                         <?php endif;?>
                 </div>
+                <a class="btn-transp" href="<?= $link_transparencia;?>" target="_blank">Ver transparencia del proyecto</a>
             </div>
     </section>
 </div>

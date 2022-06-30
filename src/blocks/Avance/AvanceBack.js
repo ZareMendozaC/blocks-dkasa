@@ -62,7 +62,18 @@ const AvanceBack = (props) => {
 	return (
 		<Section blockProps={blockProps}>
 			<SectionContainer>
-						<h4>Color boton fecha actual</h4>
+				<h4>Avance de obra</h4>
+			</SectionContainer>
+			<SectionContainer>
+					<Text><strong>Link transparencia:</strong></Text>
+					<TextControl 
+							label="" 
+							onChange={(event) => eventChangeAttr(setAttr, {link_transparencia: event})} 
+							value={attr.link_transparencia}
+						/>
+			</SectionContainer>
+			<SectionContainer>
+						<label>Color boton fecha actual</label>
 						<ColorPalette
 							onChange={(event) => eventChangeAttr(setAttr, {backgroundColor: event})}
 							colors={getPaletteColors}
@@ -74,8 +85,6 @@ const AvanceBack = (props) => {
 					imagesArr && imagesArr.map((imageArr, i)=>(
 						<Grid key={i} classEle="lia-section-repeater lia-card__item">
 							<Item percentage={80}>
-								<Title tagEle="h4" data="Detalle" className="lia-mb-0"/>
-								
 								<Text><strong>Fecha:</strong></Text>
 								<TextControl onChange={(event)=>onChangeImageTitle(event,i)} value={imageArr.fecha}/>
 								
