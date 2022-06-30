@@ -467,4 +467,21 @@
   width: 23px;
   height: 14px;
 }
+
+.btn-transp{
+  background: transparent !important;
+  color: #3C3C3A !important;
+  font-size: size(10) !important;
+  line-height: size(12) !important;
+  text-align: right;
+  margin-top: size(0) !important;
+}
+.btn-link svg{
+  width: size(25);
+  height: size(15);
+  margin-top: size(-24);
+}
+.accordion>.card .card-header{
+  height: size(72) !important;
+}
 }

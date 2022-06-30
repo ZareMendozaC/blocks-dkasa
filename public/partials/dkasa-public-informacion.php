@@ -30,7 +30,11 @@ $formulario = $attributes['formulario'];
 
 $backgroundColor = $attributes['backgroundColor'];
 ?>
-
+<style>
+    .btn-green-lg{
+        background-color:<?= $backgroundColor; ?> !important;
+    }
+</style>
 <div class="separador-87">
         <div class="accordion" id="accordionInfo">
                 <div class="card">
