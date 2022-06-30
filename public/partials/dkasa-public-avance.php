@@ -68,7 +68,9 @@ $link_transparencia = $attributes['link_transparencia'];
                                 <?php endforeach; ?>
                         <?php endif;?>
                 </div>
-                <a class="btn-transp" href="<?= $link_transparencia;?>" target="_blank">Ver transparencia del proyecto</a>
+                <?php if($link_transparencia) : ?>
+                    <a class="btn-transp" href="<?= $link_transparencia;?>" target="_blank">Ver transparencia del proyecto</a>
+                <?php endif;?>
             </div>
     </section>
 </div>

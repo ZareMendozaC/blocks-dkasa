@@ -83,7 +83,7 @@
     width: calc(100vw * (calc(742 / var(--width_base))));
   }
   .center-btn{
-    display: flex;
+    display: flex !important;
     justify-content: center;
     flex-wrap: wrap;
   }
