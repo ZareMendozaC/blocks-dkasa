@@ -33,7 +33,7 @@ $slides = $attributes['slides'];
                                         <div class="position-relative d-flex align-items-center">
                                             <img class="d-none d-md-block w-100" src="<?= $slide['mediaUrlLogo'] ?>" alt="">
                                             <img class="d-block d-md-none w-100" src="<?= $slide['mediaUrlMovil'] ?>" alt="">
-                                            <div class="datos position-absolute">
+                                            <div class="datos position-absolute" data-aos="fade-left">
                                                 <div class="datos-principales" style="background-color:<?= $slide['backgroundColor'] ?>;">
                                                     <img src="<?= $slide['mediaUrl'] ?>" alt="">
                                                     <p class="cifra"><?= $slide['cifra'] ?></p>
