@@ -242,7 +242,7 @@
     slidesToScroll: 1,
     arrows: false,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2500,
     speed: 2500,
     infinite: true,

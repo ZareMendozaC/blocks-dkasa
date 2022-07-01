@@ -33,12 +33,12 @@ $slides = $attributes['slides'];
                                         <div class="position-relative d-flex align-items-center">
                                             <img class="d-none d-md-block w-100" src="<?= $slide['mediaUrlLogo'] ?>" alt="">
                                             <img class="d-block d-md-none w-100" src="<?= $slide['mediaUrlMovil'] ?>" alt="">
-                                            <div class="datos position-absolute">
+                                            <div class="datos position-absolute" data-aos="fade-right" data-aos-duration="2000">
                                                 <div class="datos-principales" style="background-color:<?= $slide['backgroundColor'] ?>e0;">
-                                                    <p class="nombre"><?= $slide['nombre'] ?></p>
-                                                    <p class="descripcion"><?= $slide['descripcion'] ?></p>
+                                                    <p class="nombre" data-aos="fade-zoom-in" data-aos-delay="2000"><?= $slide['nombre'] ?></p>
+                                                    <p class="descripcion" data-aos="fade-zoom-in" data-aos-delay="2000"><?= $slide['descripcion'] ?></p>
                                                 </div>
-                                                <div class="enlace">
+                                                <div class="enlace" data-aos="fade-zoom-in" data-aos-delay="2000">
                                                     <div style="color:<?= $slide['backgroundColor'] ?>;">
                                                     <?= $slide['textoEnlace'] ?>
                                                     </div>
