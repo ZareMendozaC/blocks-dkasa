@@ -16,12 +16,25 @@
       font-size: size(48);
       line-height: size(59);
       margin-bottom: size(32);
+      @media screen and (max-width: 767px) {
+        font-size: size(28);
+        line-height: size(28);
+        margin-bottom: size(11);
+        margin-left: size(16);
+        margin-right: size(16);
+        
+      }
     }
   }
   .contenido-contenedor {
     margin-bottom: size(24);
     margin-left: size(251);
     margin-right: size(251);
+    @media screen and (max-width: 767px) {
+      margin-bottom: size(64);
+      margin-left: size(16);
+      margin-right: size(16);
+    }
     #slider-archive-single-slider {
       justify-content: space-between;
       display: flex;
@@ -37,6 +50,9 @@
       }
       .slider-archive-single-slide {
         width: size(1241);
+        @media screen and (max-width: 767px) {
+          width: calc(100vw * (343/var(--width_base)));
+        }
         .slider-container {
           .columna-1 {
             .botones {

@@ -238,7 +238,7 @@
             breakpoint: 767,
             settings: {
                 arrows: false,
-                dots: true
+                dots: false
             }
         }]
     });

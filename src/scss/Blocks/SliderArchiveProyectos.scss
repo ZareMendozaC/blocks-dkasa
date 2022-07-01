@@ -16,6 +16,11 @@
           .columna-1 {
             .datos {
               left: size(148);
+              @media screen and (max-width: 767px) {
+                left: 0;
+                right: 0;
+                margin: auto;
+              }
               .datos-principales {
                 width: size(454);
                 color: white;
@@ -24,6 +29,13 @@
                 border-radius: size(36);
                 text-align: center;
                 margin-bottom: size(17);
+                @media screen and (max-width: 767px) {
+                  margin: auto;
+                  margin-bottom: size(10);
+                  width: size(219);
+                  padding-top: size(20);
+                  padding-bottom: size(20);
+                }
                 .nombre {
                   margin-bottom: size(22);
                   font-weight: 400;
@@ -33,6 +45,12 @@
                   text-underline-position: under;
                   text-underline-offset: size(4);
                   text-decoration-thickness: size(1.5);
+                  @media screen and (max-width: 767px) {
+                    font-size: size(12);
+                    line-height: size(15);
+                    margin-bottom: size(17);
+                    
+                  }
                 }
                 .descripcion {
                   font-weight: 700;
@@ -41,6 +59,13 @@
                   line-height: size(29);
                   padding-left: size(25);
                   padding-right: size(25);
+                  @media screen and (max-width: 767px) {
+                    font-size: size(16);
+                    line-height: size(20);
+                    padding-left: size(20);
+                    padding-right: size(20);
+                    
+                  }
                 }
               }
               .enlace {
@@ -56,6 +81,12 @@
                   display: flex;
                   justify-content: center;
                   align-items: center;
+                  @media screen and (max-width: 767px) {
+                    width: size(105);
+                    height: size(25);
+                    font-size: size(12);
+                    line-height: size(15);                    
+                  }
                 }
               }
             }
