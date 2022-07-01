@@ -62,7 +62,7 @@ $projects = $attributes['projects'];
 			</div>
 		</div>
 		<div class="col-12 px-0 d-none d-md-block">
-			<div class="texo-enlace-general d-flex justify-content-end align-items-center">
+			<div class="texo-enlace-general d-flex justify-content-end align-items-center" data-aos="fade-left" data-aos-delay="2000">
 				<p class="">¡Quiero ver más!</p>
 				<img src="<?= site_url("/").'wp-content/uploads/2022/06/Vector-1.png' ?>" alt="">
 			</div>

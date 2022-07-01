@@ -1,3 +1,12 @@
+@keyframes moveArrow {
+    from {left: size(-10);}
+    to {left: size(20);}
+  }
+@keyframes moveArrowMov {
+    from {left: size(-10);}
+    to {left: size(0);}
+  }
+
 .banner_rojo_icon_admin {
     padding: size(20);
 }
@@ -81,13 +90,9 @@
             a{
                 display: flex;
                 align-items: center;
-                @keyframes moveArrow {
-                    from {left: size(-10);}
-                    to {left: size(20);}
-                  }
                 img{
                     animation-name: moveArrow;
-                    animation-duration: 1s;
+                    animation-duration: 0.5s;
                     animation-iteration-count: infinite;
                     animation-direction: alternate;
                     position: relative;
@@ -95,6 +100,7 @@
                 @media screen and (max-width: 767px) {
                     justify-content: end;
                     img{
+                        animation-name: moveArrowMov;
                         width: size(44);
                     }
                 }
