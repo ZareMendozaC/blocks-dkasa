@@ -26,13 +26,13 @@ $txtBtn = $attributes['txtBtn'];
 <div class="my-container separador first-bloque mrg-r-l">
 	<section id="descripcion" class="row no-padding no-margin mrg-top-141">
 			<div class="col-md-6 col-12 no-padding order-2-res">
-				<img class="img-des space-img" src="<?= $mediaUrl;?>" alt="">
+				<img class="img-des space-img" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" src="<?= $mediaUrl;?>" alt="">
 				<a href="<?= $urlBtn;?>" class="btn-quiero only-mobile-f"><?= $txtBtn;?></a>
 			</div>
 			<div class="col-md-6 col-12 no-padding pdt-93 order-1-res">
-				<h2 class="title-des per-res-one"><?= $title;?></h2>
-				<p class="subtitle-des  per-res-two"><?= $content?></p>
-				<a href="<?= $urlBtn;?>" class="btn-quiero only-desk-f"><?= $txtBtn;?></a>
+				<h2 class="title-des per-res-one" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $title;?></h2>
+				<p class="subtitle-des  per-res-two" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $content?></p>
+				<a href="<?= $urlBtn;?>" class="btn-quiero only-desk-f" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtn;?></a>
 			</div>
 	</section>
 </div>

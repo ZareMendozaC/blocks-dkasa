@@ -36,10 +36,10 @@ $link_transparencia = $attributes['link_transparencia'];
 <div class="my-container separador-avance" id="avance-proyecto">
     <section class="row no-padding no-margin">
             <div class="col-md-4 col-12 no-padding">
-                <h2 class="subtitle-general">Avance de obra</h2>
-                <p class="subtitle-des">Sé parte del día a día en el proceso de construcción de tu hogar. </p>
+                <h2 class="subtitle-general" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">Avance de obra</h2>
+                <p class="subtitle-des" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">Sé parte del día a día en el proceso de construcción de tu hogar. </p>
 
-                    <div id="slider-nav-avance" class="center-btn slider-nav-avance">
+                    <div id="slider-nav-avance" class="center-btn slider-nav-avance" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
                         <?php
                             $num=1; 
                         ?>
@@ -58,7 +58,7 @@ $link_transparencia = $attributes['link_transparencia'];
 
             </div>
             <div class="col-md-8 col-12 no-padding column-slider mrg-r-l">
-                <div class="slider-obra slider-for-avance">
+                <div class="slider-obra slider-for-avance" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
                         <?php if($images) : ?>
                                 <?php foreach ($images as $image): ?>
                                     <!--<img src="<?= $image['mediaUrl'];?>" alt="" class="">-->
@@ -69,7 +69,7 @@ $link_transparencia = $attributes['link_transparencia'];
                         <?php endif;?>
                 </div>
                 <?php if($link_transparencia) : ?>
-                    <a class="btn-transp" href="<?= $link_transparencia;?>" target="_blank">Ver transparencia del proyecto</a>
+                    <a class="btn-transp" href="<?= $link_transparencia;?>" target="_blank" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">Ver transparencia del proyecto</a>
                 <?php endif;?>
             </div>
     </section>
