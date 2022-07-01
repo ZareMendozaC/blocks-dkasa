@@ -27,6 +27,8 @@ const SliderArchiveProyectosBack = (props) => {
     const itemObj = {
       mediaIdLogo: null,
       mediaUrlLogo: "",
+      mediaIdMovil: null,
+      mediaUrlMovil: "",
       nombre: "",
       descripcion: "",
       textoEnlace: "",
@@ -124,11 +126,11 @@ const SliderArchiveProyectosBack = (props) => {
                 </Item>
               </div>
               <div class="w-100" style={{backgroundColor: imageArr.backgroundColor}}>
-                <div>
+              <div class="d-flex">
+                  <Item percentage={50} classEle="lia-gap-8">
                   <Text>
                     <strong>Imagen de Fondo:</strong>
                   </Text>
-                  <Item percentage={100} classEle="lia-gap-8">
                     <ImageUploadRepeater
                       variables={props}
                       details={{
@@ -138,6 +140,23 @@ const SliderArchiveProyectosBack = (props) => {
                         data: imagesArr,
                         namePropertyId: "mediaIdLogo",
                         namePropertyUrl: "mediaUrlLogo",
+                        namePropertyData: "slides",
+                      }}
+                    />
+                  </Item>
+                  <Item percentage={50} classEle="lia-gap-8">
+                  <Text>
+                    <strong>Imagen de Fondo Movil:</strong>
+                  </Text>
+                    <ImageUploadRepeater
+                      variables={props}
+                      details={{
+                        index: i,
+                        datum: imageArr,
+                        setData: setImagesArr,
+                        data: imagesArr,
+                        namePropertyId: "mediaIdMovil",
+                        namePropertyUrl: "mediaUrlMovil",
                         namePropertyData: "slides",
                       }}
                     />

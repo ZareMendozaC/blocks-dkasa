@@ -63,6 +63,10 @@
       .slider-home-slide {
         .slider-container {
           .columna-1 {
+            & > img{
+              height: size(1070);
+              object-fit: cover;
+            }
             .datos {
               left: size(148);
               @media screen and (max-width: 767px) {
@@ -91,7 +95,7 @@
                   max-width: size(292);
                   @media screen and (max-width: 767px) {
                     margin-bottom: size(11);
-                    max-width: fit-content;
+                    max-width: size(164);
                   }
                 }
                 .cifra {
