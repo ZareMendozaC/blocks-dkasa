@@ -44,7 +44,7 @@
 		<p><?= $content;?></p>
 	</div>
 	<img class="logo-front"  src="<?= $mediaUrlLogo;?>" alt="Logo Proyecto">
-	<div class="box-proyecto" data-aos="zoom-in" data-aos-delay="" data-aos-duration="1000"  style="background-color:<?= $bgColor;?>">
+	<div class="box-proyecto"  style="background-color:<?= $bgColor;?>">
 		<div class="part-4">
 			<div>
 				<p class="box-title">Área total</p>
