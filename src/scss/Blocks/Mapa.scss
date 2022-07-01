@@ -3,6 +3,8 @@
     bottom: calc(100vw * (calc(35 / var(--width_base))));
     left: calc(100vw * (calc(81 / var(--width_base))));
     z-index: 1;
+    width: calc(100vw * (calc(73 / var(--width_base))));
+    height: calc(100vw * (calc(73 / var(--width_base))));
 }
 .wpgmp_map_container{
     position: relative;
