@@ -38,13 +38,13 @@
 		<a href="#avance-proyecto">Avance de obra</a>
 	</div>
 </div>
-<section class="lia-seccion-fondo hero" style="background-image: url(<?= $mediaUrl;?>);">
+<section class="lia-seccion-fondo hero"  style="background-image: url(<?= $mediaUrl;?>);">
 	<div class="lia-section-container text-<?=$alignment;?>">
 		<h2 class=""><?= $title;?></h2>
 		<p><?= $content;?></p>
 	</div>
-	<img class="logo-front" src="<?= $mediaUrlLogo;?>" alt="Logo Proyecto">
-	<div class="box-proyecto" style="background-color:<?= $bgColor;?>">
+	<img class="logo-front"  src="<?= $mediaUrlLogo;?>" alt="Logo Proyecto">
+	<div class="box-proyecto" data-aos="zoom-in" data-aos-delay="" data-aos-duration="1000"  style="background-color:<?= $bgColor;?>">
 		<div class="part-4">
 			<div>
 				<p class="box-title">Área total</p>

@@ -315,9 +315,9 @@
     ],
   });
 
-  let numero = jQuery(".slick-vertical .slick-slide")
-    .not(".slick-cloned")
-    .children().length;
-  jQuery(".indice-" + numero).click();
-  AOS.init();
+  let numero= jQuery('.slick-vertical .slick-slide').not('.slick-cloned').children().length;
+	jQuery('.indice-'+numero).click();
+	AOS.init({
+		once: true,
+		});
 })(jQuery);
