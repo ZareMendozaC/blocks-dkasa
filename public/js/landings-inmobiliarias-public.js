@@ -155,7 +155,15 @@
 		slidesToScroll: 1,
 		arrows: true,
 		fade: true,
-		asNavFor: '.slider-nav-avance'
+		asNavFor: '.slider-nav-avance',
+		responsive: [
+			{
+			  breakpoint: 345,
+			  settings: {
+				arrows: false
+			  }
+			}
+		  ]
 	  });
 	  $('.slider-nav-avance').slick({
 		slidesToShow: 3,
@@ -300,4 +308,5 @@
 	
 	let numero= jQuery('.slick-vertical .slick-slide').not('.slick-cloned').children().length;
 	jQuery('.indice-'+numero).click();
+	AOS.init();
 })( jQuery );
