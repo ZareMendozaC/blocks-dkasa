@@ -422,7 +422,7 @@
 }
 .column-slider {
   display: flex;
-  justify-content: flex-start !important;
+  justify-content: center !important;
   align-items: center;
   margin-top: size(40);
 }
@@ -483,5 +483,9 @@
 }
 .accordion>.card .card-header{
   height: size(72) !important;
+}
+.column-slider.mrg-r-l{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 }
