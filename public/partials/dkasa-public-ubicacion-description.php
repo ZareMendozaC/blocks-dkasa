@@ -30,7 +30,7 @@ $vistapano = $attributes['vistapano'];
 <section class="row no-padding no-margin mrg-top-141">
 	
         <div class="col-md-6 col-12 column-img" id="column-img">
-			<img class="img-ubic" src="<?= $mediaUrl;?>" alt="" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+			<img class="img-ubic" src="<?= $mediaUrl;?>" alt="" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">
 			<?php if($vistapano) : ?>
 				<a class="btn-pano" href="<?= $vistapano;?>">
 					Vista panorámica
@@ -39,11 +39,11 @@ $vistapano = $attributes['vistapano'];
 			<?php endif;?>
 		</div>
 		<div class="col-md-6 col-12 no-padding only-desk-b">
-			<h2 class="title-des" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $title;?></h2>
-			<p class="subtitle-des" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $content?></p>
+			<h2 class="title-des" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $title;?></h2>
+			<p class="subtitle-des" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $content?></p>
             <div class="col-md-12 col-12 no-padding d-flex mrg-top-35 ">
-			<a href="<?= $urlBtn;?>" class="btn-green" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" style="background-color:<?= $backgroundColor; ?>"><?= $txtBtn;?></a>
-			<a href="<?= $urlBtnTwo;?>" class="btn-white" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtnTwo;?></a>
+			<a href="<?= $urlBtn;?>" class="btn-green" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200" style="background-color:<?= $backgroundColor; ?>"><?= $txtBtn;?></a>
+			<a href="<?= $urlBtnTwo;?>" class="btn-white" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtnTwo;?></a>
 			</div>
 		</div>
 </section>

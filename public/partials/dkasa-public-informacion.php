@@ -38,7 +38,7 @@ $backgroundColor = $attributes['backgroundColor'];
 <div class="separador-87">
         <div class="accordion" id="accordionInfo">
                 <div class="card">
-                    <div class="card-header banner-color " id="heading" style="background-color:<?= $backgroundColor; ?>">
+                    <div class="card-header banner-color " id="heading" style="background-color:<?= $backgroundColor; ?>" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <h2 class="mb-0 my-container">
                             <button class="btn btn-link  text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                             <p>Quiero más información</p>
@@ -64,8 +64,8 @@ $backgroundColor = $attributes['backgroundColor'];
 <div class="my-container mrg-r-l" id="planos-proyecto">
 	<section class="row no-padding no-margin">
 			<div class="col-md-4 col-12 no-padding mrg-35_top padt-r-l-30">
-                    <h2 class="subtitle-general">Tu sueño inicia aquí </h2>
-                    <p class="subtitle-des">Selecciona la cantidad de dormitorios que necesitas.</p>
+                    <h2 class="subtitle-general" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">Tu sueño inicia aquí </h2>
+                    <p class="subtitle-des" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">Selecciona la cantidad de dormitorios que necesitas.</p>
                     <div class="col-md-12 col-12 no-padding">
                         <div class="center-btn pdt-34">
                             <a href="" class="btn-green-lg">2 Dormitorios</a>
@@ -75,7 +75,7 @@ $backgroundColor = $attributes['backgroundColor'];
 			</div>
 			<div class="col-md-8 col-12 no-padding">
                 <?php if($images) : ?>
-                    <div class="lia-section-container lia-carousel carousel-planos">
+                    <div class="lia-section-container lia-carousel carousel-planos" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <?php foreach ($images as $image): ?>
                                 <img src="<?= $image['mediaUrl'];?>" alt="" class="img-plano">
                         <?php endforeach; ?>

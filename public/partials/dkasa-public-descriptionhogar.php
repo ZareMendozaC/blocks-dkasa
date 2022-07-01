@@ -24,12 +24,12 @@ $inicio = 100;
 <div class="my-container mrg-r-l">
 	<section class="row no-padding no-margin">
 			<div class="col-md-12 col-12 no-padding mrg-btm-57">
-				<h2 class="subtitle-general" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">Tu futuro Hogar</h2>
+				<h2 class="subtitle-general" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">Tu futuro Hogar</h2>
 			</div>
 			<div class="col-md-4 col-12 no-padding mrg-35_top order-2-res center-icons-f">
 			<?php foreach ($images as $image): ?>
 					<div class="col-md-12 col-6  box-carac_1"> 
-						<div class="into-carac box-carac" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="<?= $inicio;?>">
+						<div class="into-carac box-carac" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="<?= $inicio;?>">
 							<img src="<?= $image['mediaUrl'];?>" alt="" class="" >
 							<h3 class="subtitle-carac"><?= $image['title'];?></h3>
 						</div>
@@ -39,7 +39,7 @@ $inicio = 100;
 					endforeach; ?>
 			</div>
 			<div class="col-md-8 col-12 no-padding order-1-res">
-			<img class="img-carac" src="<?= $mediaUrl;?>" alt="" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+			<img class="img-carac" src="<?= $mediaUrl;?>" alt="" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
 			</div>
 	</section>
 </div>
