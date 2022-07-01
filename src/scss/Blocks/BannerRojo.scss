@@ -81,6 +81,17 @@
             a{
                 display: flex;
                 align-items: center;
+                @keyframes moveArrow {
+                    from {left: size(-10);}
+                    to {left: size(20);}
+                  }
+                img{
+                    animation-name: moveArrow;
+                    animation-duration: 1s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    position: relative;
+                }
                 @media screen and (max-width: 767px) {
                     justify-content: end;
                     img{
