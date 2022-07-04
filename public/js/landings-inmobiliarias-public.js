@@ -241,7 +241,6 @@
   // On edge hit
 $('#slider-home-slider').on('afterChange', function(event, slick, direction){
   console.log('edge was hit');
-  AOS.refresh();
 });
   $("#slider-archive-slider").slick({
     slidesToShow: 1,
@@ -326,4 +325,10 @@ $('#slider-home-slider').on('afterChange', function(event, slick, direction){
 	AOS.init({
 		once: true,
 		});
-})(jQuery);
+	jQuery('.openForm').click(function() {
+		$('#accordionInfo .btn-link').click();
+		$('html, body').animate({
+			scrollTop: $("#accordionInfo").offset().top
+		}, 500);
+	});
+})( jQuery );

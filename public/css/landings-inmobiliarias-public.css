@@ -113,6 +113,7 @@
   text-align: center;
   color: #ffffff;
   border: none !important;
+  cursor: pointer;
 }
 .img-des {
   width: calc(100vw * (calc(751 / var(--width_base))));
