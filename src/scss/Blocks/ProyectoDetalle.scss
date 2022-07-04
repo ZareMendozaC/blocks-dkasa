@@ -257,6 +257,7 @@
 .subtitle-carac {
   font-size: size(12) !important;
   line-height: size(15) !important;
+  width: 100%  !important;
 }
 .mrg-btm-57 {
  margin-bottom: size(0) !important; 
@@ -487,5 +488,13 @@
 .column-slider.mrg-r-l{
   margin-left: 0px !important;
   margin-right: 0px !important;
+}
+.separadores.bg-simple{
+  margin-top: size(90) !important;
+  margin-bottom: size(90) !important;
+}
+.bg-simple .subtitle-general {
+  font-size: size(44);
+  line-height: size(53);
 }
 }

@@ -285,4 +285,10 @@
 	AOS.init({
 		once: true,
 		});
+	jQuery('.openForm').click(function() {
+		$('#accordionInfo .btn-link').click();
+		$('html, body').animate({
+			scrollTop: $("#accordionInfo").offset().top
+		}, 500);
+	});
 })( jQuery );
