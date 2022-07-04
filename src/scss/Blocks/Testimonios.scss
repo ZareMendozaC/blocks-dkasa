@@ -8,7 +8,6 @@
     img {
       margin-left: size(218);
       margin-top: size(62);
-      margin-bottom: size(61);
       width: size(247);
       @media screen and (max-width: 767px) {
         width: size(191);
@@ -41,14 +40,16 @@
             }
           }
         }
+        .testimonios-slide{
+          z-index: 1;
+          position: relative;
+          padding-top: size(61);
+        }
         .slider-container {
+          z-index: 1;
+    position: relative;
           display: flex;
           justify-content: center;
-          background-image: url("/public/image/Background/testimonio-back.png");
-          background-repeat: no-repeat;
-          background-size: size(780) size(382);
-          background-position-x: size(392);
-          padding-top: size(61);
           @media screen and (max-width: 767px) {
             padding-top: 0;
             flex-wrap: wrap;
@@ -199,4 +200,18 @@
       }
     }
   }
+}
+.comilla-grande{
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: size(391);
+  z-index: 0;
+}
+.comilla-chica{
+  position: absolute;
+  pointer-events: none;
+  top: size(330);
+  right: size(178);
+  z-index: 0;
 }

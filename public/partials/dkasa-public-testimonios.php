@@ -18,7 +18,7 @@
 
 $testimonials = $attributes['testimonials'];
 ?>
-<section id="testimonios-front" class="container-fluid">
+<section id="testimonios-front" class="position-relative container-fluid">
     <div class="row">
         <div class="col-12 px-0 columna-1">
             <img src="<?= site_url("/") . 'wp-content/uploads/2022/06/Frame-test.png' ?>" alt="">
@@ -29,7 +29,7 @@ $testimonials = $attributes['testimonials'];
                     <?php foreach ($testimonials as $testimony) : ?>
                         <div class="testimonios-slide">
                             <div class="slider-container">
-                                <div class="columna-1">
+                                <div class="columna-1" data-aos="fade-zoom-in" data-aos-duration="2000">
                                     <div class="position-relative">
                                         <img src="<?= $testimony['mediaUrl'] ?>" alt="">
                                         <div class="nombre position-absolute">
@@ -38,7 +38,7 @@ $testimonials = $attributes['testimonials'];
                                     </div>
                                     <p class="proyecto"><?= $testimony['proyecto'] ?></p>
                                 </div>
-                                <div class="columna-2">
+                                <div class="columna-2" data-aos="fade-zoom-in" data-aos-duration="2000">
                                     <p class="descripcion">
                                         <?= $testimony['descripcion'] ?>
                                     </p>
@@ -47,6 +47,8 @@ $testimonials = $attributes['testimonials'];
                                     </a>
                                 </div>
                             </div>
+                            <img data-aos="fade-zoom-in" data-aos-duration="2000" class="comilla-grande" src="<? site_url('/')?>wp-content/uploads/2022/07/Comilla-grande.png" alt="">
+                            <img data-aos="fade-zoom-in" data-aos-duration="2000" class="comilla-chica" src="<? site_url('/')?>wp-content/uploads/2022/07/Comilla-chica.png" alt="">
                         </div>
                     <?php endforeach; ?>
                 </div>
@@ -56,4 +58,5 @@ $testimonials = $attributes['testimonials'];
             </div>
         </div>
     </div>
+
 </section>
