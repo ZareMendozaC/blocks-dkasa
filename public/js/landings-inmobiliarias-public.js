@@ -324,6 +324,6 @@ $('#slider-home-slider').on('afterChange', function(event, slick, direction){
   let numero= jQuery('.slick-vertical .slick-slide').not('.slick-cloned').children().length;
 	jQuery('.indice-'+numero).click();
 	AOS.init({
-		once: false,
+		once: true,
 		});
 })(jQuery);

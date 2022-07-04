@@ -29,7 +29,7 @@ $testimonials = $attributes['testimonials'];
                     <?php foreach ($testimonials as $testimony) : ?>
                         <div class="testimonios-slide">
                             <div class="slider-container">
-                                <div class="columna-1" data-aos="fade-zoom-in" data-aos-duration="2000">
+                                <div class="columna-1" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="750">
                                     <div class="position-relative">
                                         <img src="<?= $testimony['mediaUrl'] ?>" alt="">
                                         <div class="nombre position-absolute">
@@ -38,7 +38,7 @@ $testimonials = $attributes['testimonials'];
                                     </div>
                                     <p class="proyecto"><?= $testimony['proyecto'] ?></p>
                                 </div>
-                                <div class="columna-2" data-aos="fade-zoom-in" data-aos-duration="2000">
+                                <div class="columna-2" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="750">
                                     <p class="descripcion">
                                         <?= $testimony['descripcion'] ?>
                                     </p>
@@ -47,8 +47,8 @@ $testimonials = $attributes['testimonials'];
                                     </a>
                                 </div>
                             </div>
-                            <img data-aos="fade-zoom-in" data-aos-duration="2000" class="comilla-grande" src="<? site_url('/')?>wp-content/uploads/2022/07/Comilla-grande.png" alt="">
-                            <img data-aos="fade-zoom-in" data-aos-duration="2000" class="comilla-chica" src="<? site_url('/')?>wp-content/uploads/2022/07/Comilla-chica.png" alt="">
+                            <img data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="750" class="comilla-grande" src="<? site_url('/')?>wp-content/uploads/2022/07/Comilla-grande.png" alt="">
+                            <img data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-duration="750" class="comilla-chica" src="<? site_url('/')?>wp-content/uploads/2022/07/Comilla-chica.png" alt="">
                         </div>
                     <?php endforeach; ?>
                 </div>
