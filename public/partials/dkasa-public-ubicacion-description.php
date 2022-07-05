@@ -19,16 +19,18 @@
 $title = $attributes['title'];
 $content = $attributes['content'];
 $mediaUrl = $attributes['mediaUrl'];
+$mediaUrlpdf = $attributes['mediaUrlpdf'];
 $urlBtn = $attributes['urlBtn'];
 $txtBtn = $attributes['txtBtn'];
 $urlBtnTwo = $attributes['urlBtnTwo'];
 $txtBtnTwo = $attributes['txtBtnTwo'];
 $backgroundColor = $attributes['backgroundColor'];
 $vistapano = $attributes['vistapano'];
+
 ?>
 <div class="my-container separador bg-ubicacion">
 <section class="row no-padding no-margin mrg-top-141">
-	
+<a href="<?= $mediaUrlpdf;?>">brochure</a>
         <div class="col-md-6 col-12 column-img" id="column-img">
 			<img class="img-ubic" src="<?= $mediaUrl;?>" alt="" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">
 			<?php if($vistapano) : ?>

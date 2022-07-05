@@ -16,6 +16,18 @@
         "type": "string",
         "default": ""
       },
+      "mediaUrlpdf": {
+        "type": "string",
+        "default": ""
+      },
+      "mediaIdpdf": {
+        "type": "number",
+        "default": ""
+      }, 
+      "mediaName": {
+        "type": "string",
+        "default": ""
+      },
       "title": {
         "type": "string",
         "default": ""
