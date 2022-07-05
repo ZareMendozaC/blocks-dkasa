@@ -200,6 +200,26 @@
       }
     }
   }
+  .modal-content{
+    height: size(649);
+    .modal-body{
+      padding: 0;
+      button{
+        position: absolute;
+right: 0;
+width: 40px;
+height: 40px;
+background-color: #3C3C3A;
+opacity: 1;
+svg{
+color: #fff;
+width: size(27);
+height: size(27);
+font-weight: normal;
+}
+      }
+    }
+  }
 }
 .comilla-grande{
   position: absolute;

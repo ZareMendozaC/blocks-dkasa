@@ -29,6 +29,7 @@ const TestimoniosBack = (props) => {
       proyecto: "",
       descripcion: "",
       textoEnlace: "",
+      enlace:""
     };
 
     const newTestimonialsArr = [...testimonialsArr, itemObj];
@@ -64,6 +65,12 @@ const TestimoniosBack = (props) => {
   const onChangeTestimonialTextoEnlace = (event, index) => {
     const newTestimonialsArr = [...testimonialsArr];
     newTestimonialsArr[index].textoEnlace = event;
+    setTestimonialsArr(newTestimonialsArr);
+    setAttr({ testimonials: newTestimonialsArr });
+  };
+  const onChangeTestimonialEnlace = (event, index) => {
+    const newTestimonialsArr = [...testimonialsArr];
+    newTestimonialsArr[index].enlace = event;
     setTestimonialsArr(newTestimonialsArr);
     setAttr({ testimonials: newTestimonialsArr });
   };
@@ -116,6 +123,15 @@ const TestimoniosBack = (props) => {
                       onChangeTestimonialTextoEnlace(event, i)
                     }
                     value={testimonialArr.textoEnlace}
+                  />
+                  <Text>
+                    <strong>Enlace:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) =>
+                      onChangeTestimonialEnlace(event, i)
+                    }
+                    value={testimonialArr.enlace}
                   />
                 </Item>
               </div>

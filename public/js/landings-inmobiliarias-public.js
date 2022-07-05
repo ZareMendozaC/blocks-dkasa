@@ -194,11 +194,11 @@
     arrows: true,
     appendDots: $("#testimonios-dots"),
     dots: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2500,
     speed: 2500,
     infinite: true,
-    fade: true,
+    fade: false,
     prevArrow: `<div data-aos="fade-zoom-in" data-aos-duration="2000" class="" role="button" aria-label="Previous">
         <svg width="35" height="58" viewBox="0 0 35 58" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M34.0602 51.7565L28.5008 57.3157L0 28.8157L28.5008 0.291504L34.0602 5.8507L11.1187 28.8157L34.0602 51.7565Z" fill="#BE1521"/>
@@ -239,8 +239,21 @@
     ],
   });
   // On edge hit
-$('#slider-home-slider').on('afterChange', function(event, slick, direction){
-  console.log('edge was hit');
+$('#slider-home-slider').on('beforeChange', function(event, slick, direction,currentSlide,nextSlide){
+  console.log('before Change');
+  var AosInits = $(slick.$slides[currentSlide]).find('.aos-init');
+  console.log(currentSlide+1);
+  console.log(slick.$slides[currentSlide+1]);
+  $.map(AosInits, function (elementOrValue, indexOrKey) {
+    console.log(elementOrValue);
+    elementOrValue.classList.remove('aos-init','aos-animate');
+  });
+  console.log($(slick.$slides[currentSlide]).find('.aos-init'));
+});
+$('#slider-home-slider').on('afterChange', function(event, slick, direction, nextSlide){
+  console.log('after Change');
+  AOS.init({
+    });
 });
   $("#slider-archive-slider").slick({
     slidesToShow: 1,
@@ -322,9 +335,11 @@ $('#slider-home-slider').on('afterChange', function(event, slick, direction){
 
   let numero= jQuery('.slick-vertical .slick-slide').not('.slick-cloned').children().length;
 	jQuery('.indice-'+numero).click();
-	AOS.init({
-		once: true,
-		});
+	
+    AOS.init({
+      once: true,
+      });
+
 	jQuery('.openForm').click(function() {
 		$('#accordionInfo .btn-link').click();
 		$('html, body').animate({
