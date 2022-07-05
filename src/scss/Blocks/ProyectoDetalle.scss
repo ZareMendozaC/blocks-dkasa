@@ -497,4 +497,38 @@
   font-size: size(44);
   line-height: size(53);
 }
+.list-btns{
+  display: none;
+}
+.btn-res-u{
+  display: flex !important;
+  width: size(147);
+  height: size(35);
+  position: absolute;
+  background: #009EA0;
+  border-radius: 7px;
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: size(14);
+  line-height: size(17);
+  text-align: center;
+  color: #FFFFFF;
+  border: 0px !important;
+}
+.btn_1{
+  top: size(247);
+}
+.btn_2{
+  top: size(297);
+}
+.btn_3{
+  top: size(347);
+}
+.btn_4{
+  top: size(397);
+}
+.btn-pano{
+  display: none !important;
+}
 }
