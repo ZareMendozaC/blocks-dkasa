@@ -371,6 +371,8 @@
 #slider-nav-avance .slick-list.draggable {
   height: calc(100vw * 200 / var(--width_base)) !important;
   padding: calc(100vw * 10 / var(--width_base)) 0px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
 }
 #slider-nav-avance {
   height: auto  !important;
@@ -529,5 +531,9 @@
 }
 .btn-pano{
   display: none !important;
+}
+.separador-avance {
+  margin-bottom: size(61);
+  margin-top: size(58);
 }
 }
