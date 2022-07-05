@@ -43,6 +43,18 @@ $vistapano = $attributes['vistapano'];
 .list-btns .btn-white:nth-child(1), .list-btns .btn-white:nth-child(2){
 	margin-right:  calc(100vw * (calc(20 / var(--width_base))));
 }
+@media(max-width: 767px) {
+	.btn-res-u{
+		background-color: <?= $backgroundColor; ?>;
+	}
+	.btn-white, .btn-white:hover {
+    width: calc(100vw * 147 / var(--width_base));
+    height: calc(100vw * 35 / var(--width_base));
+	font-size: calc(100vw * (14/var(--width_base)));
+    line-height: calc(100vw * (17/var(--width_base)));
+	border-radius: 7px;
+}
+}
 </style>
 <div class="my-container separador bg-ubicacion">
 <section class="row no-padding no-margin mrg-top-141">

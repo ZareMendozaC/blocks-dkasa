@@ -371,15 +371,14 @@
 #slider-nav-avance .slick-list.draggable {
   height: calc(100vw * 200 / var(--width_base)) !important;
   padding: calc(100vw * 10 / var(--width_base)) 0px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
 }
 #slider-nav-avance {
   height: auto  !important;
 }
 .slider-nav-avance .btn-white-lg {
   margin-bottom: calc(100vw * 15 / var(--width_base)) !important;
-}
-.my-video {
-  height:  size(350) !important;
   width:  size(340) !important;
 }
 .slider-obra {
@@ -505,7 +504,6 @@
   width: size(147);
   height: size(35);
   position: absolute;
-  background: #009EA0;
   border-radius: 7px;
   font-family: 'Century Gothic';
   font-style: normal;
@@ -530,5 +528,9 @@
 }
 .btn-pano{
   display: none !important;
+}
+.separador-avance {
+  margin-bottom: size(61);
+  margin-top: size(58);
 }
 }
