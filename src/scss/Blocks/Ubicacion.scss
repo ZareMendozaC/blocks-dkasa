@@ -11,6 +11,7 @@
 .mrg-top-35{
     margin-top: calc(100vw * (calc(35/ var(--width_base)))) !important;
 }
+
 .btn-pano, .btn-pano:hover{
     position: absolute;
     width: calc(100vw * (calc(276 / var(--width_base))));
@@ -35,4 +36,7 @@
     width: calc(100vw * (calc(22.02 / var(--width_base))));
     height:  calc(100vw * (calc(15.03 / var(--width_base))));
     margin-left:  calc(100vw * (calc(10 / var(--width_base))));
+}
+.list-btns{
+    display: flex;
 }

@@ -54,14 +54,32 @@ $vistapano = $attributes['vistapano'];
 					<img class="icon-eye-pano" src="<?= site_url("/") . 'wp-content/uploads/2022/06/ojo.png' ?>" alt="">
 				</a>
 			<?php endif;?>
+			<?php if($mediaUrlpdf) : ?>
+					<a href="<?= $mediaUrlpdf;?>" class="btn-white btn-res-u btn_1" download="<?= $mediaName;?>" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Brochure</a>
+			<?php endif;?>
+			<?php if($urlBtn) : ?>
+					<a href="<?= $urlBtn;?>" class="btn-white btn-res-u btn_2" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200" ><?= $txtBtn;?></a>
+			<?php endif;?>
+			<?php if($urlBtnTwo) : ?>
+					<a href="<?= $urlBtnTwo;?>" class="btn-white btn-res-u btn_3" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtnTwo;?></a>
+			<?php endif;?>
+			<?php if($vistapano) : ?>
+					<a href="<?= $vistapano;?>" class="btn-white btn-res-u btn_4" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Panorámica <img class="icon-eye-pano" src="<?= site_url("/") . 'wp-content/uploads/2022/06/ojo.png' ?>" alt=""></a>
+			<?php endif;?>
 		</div>
 		<div class="col-md-6 col-12 no-padding only-desk-b">
 			<h2 class="title-des" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $title;?></h2>
 			<p class="subtitle-des" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $content?></p>
             <div class="col-md-12 col-12 no-padding d-flex mrg-top-35 list-btns ">
-			<a href="<?= $mediaUrlpdf;?>" class="btn-white" download="<?= $mediaName;?>" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Brochure</a>
-			<a href="<?= $urlBtn;?>" class="btn-white" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200" ><?= $txtBtn;?></a>
-			<a href="<?= $urlBtnTwo;?>" class="btn-white" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtnTwo;?></a>
+				<?php if($mediaUrlpdf) : ?>
+					<a href="<?= $mediaUrlpdf;?>" class="btn-white" download="<?= $mediaName;?>" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Brochure</a>
+				<?php endif;?>
+				<?php if($urlBtn) : ?>
+					<a href="<?= $urlBtn;?>" class="btn-white" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200" ><?= $txtBtn;?></a>
+				<?php endif;?>
+				<?php if($urlBtnTwo) : ?>
+					<a href="<?= $urlBtnTwo;?>" class="btn-white" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtnTwo;?></a>
+				<?php endif;?>
 			</div>
 		</div>
 </section>
