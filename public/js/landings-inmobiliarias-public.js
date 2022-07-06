@@ -310,7 +310,7 @@ $('#slider-home-slider').on('afterChange', function(event, slick, direction, nex
     autoplay: false,
     autoplaySpeed: 150,
     speed: 1250,
-    infinite: false,
+    infinite: true,
     variableWidth: true,
     prevArrow: `<div class="prev" role="button" aria-label="Previous">
         <svg width="35" height="58" viewBox="0 0 35 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -326,8 +326,18 @@ $('#slider-home-slider').on('afterChange', function(event, slick, direction, nex
       {
         breakpoint: 767,
         settings: {
-          arrows: false,
-          dots: true,
+          arrows: true,
+          dots: false,
+          prevArrow: `<div class="prev" role="button" aria-label="Previous">
+          <svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 20.7568L11.7165 23L1.00536e-06 11.5L11.7165 -1.99626e-07L14 2.24319L4.5769 11.5L14 20.7568Z" fill="white"/>
+          </svg>          
+        </div>`,
+    nextArrow: `<div class="next" role="button" aria-label="Next">
+    <svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 2.24319L2.28346 0L14 11.5L2.28346 23L0 20.7568L9.4231 11.5L0 2.24319Z" fill="white"/>
+    </svg>    
+        </div>`,
         },
       },
     ],

@@ -54,7 +54,7 @@ $slides = $attributes['slides'];
                                             <div class="titulo" style="background-color:<?= $slide['backgroundColor'] ?>;">
                                                 <h2><?= $slide['nombre'] ?></h2>
                                             </div>
-                                            <div class="datos-principales">
+                                            <div class="d-none d-md-block datos-principales">
                                                 <p class="rotulo">Área total</p>
                                                 <p class="datos-info"><?= $slide['area'] ?></p>
                                                 <p class="rotulo">Dormitorios</p>
@@ -73,7 +73,7 @@ $slides = $attributes['slides'];
                                         </div>
                                     </div>
                                 </div>
-                                <div class="columna-2">
+                                <div class="columna-2 d-block d-md-none ">
                                     <div class="datos-principales">
                                         <p class="rotulo">Área total</p>
                                         <p class="datos-info"><?= $slide['area'] ?></p>
