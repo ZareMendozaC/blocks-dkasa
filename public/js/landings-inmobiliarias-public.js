@@ -29,7 +29,7 @@
    * practising this, we should strive to set a better example in our own work.
    */
 
-   $(“.lia-carousel”).slick({
+   $(".lia-carousel").slick({
     dots: true,
     infinite: true,
     autoplay: false,
