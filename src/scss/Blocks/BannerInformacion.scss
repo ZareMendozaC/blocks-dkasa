@@ -149,11 +149,10 @@
   from {top: 0;}
   to {top: calc(100vw * (calc(10 / var(--width_base))));}
 }
-#heading > h2 > budivtton > svg {
+#heading > h2 > div > svg {
   width: calc(100vw * (calc(20/var(--width_base))));
   height: calc(100vw * (calc(15/var(--width_base))));
 }
-
 #heading > h2 > div> svg {
   animation-name: moveArrowFooter;
   animation-duration: 0.5s;
@@ -164,5 +163,5 @@
 }
 #heading > h2 > div {
   font-size: 0;
-  margin-left: calc(100vw * (calc(20/var(--width_base))));
+  margin-left: calc(100vw * (calc(8/var(--width_base))));
 }

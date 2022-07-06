@@ -80,7 +80,7 @@
   }
 
   $(".lia-carousel").slick({
-    dots: true,
+    dots: false,
     infinite: true,
     autoplay: false,
     slidesToShow: 1,

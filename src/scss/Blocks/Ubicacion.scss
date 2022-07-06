@@ -40,3 +40,22 @@
 .list-btns{
     display: flex;
 }
+
+#planos-proyecto .carousel-planos .slick-dots li button {
+    height: calc(100vw*(15/var(--width_base)));
+    padding: 0;
+    width: calc(100vw*(15/var(--width_base)));
+}
+#planos-proyecto .carousel-planos .slick-dots li button:before {
+    background-color: transparent;
+    border: calc(100vw*(.5/var(--width_base))) solid #3c3c3a;
+    border-radius: 50%;
+    content: "";
+    height: calc(100vw*(15/var(--width_base)));
+    opacity: 1;
+    width: calc(100vw*(15/var(--width_base)));
+}
+#planos-proyecto .carousel-planos .slick-dots li.slick-active button:before {
+    background: #3c3c3a;
+    opacity: 1;
+}
