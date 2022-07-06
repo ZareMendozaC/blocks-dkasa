@@ -73,6 +73,21 @@ $slides = $attributes['slides'];
                                         </div>
                                     </div>
                                 </div>
+                                <div class="columna-2">
+<div class="datos-principales">
+                                                <p class="rotulo">Área total</p>
+                                                <p class="datos-info"><?= $slide['area'] ?></p>
+                                                <p class="rotulo">Dormitorios</p>
+                                                <p class="datos-info"><?= $slide['dormitorios'] ?></p>
+                                                <p class="rotulo">Ubicación</p>
+                                                <p class="datos-info"><?= $slide['ubicacion'] ?></p>
+                                                <p class="rotulo">Precio</p>
+                                                <p class="datos-info"><?= $slide['precio'] ?></p>
+                                                <a class="enlace" href="<?= $slide['enlace'] ?>" style="background-color:<?= $slide['backgroundColor'] ?>;">
+                                                    <?= $slide['textoEnlace'] ?>
+                                                </a>
+                                            </div>
+                                </div>
                             </div>
                         </div>
                     <?php endforeach; ?>
