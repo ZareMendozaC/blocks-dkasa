@@ -61,7 +61,7 @@ $vistapano = $attributes['vistapano'];
         <div class="col-md-6 col-12 column-img" id="column-img">
 			<img class="img-ubic" src="<?= $mediaUrl;?>" alt="" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">
 			<?php if($vistapano) : ?>
-				<a class="btn-pano" href="<?= $vistapano;?>">
+				<a class="btn-pano" href="<?= $vistapano;?>" data-bs-toggle="modal" data-bs-target="#verPanoramica">
 					Vista panorámica
 					<img class="icon-eye-pano" src="<?= site_url("/") . 'wp-content/uploads/2022/06/ojo.png' ?>" alt="">
 				</a>
@@ -70,13 +70,13 @@ $vistapano = $attributes['vistapano'];
 					<a href="<?= $mediaUrlpdf;?>" class="btn-white btn-res-u btn_1" download="<?= $mediaName;?>" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Brochure</a>
 			<?php endif;?>
 			<?php if($urlBtn) : ?>
-					<a href="<?= $urlBtn;?>" class="btn-white btn-res-u btn_2" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200" ><?= $txtBtn;?></a>
+					<a href="<?= $urlBtn;?>" data-bs-toggle="modal" data-bs-target="#verTour"  class="btn-white btn-res-u btn_2" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200" ><?= $txtBtn;?></a>
 			<?php endif;?>
 			<?php if($urlBtnTwo) : ?>
-					<a href="<?= $urlBtnTwo;?>" class="btn-white btn-res-u btn_3" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtnTwo;?></a>
+					<a href="<?= $urlBtnTwo;?>" data-bs-toggle="modal" data-bs-target="#verVideo" class="btn-white btn-res-u btn_3" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtnTwo;?></a>
 			<?php endif;?>
 			<?php if($vistapano) : ?>
-					<a href="<?= $vistapano;?>" class="btn-white btn-res-u btn_4" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Panorámica <img class="icon-eye-pano" src="<?= site_url("/") . 'wp-content/uploads/2022/06/ojo.png' ?>" alt=""></a>
+					<a href="<?= $vistapano;?>" data-bs-toggle="modal" data-bs-target="#verPanoramica" class="btn-white btn-res-u btn_4" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Panorámica <img class="icon-eye-pano" src="<?= site_url("/") . 'wp-content/uploads/2022/06/ojo.png' ?>" alt=""></a>
 			<?php endif;?>
 		</div>
 		<div class="col-md-6 col-12 no-padding only-desk-b">
@@ -87,11 +87,51 @@ $vistapano = $attributes['vistapano'];
 					<a href="<?= $mediaUrlpdf;?>" class="btn-white" download="<?= $mediaName;?>" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Brochure</a>
 				<?php endif;?>
 				<?php if($urlBtn) : ?>
-					<a href="<?= $urlBtn;?>" class="btn-white" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200" ><?= $txtBtn;?></a>
+					<a href="<?= $urlBtn;?>" data-bs-toggle="modal" data-bs-target="#verTour" class="btn-white" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200" ><?= $txtBtn;?></a>
 				<?php endif;?>
 				<?php if($urlBtnTwo) : ?>
-					<a href="<?= $urlBtnTwo;?>" class="btn-white" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtnTwo;?></a>
+					<a href="<?= $urlBtnTwo;?>" data-bs-toggle="modal" data-bs-target="#verVideo" class="btn-white" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtnTwo;?></a>
 				<?php endif;?>
+			</div>
+		</div>
+
+		<div class="modal fade" id="verVideo" tabindex="-1" aria-labelledby="verVideoLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="verVideoLabel">Modal video</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="verTour" tabindex="-1" aria-labelledby="verTourLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="verTourLabel">Modal tour</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="verPanoramica" tabindex="-1" aria-labelledby="verPanoramicaLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="verPanoramicaLabel">Modal Vista Panoramica</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				</div>
 			</div>
 		</div>
 </section>

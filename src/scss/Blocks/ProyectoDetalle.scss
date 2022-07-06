@@ -532,8 +532,8 @@
   display: none !important;
 }
 .separador-avance {
-  margin-bottom: size(61);
-  margin-top: size(58);
+  margin-bottom: size(61) !important;
+  margin-top: size(58) !important;
 }
 .banner-color-button {
   font-size: calc(100vw * 24 / var(--width_base)) !important;
@@ -544,8 +544,8 @@
   margin-left: 0px !important;
 }
 #heading > h2 > div > svg{
-  width: size(19);
-  height: size(10);
+  width: size(19) !important;
+  height: size(10) !important;
 }
 #titlebtnInf{
   margin-bottom: 0px !important;
