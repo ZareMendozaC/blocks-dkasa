@@ -40,13 +40,14 @@ $backgroundColor = $attributes['backgroundColor'];
                 <div class="card">
                     <div class="card-header banner-color " id="heading" style="background-color:<?= $backgroundColor; ?>" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <h2 class="mb-0 my-container">
-                            <button class="btn btn-link  text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                            <p>Quiero más información</p>
-                            <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.5615 -2.13184e-07L25 2.4484L12.4989 15L1.0973e-06 2.44839L2.43854 -1.97239e-06L12.4989 10.1032L22.5615 -2.13184e-07Z" fill="white"/>
-</svg>
-
+                            <button id="titlebtnInf" class="btn btn-link banner-color-button text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Quiero más información
                             </button>
+                            <div>
+                                <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.5615 -2.13184e-07L25 2.4484L12.4989 15L1.0973e-06 2.44839L2.43854 -1.97239e-06L12.4989 10.1032L22.5615 -2.13184e-07Z" fill="white"/>
+                                </svg>
+                            </div>
                         </h2>
                     </div>
                     <div id="collapseTwo" class="collapse color-form" aria-labelledby="heading" data-parent="#accordionInfo">
