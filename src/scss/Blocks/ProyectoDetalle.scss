@@ -483,6 +483,8 @@
 }
 .accordion>.card .card-header{
   height: size(72) !important;
+  text-align: left;
+  padding: size(10) size(16);
 }
 .column-slider.mrg-r-l{
   margin-left: 0px !important;
@@ -532,5 +534,20 @@
 .separador-avance {
   margin-bottom: size(61);
   margin-top: size(58);
+}
+.banner-color-button {
+  font-size: calc(100vw * 24 / var(--width_base)) !important;
+  line-height: calc(100vw * 20 / var(--width_base)) !important;
+}
+#heading > h2 > div {
+  font-size: 0;
+  margin-left: 0px !important;
+}
+#heading > h2 > div > svg{
+  width: size(19);
+  height: size(10);
+}
+#titlebtnInf{
+  margin-bottom: 0px !important;
 }
 }
