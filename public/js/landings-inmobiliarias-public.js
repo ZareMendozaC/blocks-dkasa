@@ -29,6 +29,21 @@
    * practising this, we should strive to set a better example in our own work.
    */
 
+   $(“.lia-carousel”).slick({
+    dots: true,
+    infinite: true,
+    autoplay: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true,
+    prevArrow: `<div class=“arrow-slider-prev”><svg width=“35” height=“58" viewBox=“0 0 35 58” fill=“none” xmlns=“http://www.w3.org/2000/svg”>
+    <path d=“M34.0602 52.3016L28.5008 57.8608L0 29.3609L28.5008 0.83667L34.0602 6.39586L11.1187 29.3609L34.0602 52.3016Z” fill=“#BE1521”/>
+    </svg></div>`,
+    nextArrow: `<div class=“arrow-slider-next”><svg width=“35” height=“57" viewBox=“0 0 35 57” fill=“none” xmlns=“http://www.w3.org/2000/svg”>
+    <path d=“M0 5.55919L5.5593 0L34.0844 28.4999L5.5593 56.9999L0 51.4407L22.9415 28.4999L0 5.55919Z” fill=“#BE1521”/>
+    </svg></div>`,
+  });
   
   $(".slider-for").slick({
     slidesToShow: 1,
