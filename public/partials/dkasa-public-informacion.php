@@ -34,6 +34,9 @@ $backgroundColor = $attributes['backgroundColor'];
     .btn-green-lg{
         background-color:<?= $backgroundColor; ?> !important;
     }
+    .is-active{
+        background-color:<?= $backgroundColor; ?> !important;
+    }
 </style>
 <div class="separador-87">
         <div class="accordion" id="accordionInfo">
