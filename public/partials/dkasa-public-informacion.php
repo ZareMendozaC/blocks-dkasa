@@ -34,6 +34,9 @@ $backgroundColor = $attributes['backgroundColor'];
     .btn-green-lg{
         background-color:<?= $backgroundColor; ?> !important;
     }
+    .is-active{
+        background-color:<?= $backgroundColor; ?> !important;
+    }
 </style>
 <div class="separador-87">
         <div class="accordion" id="accordionInfo">
@@ -61,29 +64,4 @@ $backgroundColor = $attributes['backgroundColor'];
     </div>
 
 
-</div>
-<div class="my-container mrg-r-l" id="planos-proyecto">
-	<section class="row no-padding no-margin">
-			<div class="col-md-4 col-12 no-padding mrg-35_top padt-r-l-30">
-                    <h2 class="subtitle-general" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">Tu sueño inicia aquí </h2>
-                    <p class="subtitle-des" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">Selecciona la cantidad de dormitorios que necesitas.</p>
-                    <div class="col-md-12 col-12 no-padding">
-                        <div class="center-btn pdt-34">
-                            <a href="" class="btn-green-lg">2 Dormitorios</a>
-                            <a href="" class="btn-white-lg mrg-18-p">3 Dormitorios</a>
-                        </div>
-                    </div>
-			</div>
-			<div class="col-md-8 col-12 no-padding">
-                <?php if($images) : ?>
-                    <div class="lia-section-container lia-carousel carousel-planos" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
-                        <?php foreach ($images as $image): ?>
-                                <img src="<?= $image['mediaUrl'];?>" alt="" class="img-plano">
-                        <?php endforeach; ?>
-                    </div>
-                <?php endif;?>
-			</div>
-
-
-	</section>
 </div>
