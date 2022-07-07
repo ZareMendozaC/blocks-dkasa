@@ -297,4 +297,5 @@ $('#slider-home-slider').on('afterChange', function(event, slick, direction, nex
 			scrollTop: $("#accordionInfo").offset().top
 		}, 500);
 	});
+
 })( jQuery );

@@ -34,20 +34,20 @@
           display: flex;
           align-items: center;
           @media screen and (max-width: 767px) {
-            svg{
+            svg {
               width: size(14);
               height: size(23);
             }
           }
         }
-        .testimonios-slide{
+        .testimonios-slide {
           z-index: 1;
           position: relative;
           padding-top: size(61);
         }
         .slider-container {
           z-index: 1;
-    position: relative;
+          position: relative;
           display: flex;
           justify-content: center;
           @media screen and (max-width: 767px) {
@@ -111,7 +111,7 @@
               }
             }
           }
-          
+
           .columna-2 {
             width: size(504);
             margin-left: size(45);
@@ -200,35 +200,35 @@
       }
     }
   }
-  .modal-content{
+  .modal-content {
     height: size(649);
-    .modal-body{
+    .modal-body {
       padding: 0;
-      button{
+      button {
         position: absolute;
-right: 0;
-width: 40px;
-height: 40px;
-background-color: #3C3C3A;
-opacity: 1;
-svg{
-color: #fff;
-width: size(27);
-height: size(27);
-font-weight: normal;
-}
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background-color: #3c3c3a;
+        opacity: 1;
+        svg {
+          color: #fff;
+          width: size(27);
+          height: size(27);
+          font-weight: normal;
+        }
       }
     }
   }
 }
-.comilla-grande{
+.comilla-grande {
   position: absolute;
   pointer-events: none;
   top: 0;
   left: size(391);
   z-index: 0;
 }
-.comilla-chica{
+.comilla-chica {
   position: absolute;
   pointer-events: none;
   top: size(330);
