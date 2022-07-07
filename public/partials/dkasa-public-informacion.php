@@ -36,7 +36,10 @@ $backgroundColor = $attributes['backgroundColor'];
     }
     .is-active{
         background-color:<?= $backgroundColor; ?> !important;
-    }
+        color: #fff !important;
+        border: 0px !important;
+
+}
 </style>
 <div class="separador-87">
         <div class="accordion" id="accordionInfo">
