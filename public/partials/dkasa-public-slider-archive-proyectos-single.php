@@ -37,17 +37,17 @@ $modal_counter = 0;
                                         <img class="w-100" src="<?= $slide['mediaUrlLogo'] ?>" alt="">
                                         <div class="botones">
                                             <?php if ($slide['tour'] != '') : ?>
-                                                <a class="tour" onMouseOver="this.style.backgroundColor='<?= $slide['backgroundColor'] ?>';this.style.borderColor='<?= $slide['backgroundColor'] ?>';" onMouseOut="this.style.backgroundColor='transparent';this.style.borderColor='#fff';" data-toggle="modal" data-target="#proyectoTour<?= $slider_counter ?>">
+                                                <a class="tour" href="#" onMouseOver="this.style.backgroundColor='<?= $slide['backgroundColor'] ?>';this.style.borderColor='<?= $slide['backgroundColor'] ?>';" onMouseOut="this.style.backgroundColor='transparent';this.style.borderColor='#fff';" data-toggle="modal" data-target="#proyectoTour<?= $slider_counter ?>">
                                                     Tour virtual
                                                 </a>
                                             <?php endif; ?>
                                             <?php if ($slide['video'] != '') : ?>
-                                                <a class="video" onMouseOver="this.style.backgroundColor='<?= $slide['backgroundColor'] ?>';this.style.borderColor='<?= $slide['backgroundColor'] ?>';" onMouseOut="this.style.backgroundColor='transparent';this.style.borderColor='#fff';" data-toggle="modal" data-target="#proyectoVideo<?= $slider_counter ?>">
+                                                <a class="video" href="#" onMouseOver="this.style.backgroundColor='<?= $slide['backgroundColor'] ?>';this.style.borderColor='<?= $slide['backgroundColor'] ?>';" onMouseOut="this.style.backgroundColor='transparent';this.style.borderColor='#fff';" data-toggle="modal" data-target="#proyectoVideo<?= $slider_counter ?>">
                                                     Video
                                                 </a>
                                             <?php endif; ?>
                                             <?php if ($slide['panoramica'] != '') : ?>
-                                                <a class="panoramica" onMouseOver="this.style.backgroundColor='<?= $slide['backgroundColor'] ?>';this.style.borderColor='<?= $slide['backgroundColor'] ?>';" onMouseOut="this.style.backgroundColor='transparent';this.style.borderColor='#fff';" data-toggle="modal" data-target="#proyectoPanoramica<?= $slider_counter ?>">
+                                                <a class="panoramica" href="#" onMouseOver="this.style.backgroundColor='<?= $slide['backgroundColor'] ?>';this.style.borderColor='<?= $slide['backgroundColor'] ?>';" onMouseOut="this.style.backgroundColor='transparent';this.style.borderColor='#fff';" data-toggle="modal" data-target="#proyectoPanoramica<?= $slider_counter ?>">
                                                     Panorámica
                                                 </a>
                                             <?php endif; ?>

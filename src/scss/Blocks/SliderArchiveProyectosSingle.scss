@@ -45,12 +45,18 @@
           top: 25%;
         }
         &.prev {
+          margin-right: size(46);
+          @media screen and (max-width: 767px) {
           left: size(15);
           z-index: 2;
+          }
         }
         &.next {
+          margin-left: size(46);
+          @media screen and (max-width: 767px) {
           right: size(15);
           z-index: 2;
+          }
         }
       }
       .slider-archive-single-slide {
