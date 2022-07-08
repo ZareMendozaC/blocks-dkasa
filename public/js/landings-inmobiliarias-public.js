@@ -29,7 +29,7 @@
    * practising this, we should strive to set a better example in our own work.
    */
 
-   $(".lia-carousel").slick({
+  $(".lia-carousel").slick({
     dots: true,
     infinite: true,
     autoplay: false,
@@ -44,7 +44,7 @@
     <path d=“M0 5.55919L5.5593 0L34.0844 28.4999L5.5593 56.9999L0 51.4407L22.9415 28.4999L0 5.55919Z” fill=“#BE1521”/>
     </svg></div>`,
   });
-  
+
   $(".slider-for").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -180,22 +180,21 @@
     ],
   });
   // On edge hit
-$('#slider-home-slider').on('beforeChange', function(event, slick, direction,currentSlide,nextSlide){
-  console.log('before Change');
-  var AosInits = $(slick.$slides[currentSlide]).find('.aos-init');
-  console.log(currentSlide+1);
-  console.log(slick.$slides[currentSlide+1]);
-  $.map(AosInits, function (elementOrValue, indexOrKey) {
-    console.log(elementOrValue);
-    elementOrValue.classList.remove('aos-init','aos-animate');
-  });
-  console.log($(slick.$slides[currentSlide]).find('.aos-init'));
-});
-$('#slider-home-slider').on('afterChange', function(event, slick, direction, nextSlide){
-  console.log('after Change');
-  AOS.init({
-    });
-});
+  $("#slider-home-slider").on(
+    "beforeChange",
+    function (event, slick, direction, currentSlide, nextSlide) {
+      var AosInits = $(slick.$slides[currentSlide]).find(".aos-init");
+      $.map(AosInits, function (elementOrValue, indexOrKey) {
+        elementOrValue.classList.remove("aos-init", "aos-animate");
+      });
+    }
+  );
+  $("#slider-home-slider").on(
+    "afterChange",
+    function (event, slick, direction, nextSlide) {
+      AOS.init({});
+    }
+  );
   $("#slider-archive-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -274,7 +273,7 @@ $('#slider-home-slider').on('afterChange', function(event, slick, direction, nex
           <path d="M14 20.7568L11.7165 23L1.00536e-06 11.5L11.7165 -1.99626e-07L14 2.24319L4.5769 11.5L14 20.7568Z" fill="white"/>
           </svg>          
         </div>`,
-    nextArrow: `<div class="next" role="button" aria-label="Next">
+          nextArrow: `<div class="next" role="button" aria-label="Next">
     <svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 2.24319L2.28346 0L14 11.5L2.28346 23L0 20.7568L9.4231 11.5L0 2.24319Z" fill="white"/>
     </svg>    
@@ -283,19 +282,59 @@ $('#slider-home-slider').on('afterChange', function(event, slick, direction, nex
       },
     ],
   });
-
-  let numero= jQuery('.slick-vertical .slick-slide').not('.slick-cloned').children().length;
-	jQuery('.indice-'+numero).click();
-	
-    AOS.init({
-      once: true,
+  // On edge hit
+  $("#slider-archive-single-slider").on(
+    "beforeChange",
+    function (event, slick, direction, currentSlide, nextSlide) {
+      console.log(nextSlide);
+      var AosInits = $(slick.$slides[currentSlide]).find(".aos-init");
+      $.map(AosInits, function (elementOrValue, indexOrKey) {
+        elementOrValue.classList.remove("aos-init", "aos-animate");
       });
+      $('#slider-archive-single-front .black-back').css('z-index','3');
+      $('#slider-archive-single-front .black-back').css('opacity','1');
+      $('#slider-archive-single-front .datos-principales').css('opacity','0');
+    }
+  );
 
-	jQuery('.openForm').click(function() {
-		$('#accordionInfo .btn-link').click();
-		$('html, body').animate({
-			scrollTop: $("#accordionInfo").offset().top
-		}, 500);
-	});
+  $("#slider-archive-single-slider").on(
+    "afterChange",
+    function (event, slick, direction, currentSlide) {
+      var current_slide = slick.currentSlide;
+      function next_slide_f() {
+        var nextslide = current_slide + 1;
+        if (nextslide == slick.slideCount) {
+          nextslide = 0;
+          return nextslide;
+        } else {
+          return nextslide;
+        }
+      }
+      var next_slide = next_slide_f();
+      console.log("afterChange");
+      $('#slider-archive-single-front .black-back').css('z-index','1');
+      $('#slider-archive-single-front .black-back').css('opacity','0');
+      $('#slider-archive-single-front .datos-principales').css('opacity','1');
+      AOS.init({});
+    }
+  );
 
-})( jQuery );
+  let numero = jQuery(".slick-vertical .slick-slide")
+    .not(".slick-cloned")
+    .children().length;
+  jQuery(".indice-" + numero).click();
+
+  AOS.init({
+    once: true,
+  });
+
+  jQuery(".openForm").click(function () {
+    $("#accordionInfo .btn-link").click();
+    $("html, body").animate(
+      {
+        scrollTop: $("#accordionInfo").offset().top,
+      },
+      500
+    );
+  });
+})(jQuery);

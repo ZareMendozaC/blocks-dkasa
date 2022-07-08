@@ -57,15 +57,15 @@ $modal_counter = 0;
                                                 <h2><?= $slide['nombre'] ?></h2>
                                             </div>
                                             <div class="d-none d-md-block datos-principales">
-                                                <p class="rotulo">Área total</p>
-                                                <p class="datos-info"><?= $slide['area'] ?></p>
-                                                <p class="rotulo">Dormitorios</p>
-                                                <p class="datos-info"><?= $slide['dormitorios'] ?></p>
-                                                <p class="rotulo">Ubicación</p>
-                                                <p class="datos-info"><?= $slide['ubicacion'] ?></p>
-                                                <p class="rotulo">Precio</p>
-                                                <p class="datos-info"><?= $slide['precio'] ?></p>
-                                                <a class="enlace" href="<?= $slide['enlace'] ?>" style="background-color:<?= $slide['backgroundColor'] ?>;">
+                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="2000"  data-aos-once="false">Área total</p>
+                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="2000"  data-aos-once="false"><?= $slide['area'] ?></p>
+                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="2000"  data-aos-once="false">Dormitorios</p>
+                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="2000"  data-aos-once="false"><?= $slide['dormitorios'] ?></p>
+                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="2000"  data-aos-once="false">Ubicación</p>
+                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="2000"  data-aos-once="false"><?= $slide['ubicacion'] ?></p>
+                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="2000"  data-aos-once="false">Precio</p>
+                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="2000"  data-aos-once="false"><?= $slide['precio'] ?></p>
+                                                <a class="enlace" href="<?= $slide['enlace'] ?>" style="background-color:<?= $slide['backgroundColor'] ?>;"  data-aos="fade-zoom-in" data-aos-delay="2000"  data-aos-once="false">
                                                     <?= $slide['textoEnlace'] ?>
                                                 </a>
                                             </div>
@@ -95,6 +95,9 @@ $modal_counter = 0;
                     <?php $slider_counter; endforeach; ?>
                 </div>
                 <div id="slider-archive-single-dots">
+
+                </div>
+                <div class="black-back d-none d-md-block">
 
                 </div>
             </div>
