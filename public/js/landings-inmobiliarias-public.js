@@ -247,9 +247,9 @@
     arrows: true,
     dots: true,
     appendDots: $("#slider-archive-single-dots"),
-    autoplay: false,
-    autoplaySpeed: 150,
-    speed: 1250,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 2000,
     infinite: true,
     variableWidth: true,
     prevArrow: `<div class="prev" role="button" aria-label="Previous">
