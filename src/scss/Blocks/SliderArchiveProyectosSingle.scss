@@ -29,6 +29,7 @@
     margin-bottom: size(24);
     margin-left: size(251);
     margin-right: size(251);
+    position: relative;
     @media screen and (max-width: 767px) {
       margin-bottom: size(64);
       margin-left: size(16);
@@ -323,12 +324,22 @@
 }
 .black-back {
   position: absolute;
-  width: size(322);
-  height: size(415);
-  top: size(143);
-  background: #3c3c3a;
-  right: size(422);
-  border-bottom-right-radius: size(36);
+  top: size(53);
+  right: size(171);
   opacity: 0;
   z-index: 1;
+  .titulo {
+    height: size(56);
+    width: size(287);
+    margin-left: 0;
+    margin-bottom: size(12);
+    border-bottom-right-radius: size(36);
+    background-color: #be1521;
+  }
+  .datos {
+    width: size(322);
+    height: size(415);
+    background: #3c3c3a;
+    border-bottom-right-radius: size(36);
+  }
 }

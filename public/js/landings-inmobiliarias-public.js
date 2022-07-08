@@ -247,7 +247,7 @@
     arrows: true,
     dots: true,
     appendDots: $("#slider-archive-single-dots"),
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     speed: 2000,
     infinite: true,
@@ -293,7 +293,8 @@
       });
       $('#slider-archive-single-front .black-back').css('z-index','3');
       $('#slider-archive-single-front .black-back').css('opacity','1');
-      $('#slider-archive-single-front .datos-principales').css('opacity','0');
+      $('#slider-archive-single-front .columna-1 .datos .titulo').css('opacity','0');
+      $('#slider-archive-single-front .columna-1 .datos .datos-principales').css('opacity','0');
     }
   );
 
@@ -314,7 +315,8 @@
       console.log("afterChange");
       $('#slider-archive-single-front .black-back').css('z-index','1');
       $('#slider-archive-single-front .black-back').css('opacity','0');
-      $('#slider-archive-single-front .datos-principales').css('opacity','1');
+      $('#slider-archive-single-front .columna-1 .datos .titulo').css('opacity','1');
+      $('#slider-archive-single-front .columna-1 .datos .datos-principales').css('opacity','1');
       AOS.init({});
     }
   );
