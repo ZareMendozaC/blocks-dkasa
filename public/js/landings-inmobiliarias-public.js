@@ -163,6 +163,7 @@
   $("#slider-home-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    pauseOnHover:false,
     arrows: false,
     dots: false,
     autoplay: true,
@@ -198,6 +199,7 @@
   $("#slider-archive-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    pauseOnHover:false,
     arrows: false,
     dots: false,
     autoplay: true,
@@ -246,6 +248,7 @@
     $( ".black-back" ).insertAfter( "#slider-archive-single-slider .next.slick-arrow" );
 });
   $("#slider-archive-single-slider").slick({
+    pauseOnHover:false,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -290,7 +293,6 @@
   $("#slider-archive-single-slider").on(
     "beforeChange",
     function (event, slick, direction, currentSlide, nextSlide) {
-      console.log(nextSlide);
       var AosInits = $(slick.$slides[currentSlide]).find(".aos-init");
       $.map(AosInits, function (elementOrValue, indexOrKey) {
         elementOrValue.classList.remove("aos-init", "aos-animate");
