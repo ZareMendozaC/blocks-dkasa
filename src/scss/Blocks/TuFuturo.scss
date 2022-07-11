@@ -34,13 +34,14 @@
   .texo-enlace-general {
     margin-right: size(342);
     margin-bottom: size(63);
-    p {
+    a {
       font-weight: 700;
       font-size: size(20);
       line-height: size(25);
       color: #3c3c3a;
       margin-bottom: 0;
       margin-right: size(12);
+      text-decoration: none;
     }
   }
   .contenido-contenedor {
