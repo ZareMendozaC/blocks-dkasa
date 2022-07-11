@@ -34,3 +34,8 @@
 .mrg-btm-57{
     margin-bottom:  calc(100vw * (calc(57 / var(--width_base))));
 }
+.center-icons-f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
