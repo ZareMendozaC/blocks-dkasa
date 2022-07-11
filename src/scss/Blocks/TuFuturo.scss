@@ -116,6 +116,14 @@
             width: 100%;
           }
       }
+      & > div{
+        height: inherit;
+      }
+      img{
+        width: 100%;
+        object-fit: cover;
+height: inherit;
+      }
         .estado {
           height: size(44);
           display: flex;

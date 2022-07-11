@@ -27,8 +27,8 @@
   }
   .contenido-contenedor {
     margin-bottom: size(24);
-    margin-left: size(332);
-    margin-right: size(332);
+    margin-left: 0;
+    margin-right: 0;
     position: relative;
     @media screen and (max-width: 767px) {
       margin-bottom: size(64);
@@ -38,6 +38,8 @@
     #slider-archive-single-slider {
       justify-content: space-between;
       z-index: 2;
+      width: size(1241);
+      margin: auto;
       display: flex;
       .slick-arrow {
         display: flex;
@@ -340,7 +342,7 @@ height: size(649);
 }
 .black-back {
   position: absolute;
-  top: size(53);
+  top: size(76);
   right: size(90);
   opacity: 0;
   z-index: 1;
