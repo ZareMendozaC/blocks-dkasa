@@ -42,6 +42,9 @@
       margin-right: auto;
       margin-left: auto;
       display: flex;
+      .slick-list{
+        z-index: 2;
+      }
       .slick-arrow {
         display: flex;
         align-items: center;

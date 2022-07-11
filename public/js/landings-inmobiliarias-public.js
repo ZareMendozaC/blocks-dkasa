@@ -255,8 +255,8 @@
     dots: true,
     appendDots: $("#slider-archive-single-dots"),
     autoplay: true,
-    autoplaySpeed: 1500,
-    speed: 1500,
+    autoplaySpeed: 2000,
+    speed: 2000,
     infinite: true,
     variableWidth: true,
     prevArrow: `<div class="prev" role="button" aria-label="Previous">
@@ -306,19 +306,7 @@
 
   $("#slider-archive-single-slider").on(
     "afterChange",
-    function (event, slick, direction, currentSlide) {
-      var current_slide = slick.currentSlide;
-      function next_slide_f() {
-        var nextslide = current_slide + 1;
-        if (nextslide == slick.slideCount) {
-          nextslide = 0;
-          return nextslide;
-        } else {
-          return nextslide;
-        }
-      }
-      var next_slide = next_slide_f();
-      console.log("afterChange");
+    function (event, slick, direction, currentSlide) {      
       $('#slider-archive-single-front .black-back').css('z-index','1');
       $('#slider-archive-single-front .black-back').css('opacity','0');
       $('#slider-archive-single-front .columna-1 .datos .titulo').css('opacity','1');
