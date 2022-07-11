@@ -54,18 +54,18 @@ $modal_counter = 0;
                                         </div>
                                         <div class="datos position-absolute">
                                             <div class="titulo" style="background-color:<?= $slide['backgroundColor'] ?>;">
-                                                <h2 data-aos="fade-zoom-in" data-aos-delay="750" data-aos-once="false"><?= $slide['nombre'] ?></h2>
+                                                <h2 data-aos="fade-zoom-in" data-aos-delay="450" data-aos-once="false"><?= $slide['nombre'] ?></h2>
                                             </div>
                                             <div class="d-none d-md-block datos-principales">
-                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="750" data-aos-once="false">Área total</p>
-                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="750" data-aos-once="false"><?= $slide['area'] ?></p>
-                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="750" data-aos-once="false">Dormitorios</p>
-                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="750" data-aos-once="false"><?= $slide['dormitorios'] ?></p>
-                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="750" data-aos-once="false">Ubicación</p>
-                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="750" data-aos-once="false"><?= $slide['ubicacion'] ?></p>
-                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="750" data-aos-once="false">Precio</p>
-                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="750" data-aos-once="false"><?= $slide['precio'] ?></p>
-                                                <a class="enlace" href="<?= $slide['enlace'] ?>" style="background-color:<?= $slide['backgroundColor'] ?>;" data-aos="fade-zoom-in" data-aos-delay="750" data-aos-once="false">
+                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="450" data-aos-once="false">Área total</p>
+                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="450" data-aos-once="false"><?= $slide['area'] ?></p>
+                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="450" data-aos-once="false">Dormitorios</p>
+                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="450" data-aos-once="false"><?= $slide['dormitorios'] ?></p>
+                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="450" data-aos-once="false">Ubicación</p>
+                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="450" data-aos-once="false"><?= $slide['ubicacion'] ?></p>
+                                                <p class="rotulo" data-aos="fade-zoom-in" data-aos-delay="450" data-aos-once="false">Precio</p>
+                                                <p class="datos-info" data-aos="fade-zoom-in" data-aos-delay="450" data-aos-once="false"><?= $slide['precio'] ?></p>
+                                                <a class="enlace" href="<?= $slide['enlace'] ?>" style="background-color:<?= $slide['backgroundColor'] ?>;" data-aos="fade-zoom-in" data-aos-delay="450" data-aos-once="false">
                                                     <?= $slide['textoEnlace'] ?>
                                                 </a>
                                             </div>
