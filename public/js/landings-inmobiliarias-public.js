@@ -241,6 +241,10 @@
       },
     ],
   });
+  $('#slider-archive-single-slider').on('init', function(event, slick){
+    console.log("initialized");
+    $( ".black-back" ).insertAfter( "#slider-archive-single-slider .next.slick-arrow" );
+});
   $("#slider-archive-single-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,

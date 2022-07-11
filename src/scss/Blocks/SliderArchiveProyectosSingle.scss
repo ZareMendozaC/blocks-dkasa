@@ -131,6 +131,7 @@
               }
             }
             .datos {
+              top: size(53);
               right: size(92);
               width: size(322);
               @media screen and (max-width: 767px) {
@@ -342,8 +343,8 @@ height: size(649);
 }
 .black-back {
   position: absolute;
-  top: size(76);
-  right: size(90);
+  top: size(53);
+  right: size(92);
   opacity: 0;
   z-index: 1;
   .titulo {
