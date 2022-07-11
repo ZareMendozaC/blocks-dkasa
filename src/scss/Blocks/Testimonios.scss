@@ -200,6 +200,15 @@
       }
     }
   }
+  .modal-dialog{
+    width: size(1240);
+max-width: size(1240);
+height: size(649);
+@media screen and (max-width: 767px) {
+  width: auto;
+  height: auto;
+}
+  }
   .modal-content {
     height: size(649);
     @media screen and (max-width: 767px) {

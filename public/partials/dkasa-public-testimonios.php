@@ -65,7 +65,7 @@ $modal_counter = 0;
     </div>
     <?php foreach ($testimonials as $testimony) : $modal_counter++; ?>
         <div class="modal fade" id="testimonioModal<?= $modal_counter ?>" tabindex="-1" aria-labelledby="testimonioModal<?= $modal_counter ?>Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
