@@ -27,8 +27,8 @@
   }
   .contenido-contenedor {
     margin-bottom: size(24);
-    margin-left: size(251);
-    margin-right: size(251);
+    margin-left: size(332);
+    margin-right: size(332);
     position: relative;
     @media screen and (max-width: 767px) {
       margin-bottom: size(64);
@@ -42,19 +42,23 @@
       .slick-arrow {
         display: flex;
         align-items: center;
+        position: absolute;
+        top: 50%;
         @media screen and (max-width: 767px) {
           position: absolute;
           top: 25%;
         }
         &.prev {
-          margin-right: size(46);
+          left: size(-81);
+          margin-right: 0;
           @media screen and (max-width: 767px) {
             left: size(15);
             z-index: 2;
           }
         }
         &.next {
-          margin-left: size(46);
+          right: size(-81);
+          margin-left: 0;
           @media screen and (max-width: 767px) {
             right: size(15);
             z-index: 2;
@@ -327,8 +331,8 @@
 }
 .black-back {
   position: absolute;
-  top: size(76);
-  right: size(171);
+  top: size(53);
+  right: size(90);
   opacity: 0;
   z-index: 1;
   .titulo {
