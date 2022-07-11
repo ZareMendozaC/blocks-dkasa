@@ -336,13 +336,12 @@
     once: true,
   });
 
-  jQuery(".openForm").click(function () {
-    $("#accordionInfo .btn-link").click();
-    $("html, body").animate(
-      {
-        scrollTop: $("#accordionInfo").offset().top,
-      },
-      500
-    );
-  });
-})(jQuery);
+	jQuery('.openForm').click(function() {
+    if($('#titlebtnInf').hasClass('collapsed')){
+      $('#accordionInfo .btn-link').click();
+    }
+		$('html, body').animate({
+			scrollTop: $("#accordionInfo").offset().top
+		}, 500);
+	});
+})( jQuery );
