@@ -39,10 +39,6 @@
 	</div>
 </div>
 <section class="lia-seccion-fondo hero"  style="background-image: url(<?= $mediaUrl;?>);">
-	<div class="lia-section-container text-<?=$alignment;?>">
-		<h2 class=""><?= $title;?></h2>
-		<p><?= $content;?></p>
-	</div>
 	<img class="logo-front"  src="<?= $mediaUrlLogo;?>" alt="Logo Proyecto">
 	<div class="box-proyecto"  style="background-color:<?= $bgColor;?>">
 		<div class="part-4">
