@@ -347,16 +347,19 @@
       500
     );
   });
-  $("#proyectoPanoramica0").on("shown.bs.modal", function (event) {
+  $(".panoramica-modal").on("shown.bs.modal", function (event) {
+    var url_img;
     var panorama, viewer, container, infospot;
     var containerBaseWidth = 700;
     var containerBaseHeight = 400;
     var deltaSize = 100;
 
-    container = document.querySelector("#panoramica-container-0");
+    url_img = $('#panoramica-imagen').data('imagePan');
+    console.log(url_img);
+    container = document.querySelector("#panoramica-imagen");
 
     panorama = new PANOLENS.ImagePanorama(
-      "http://dkasa-local.local/wp-content/uploads/2022/07/DJI_0674-scaled.jpg"
+      url_img
     );
 
     infospot = new PANOLENS.Infospot(350, PANOLENS.DataImage.Info);

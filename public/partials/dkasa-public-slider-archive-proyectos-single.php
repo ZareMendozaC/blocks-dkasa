@@ -143,7 +143,7 @@ $modal_counter = 0;
             </div>
         <?php endif ?>
         <?php if ($slide['panoramica'] != '') : ?>
-            <div class="modal fade" id="proyectoPanoramica<?= $modal_counter ?>" tabindex="-1" aria-labelledby="proyectoPanoramica<?= $modal_counter ?>Label" aria-hidden="true">
+            <div class="modal fade panoramica-modal" id="proyectoPanoramica<?= $modal_counter ?>" tabindex="-1" aria-labelledby="proyectoPanoramica<?= $modal_counter ?>Label" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -153,7 +153,7 @@ $modal_counter = 0;
                                     <path d="M25 2L13.5 13.5L2 25" stroke="white" stroke-width="4" />
                                 </svg>
                             </button>
-                            <div id="panoramica-container-<?= $modal_counter ?>">
+                            <div id="panoramica-imagen" data-image-pan="<?= $slide['panoramica'] ?>">
 
                             </div>
                             <!-- <iframe width="100%" height="100%" src="<?= $slide['panoramica'] ?>" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
