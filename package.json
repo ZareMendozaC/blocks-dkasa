@@ -28,6 +28,7 @@
     "@wordpress/data": "^6.8.0",
     "@wordpress/element": "^4.6.0",
     "@wordpress/primitives": "^3.7.0",
-    "@wordpress/server-side-render": "^3.6.0"
+    "@wordpress/server-side-render": "^3.6.0",
+    "panolens": "^0.12.1"
   }
 }

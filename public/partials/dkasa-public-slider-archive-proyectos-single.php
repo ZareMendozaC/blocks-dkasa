@@ -152,9 +152,11 @@ $modal_counter = 0;
                                     <path d="M3 2L14 13.5L25 25" stroke="white" stroke-width="4" />
                                     <path d="M25 2L13.5 13.5L2 25" stroke="white" stroke-width="4" />
                                 </svg>
-
                             </button>
-                            <iframe width="100%" height="100%" src="<?= $slide['panoramica'] ?>" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div id="panoramica-container-<?= $modal_counter ?>">
+
+                            </div>
+                            <!-- <iframe width="100%" height="100%" src="<?= $slide['panoramica'] ?>" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         </div>
                     </div>
                 </div>

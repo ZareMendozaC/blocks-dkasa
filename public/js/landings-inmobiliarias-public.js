@@ -163,7 +163,7 @@
   $("#slider-home-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    pauseOnHover:false,
+    pauseOnHover: false,
     arrows: false,
     dots: false,
     autoplay: true,
@@ -199,7 +199,7 @@
   $("#slider-archive-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    pauseOnHover:false,
+    pauseOnHover: false,
     arrows: false,
     dots: false,
     autoplay: true,
@@ -243,12 +243,14 @@
       },
     ],
   });
-  $('#slider-archive-single-slider').on('init', function(event, slick){
+  $("#slider-archive-single-slider").on("init", function (event, slick) {
     console.log("initialized");
-    $( ".black-back" ).insertAfter( "#slider-archive-single-slider .next.slick-arrow" );
-});
+    $(".black-back").insertAfter(
+      "#slider-archive-single-slider .next.slick-arrow"
+    );
+  });
   $("#slider-archive-single-slider").slick({
-    pauseOnHover:false,
+    pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -297,20 +299,30 @@
       $.map(AosInits, function (elementOrValue, indexOrKey) {
         elementOrValue.classList.remove("aos-init", "aos-animate");
       });
-      $('#slider-archive-single-front .black-back').css('z-index','3');
-      $('#slider-archive-single-front .black-back').css('opacity','1');
-      $('#slider-archive-single-front .columna-1 .datos .titulo').css('opacity','0');
-      $('#slider-archive-single-front .columna-1 .datos .datos-principales').css('opacity','0');
+      $("#slider-archive-single-front .black-back").css("z-index", "3");
+      $("#slider-archive-single-front .black-back").css("opacity", "1");
+      $("#slider-archive-single-front .columna-1 .datos .titulo").css(
+        "opacity",
+        "0"
+      );
+      $(
+        "#slider-archive-single-front .columna-1 .datos .datos-principales"
+      ).css("opacity", "0");
     }
   );
 
   $("#slider-archive-single-slider").on(
     "afterChange",
-    function (event, slick, direction, currentSlide) {      
-      $('#slider-archive-single-front .black-back').css('z-index','1');
-      $('#slider-archive-single-front .black-back').css('opacity','0');
-      $('#slider-archive-single-front .columna-1 .datos .titulo').css('opacity','1');
-      $('#slider-archive-single-front .columna-1 .datos .datos-principales').css('opacity','1');
+    function (event, slick, direction, currentSlide) {
+      $("#slider-archive-single-front .black-back").css("z-index", "1");
+      $("#slider-archive-single-front .black-back").css("opacity", "0");
+      $("#slider-archive-single-front .columna-1 .datos .titulo").css(
+        "opacity",
+        "1"
+      );
+      $(
+        "#slider-archive-single-front .columna-1 .datos .datos-principales"
+      ).css("opacity", "1");
       AOS.init({});
     }
   );
@@ -324,12 +336,37 @@
     once: true,
   });
 
-	jQuery('.openForm').click(function() {
-    if($('#titlebtnInf').hasClass('collapsed')){
-      $('#accordionInfo .btn-link').click();
+  jQuery(".openForm").click(function () {
+    if ($("#titlebtnInf").hasClass("collapsed")) {
+      $("#accordionInfo .btn-link").click();
     }
-		$('html, body').animate({
-			scrollTop: $("#accordionInfo").offset().top
-		}, 500);
-	});
-})( jQuery );
+    $("html, body").animate(
+      {
+        scrollTop: $("#accordionInfo").offset().top,
+      },
+      500
+    );
+  });
+  $("#proyectoPanoramica0").on("shown.bs.modal", function (event) {
+    var panorama, viewer, container, infospot;
+    var containerBaseWidth = 700;
+    var containerBaseHeight = 400;
+    var deltaSize = 100;
+
+    container = document.querySelector("#panoramica-container-0");
+
+    panorama = new PANOLENS.ImagePanorama(
+      "http://dkasa-local.local/wp-content/uploads/2022/07/DJI_0674-scaled.jpg"
+    );
+
+    infospot = new PANOLENS.Infospot(350, PANOLENS.DataImage.Info);
+    infospot.position.set(0, 0, -5000);
+    infospot.addHoverText("Hello Panolens", 30);
+    panorama.add(infospot);
+
+    viewer = new PANOLENS.Viewer({
+      container: container,
+    });
+    viewer.add(panorama);
+  });
+})(jQuery);
