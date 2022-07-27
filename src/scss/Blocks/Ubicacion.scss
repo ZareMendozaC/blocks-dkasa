@@ -1,61 +1,97 @@
-.img-ubic{
-    width: calc(100vw * (calc(318 / var(--width_base))));
-    height: calc(100vw * (calc(567 / var(--width_base))));
+.img-ubic {
+  width: calc(100vw * (calc(318 / var(--width_base))));
+  height: calc(100vw * (calc(567 / var(--width_base))));
 }
-.column-img{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: calc(100vw * (calc(340/ var(--width_base)))) !important;
+.column-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: calc(100vw * (calc(340 / var(--width_base)))) !important;
 }
-.mrg-top-35{
-    margin-top: calc(100vw * (calc(35/ var(--width_base)))) !important;
+.mrg-top-35 {
+  margin-top: calc(100vw * (calc(35 / var(--width_base)))) !important;
 }
 
-.btn-pano, .btn-pano:hover{
-    position: absolute;
-    width: calc(100vw * (calc(276 / var(--width_base))));
-    height: calc(100vw * (calc(52 / var(--width_base))));
-    left: 49%;
-    bottom: calc(100vw * (calc(11 / var(--width_base))));  
-    background: #3C3C3A;
-    border-radius: 9px;
-    font-family: 'Century Gothic';
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(100vw * (calc(20 / var(--width_base))));
-    line-height: calc(100vw * (calc(25 / var(--width_base))));
-    text-align: center;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none !important;
+.btn-pano,
+.btn-pano:hover {
+  position: absolute;
+  width: calc(100vw * (calc(276 / var(--width_base))));
+  height: calc(100vw * (calc(52 / var(--width_base))));
+  left: 49%;
+  bottom: calc(100vw * (calc(11 / var(--width_base))));
+  background: #3c3c3a;
+  border-radius: 9px;
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(100vw * (calc(20 / var(--width_base))));
+  line-height: calc(100vw * (calc(25 / var(--width_base))));
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
 }
-.icon-eye-pano{
-    width: calc(100vw * (calc(22.02 / var(--width_base))));
-    height:  calc(100vw * (calc(15.03 / var(--width_base))));
-    margin-left:  calc(100vw * (calc(10 / var(--width_base))));
+.icon-eye-pano {
+  width: calc(100vw * (calc(22.02 / var(--width_base))));
+  height: calc(100vw * (calc(15.03 / var(--width_base))));
+  margin-left: calc(100vw * (calc(10 / var(--width_base))));
 }
-.list-btns{
-    display: flex;
+.list-btns {
+  display: flex;
 }
 
 #planos-proyecto .carousel-planos .slick-dots li button {
-    height: calc(100vw*(15/var(--width_base)));
-    padding: 0;
-    width: calc(100vw*(15/var(--width_base)));
+  height: calc(100vw * (15 / var(--width_base)));
+  padding: 0;
+  width: calc(100vw * (15 / var(--width_base)));
 }
 #planos-proyecto .carousel-planos .slick-dots li button:before {
-    background-color: transparent;
-    border: calc(100vw*(.5/var(--width_base))) solid #3c3c3a;
-    border-radius: 50%;
-    content: "";
-    height: calc(100vw*(15/var(--width_base)));
-    opacity: 1;
-    width: calc(100vw*(15/var(--width_base)));
+  background-color: transparent;
+  border: size(0.5) solid #3c3c3a;
+  border-radius: 50%;
+  content: "";
+  height: calc(100vw * (15 / var(--width_base)));
+  opacity: 1;
+  width: calc(100vw * (15 / var(--width_base)));
 }
 #planos-proyecto .carousel-planos .slick-dots li.slick-active button:before {
-    background: #3c3c3a;
-    opacity: 1;
+  background: #3c3c3a;
+  opacity: 1;
+}
+
+#verPanoramica {
+  .modal-dialog {
+    width: size(1240);
+    max-width: size(1240);
+    height: size(649);
+    @media screen and (max-width: 767px) {
+      width: auto;
+      height: auto;
+    }
+  }
+  .modal-content {
+    height: size(649);
+    @media screen and (max-width: 767px) {
+      height: auto;
+    }
+    .modal-body {
+      padding: 0;
+      button {
+        position: absolute;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background-color: #3c3c3a;
+        opacity: 1;
+        svg {
+          color: #fff;
+          width: size(27);
+          height: size(27);
+          font-weight: normal;
+        }
+      }
+    }
+  }
 }

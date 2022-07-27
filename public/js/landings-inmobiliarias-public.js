@@ -71,13 +71,14 @@
     ],
   });
   $(".slider-nav").slick({
-    slidesToShow: 5,
+    slidesToShow: 1,
     slidesToScroll: 1,
     asNavFor: ".slider-for",
     dots: false,
     centerMode: true,
     variableWidth: true,
     focusOnSelect: true,
+    infinite: true,
     responsive: [
       {
         breakpoint: 345,
@@ -371,5 +372,8 @@
       container: container,
     });
     viewer.add(panorama);
+  });
+  $(".panoramica-modal").on("hide.bs.modal", function (event) {
+    $('#panoramica-imagen').empty();
   });
 })(jQuery);

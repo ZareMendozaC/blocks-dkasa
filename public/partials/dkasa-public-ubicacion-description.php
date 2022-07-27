@@ -27,7 +27,7 @@ $urlBtnTwo = $attributes['urlBtnTwo'];
 $txtBtnTwo = $attributes['txtBtnTwo'];
 $backgroundColor = $attributes['backgroundColor'];
 $vistapano = $attributes['vistapano'];
-
+$mediaPanUrl = $attributes['mediaPanUrl'];
 ?>
 <style>
 .btn-white:hover{
@@ -60,10 +60,9 @@ $vistapano = $attributes['vistapano'];
 <section class="row no-padding no-margin mrg-top-141">
         <div class="col-md-6 col-12 column-img" id="column-img">
 			<img class="img-ubic" src="<?= $mediaUrl;?>" alt="" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">
-			<?php if($vistapano) : ?>
+			<?php if($mediaPanUrl) : ?>
 				<a class="btn-pano" href="<?= $vistapano;?>" data-bs-toggle="modal" data-bs-target="#verPanoramica">
 					Vista panorámica
-					<img class="icon-eye-pano" src="<?= site_url("/") . 'wp-content/uploads/2022/06/ojo.png' ?>" alt="">
 				</a>
 			<?php endif;?>
 			<?php if($mediaUrlpdf) : ?>
@@ -75,7 +74,7 @@ $vistapano = $attributes['vistapano'];
 			<?php if($urlBtnTwo) : ?>
 					<a href="<?= $urlBtnTwo;?>" data-bs-toggle="modal" data-bs-target="#verVideo" class="btn-white btn-res-u btn_3" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $txtBtnTwo;?></a>
 			<?php endif;?>
-			<?php if($vistapano) : ?>
+			<?php if($mediaPanUrl) : ?>
 					<a href="<?= $vistapano;?>" data-bs-toggle="modal" data-bs-target="#verPanoramica" class="btn-white btn-res-u btn_4" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Panorámica <img class="icon-eye-pano" src="<?= site_url("/") . 'wp-content/uploads/2022/06/ojo.png' ?>" alt=""></a>
 			<?php endif;?>
 		</div>
@@ -121,16 +120,21 @@ $vistapano = $attributes['vistapano'];
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="verPanoramica" tabindex="-1" aria-labelledby="verPanoramicaLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="verPanoramicaLabel">Modal Vista Panoramica</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					...
-				</div>
+		<div class="modal fade panoramica-modal" id="verPanoramica" tabindex="-1" aria-labelledby="verPanoramicaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 2L14 13.5L25 25" stroke="white" stroke-width="4" />
+                                    <path d="M25 2L13.5 13.5L2 25" stroke="white" stroke-width="4" />
+                                </svg>
+                            </button>
+                            <div id="panoramica-imagen" data-image-pan="<?= $mediaPanUrl ?>">
+
+                            </div>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>

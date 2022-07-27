@@ -104,8 +104,17 @@ const DescriptionUbicacionBack= (props) => {
 						
 
 					</Item>
-
-					
+					<Item>
+					<ImageUpload
+								setAttr={setAttr}
+								detail={{
+									mediaUrl: attr.mediaPanUrl,
+									mediaId: attr.mediaPanId,
+									propertyUrl: "mediaPanUrl",
+									propertyId: "mediaPanId"
+								}}
+							/>
+					</Item>
 				</Grid>
 			</SectionContainer>
 		</Section>

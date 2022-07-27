@@ -29,7 +29,6 @@ $images = $attributes['images'];
             </div>
             <div class="slider-nav" id="slider-nav">
                 <?php foreach ($images as $image): ?>
-                    
                         <img src="<?= $image['mediaUrl'];?>" alt="imagen" class="img-litle" id="img-litle">
                 <?php endforeach; ?>
             </div>

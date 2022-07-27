@@ -59,7 +59,13 @@
       "vistapano": {
           "type": "string",
           "default": ""
+      },
+      "mediaPanId": {
+        "type": "number"
+      },
+      "mediaPanUrl": {
+        "type": "string",
+        "default": ""
       }
     }
   }
-
