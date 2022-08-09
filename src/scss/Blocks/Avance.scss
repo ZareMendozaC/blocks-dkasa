@@ -71,3 +71,15 @@
 .wp-block-dkasa-avance{
     border: 1px solid #e0e0e0;
 }
+@media screen and (max-width: 767px) {
+    //para responsive agregar 
+​
+.slider-for-avance .slick-arrow{ 
+    display: none !important;
+} 
+
+//para responsive corregir
+.my-video{
+    height: auto !important; // tiene q tener auto porq si no aparece una espacio abajo
+}
+}

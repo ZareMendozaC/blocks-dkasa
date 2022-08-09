@@ -196,7 +196,7 @@ function enqueue_scripts(){
     wp_enqueue_script( 'js-aos', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/js/aos.js', array( 'jquery' ), '5.0.0', true );
     wp_enqueue_script( 'js-three', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/js/three.min.js', array( 'jquery' ), '5.0.0', true );
     wp_enqueue_script( 'js-panolens', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/js/panolens.min.js', array( 'jquery' ), '5.0.0', true );
-    wp_enqueue_script( 'dkasa-script', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/js/landings-inmobiliarias-public.js', array( 'jquery' ), '5.0.0', true );
+    wp_enqueue_script( 'dkasa-script', DKASA_BLOCKS_URL_PLUGIN_FRONT . 'public/js/landings-inmobiliarias-public.js', array( 'jquery' ), null, true );
 
 
 }

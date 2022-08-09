@@ -306,6 +306,14 @@
   width: size(82) !important;
   height: size(47) ;
 }
+@media screen and (max-width: 767px) {
+  #slider-nav .slick-arrow{ 
+    display: none !important;
+}
+#slider-nav{
+  display: none !important;
+}
+}
 .carousel-planos {
   width: 100% !important;
 }

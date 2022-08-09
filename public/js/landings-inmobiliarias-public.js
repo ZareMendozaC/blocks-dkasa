@@ -49,6 +49,8 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    autoplaySpeed: 2500,
+    speed: 2500,
     // fade: true,
     variableWidth: true,
     autoplay: true,
@@ -65,13 +67,16 @@
         settings: {
           arrows: true,
           slidesToShow: 1,
-          variableWidth: true,
+          slidesToScroll: 1,
+          variableWidth: true
         },
       },
     ],
   });
   $(".slider-nav").slick({
-    slidesToShow: 1,
+    slidesToShow: 3,
+    autoplaySpeed: 2500,
+    speed: 2500,
     slidesToScroll: 1,
     asNavFor: ".slider-for",
     dots: false,
@@ -81,12 +86,8 @@
     infinite: true,
     responsive: [
       {
-        breakpoint: 345,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          slidesToShow: 4,
-        },
+        breakpoint: 768,
+        settings: "unslick"
       },
     ],
   });
@@ -99,7 +100,7 @@
     asNavFor: ".slider-nav-avance",
     responsive: [
       {
-        breakpoint: 345,
+        breakpoint: 768,
         settings: {
           arrows: false,
         },
@@ -168,8 +169,8 @@
     arrows: false,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 3000,
+    autoplaySpeed: 2750,
+    speed: 2750,
     infinite: true,
     responsive: [
       {
@@ -223,8 +224,8 @@
     arrows: true,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 5000,
+    autoplaySpeed: 4500,
+    speed: 4500,
     infinite: true,
     variableWidth: true,
     prevArrow: `<div class="prev" role="button" aria-label="Previous">

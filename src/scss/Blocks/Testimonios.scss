@@ -213,7 +213,7 @@ height: size(649);
   .modal-content {
     height: size(649);
     @media screen and (max-width: 767px) {
-      height: auto;
+      height: size(370);
     }
     .modal-body {
       padding: 0;
