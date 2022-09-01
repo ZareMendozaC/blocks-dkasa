@@ -167,7 +167,7 @@
     slidesToScroll: 1,
     pauseOnHover: false,
     arrows: false,
-    dots: false,
+    dots: true,
     autoplay: true,
     autoplaySpeed: 2750,
     speed: 2750,

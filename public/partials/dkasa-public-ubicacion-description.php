@@ -66,7 +66,7 @@ $mediaPanUrl = $attributes['mediaPanUrl'];
 				</a>
 			<?php endif;?>
 			<?php if($mediaUrlpdf) : ?>
-					<a href="<?= $mediaUrlpdf;?>" class="btn-white btn-res-u btn_1" download="<?= $mediaName;?>" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Brochure</a>
+					<a href="<?= $mediaUrlpdf;?>" class="btn-white btn-res-u btn_1" download="<?= $mediaName;?>" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Descargar Brochure</a>
 			<?php endif;?>
 			<?php if($urlBtn) : ?>
 					<a href="<?= $urlBtn;?>" data-bs-toggle="modal" data-bs-target="#verTour"  class="btn-white btn-res-u btn_2" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200" ><?= $txtBtn;?></a>
@@ -83,7 +83,7 @@ $mediaPanUrl = $attributes['mediaPanUrl'];
 			<p class="subtitle-des" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $content?></p>
             <div class="col-md-12 col-12 no-padding d-flex mrg-top-35 list-btns ">
 				<?php if($mediaUrlpdf) : ?>
-					<a href="<?= $mediaUrlpdf;?>" class="btn-white" download="<?= $mediaName;?>" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Brochure</a>
+					<a href="<?= $mediaUrlpdf;?>" class="btn-white" download="<?= $mediaName;?>" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Descargar Brochure</a>
 				<?php endif;?>
 				<?php if($urlBtn) : ?>
 					<a href="<?= $urlBtn;?>" data-bs-toggle="modal" data-bs-target="#verTour" class="btn-white" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200" ><?= $txtBtn;?></a>
