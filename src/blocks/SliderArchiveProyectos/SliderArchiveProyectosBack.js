@@ -31,6 +31,7 @@ const SliderArchiveProyectosBack = (props) => {
       mediaUrlMovil: "",
       nombre: "",
       descripcion: "",
+      direccion:"",
       textoEnlace: "",
       enlace: "",
       backgroundColor: ""
@@ -58,6 +59,12 @@ const SliderArchiveProyectosBack = (props) => {
   const onChangeImageDescripcion = (event, index) => {
     const newImagesArr = [...imagesArr];
     newImagesArr[index].descripcion = event;
+    setImagesArr(newImagesArr);
+    setAttr({ images: newImagesArr });
+  };
+  const onChangeImageDireccion = (event, index) => {
+    const newImagesArr = [...imagesArr];
+    newImagesArr[index].direccion = event;
     setImagesArr(newImagesArr);
     setAttr({ images: newImagesArr });
   };
@@ -104,6 +111,13 @@ const SliderArchiveProyectosBack = (props) => {
                   <TextControl
                     onChange={(event) => onChangeImageDescripcion(event, i)}
                     value={imageArr.descripcion}
+                  />
+                  <Text>
+                    <strong>Dirección:</strong>
+                  </Text>
+                  <TextControl
+                    onChange={(event) => onChangeImageDireccion(event, i)}
+                    value={imageArr.direccion}
                   />
                   <Text>
                     <strong>Texto de Enlace:</strong>

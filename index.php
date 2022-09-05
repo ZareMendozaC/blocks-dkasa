@@ -33,10 +33,7 @@ class DkasaBlocks{
 
     function adminAssets(){
         wp_register_script('dkasablock1', plugin_dir_url(__FILE__) . 'build/index.js', array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-block-editor'));
-        register_block_type("dkasa/block-1",array(
-            'editor_script' => 'dkasablock1',
-            'render_callback' => array($this, 'theHTML')
-        ));
+        
         register_block_type( DKASA_BLOCKS_URL_PLUGIN . 'config/banner-block.json', array(
             'editor_script' => 'dkasablock1',
             'render_callback' => array($this,'landings_inmobiliarias_banner_render_callback'),

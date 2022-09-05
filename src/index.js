@@ -1,6 +1,3 @@
-import "./bloque1";
-import "./bloque2";
-
 import { registerBlockType } from '@wordpress/blocks';
 import { render } from '@wordpress/element';
 import './style.scss';

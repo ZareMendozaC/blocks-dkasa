@@ -37,6 +37,7 @@ $slides = $attributes['slides'];
                                                 <div class="datos-principales" style="background-color:<?= $slide['backgroundColor'] ?>e0;">
                                                     <p class="nombre" data-aos="fade-zoom-in" data-aos-delay="2000"><?= $slide['nombre'] ?></p>
                                                     <p class="descripcion" data-aos="fade-zoom-in" data-aos-delay="2000"><?= $slide['descripcion'] ?></p>
+                                                    <p class="direccion" data-aos="fade-zoom-in" data-aos-delay="2000"><?= $slide['direccion'] ?></p>
                                                 </div>
                                                 <div class="enlace" data-aos="fade-zoom-in" data-aos-delay="2000">
                                                     <div style="color:<?= $slide['backgroundColor'] ?>;">

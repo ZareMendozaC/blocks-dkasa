@@ -68,7 +68,7 @@
           arrows: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          variableWidth: true
+          variableWidth: true,
         },
       },
     ],
@@ -87,7 +87,7 @@
     responsive: [
       {
         breakpoint: 768,
-        settings: "unslick"
+        settings: "unslick",
       },
     ],
   });
@@ -176,7 +176,17 @@
       {
         breakpoint: 767,
         settings: {
-          arrows: false,
+          prevArrow: `<div data-aos="fade-zoom-in" data-aos-duration="2000" class="arrow-left" role="button" aria-label="Previous">
+        <svg width="35" height="58" viewBox="0 0 35 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M34.0602 51.7565L28.5008 57.3157L0 28.8157L28.5008 0.291504L34.0602 5.8507L11.1187 28.8157L34.0602 51.7565Z" fill="#BE1521"/>
+        </svg>
+        </div>`,
+          nextArrow: `<div data-aos="fade-zoom-in" data-aos-duration="2000" class="arrow-right" role="button" aria-label="Next">
+        <svg width="35" height="58" viewBox="0 0 35 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 6.01403L5.5593 0.454834L34.0844 28.9548L5.5593 57.4547L0 51.8955L22.9415 28.9548L0 6.01403Z" fill="#BE1521"/>
+        </svg>
+        </div>`,
+          arrows: true,
           dots: true,
         },
       },
@@ -241,10 +251,13 @@
     responsive: [
       {
         breakpoint: 767,
-        settings: "unslick",
+        settings: {
+          slidesToShow: 1,
+        },
       },
     ],
   });
+
   $("#slider-archive-single-slider").on("init", function (event, slick) {
     console.log("initialized");
     $(".black-back").insertAfter(
@@ -356,13 +369,11 @@
     var containerBaseHeight = 400;
     var deltaSize = 100;
 
-    url_img = $('#panoramica-imagen').data('imagePan');
+    url_img = $("#panoramica-imagen").data("imagePan");
     console.log(url_img);
     container = document.querySelector("#panoramica-imagen");
 
-    panorama = new PANOLENS.ImagePanorama(
-      url_img
-    );
+    panorama = new PANOLENS.ImagePanorama(url_img);
 
     infospot = new PANOLENS.Infospot(350, PANOLENS.DataImage.Info);
     infospot.position.set(0, 0, -5000);
@@ -375,6 +386,6 @@
     viewer.add(panorama);
   });
   $(".panoramica-modal").on("hide.bs.modal", function (event) {
-    $('#panoramica-imagen').empty();
+    $("#panoramica-imagen").empty();
   });
 })(jQuery);
