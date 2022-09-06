@@ -21,7 +21,7 @@ $slider_counter = 0;
 $modal_counter = 0;
 ?>
 
-<section id="slider-archive-single-front" class="container-fluid">
+<!-- <section id="slider-archive-single-front" class="container-fluid">
     <div class="row">
         <div class="col-12 px-0 columna-1">
             <h2 class="titulo"><?= $titulo ?></h2>
@@ -102,7 +102,7 @@ $modal_counter = 0;
                 <div id="slider-archive-single-dots">
 
                 </div>
-
+                
             </div>
         </div>
     </div>
@@ -156,7 +156,7 @@ $modal_counter = 0;
                             <div id="panoramica-imagen" data-image-pan="<?= $slide['panoramica'] ?>">
 
                             </div>
-                            <!-- <iframe width="100%" height="100%" src="<?= $slide['panoramica'] ?>" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                            <!- <iframe width="100%" height="100%" src="<?= $slide['panoramica'] ?>" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ->
                         </div>
                     </div>
                 </div>
@@ -165,4 +165,48 @@ $modal_counter = 0;
 
     <?php $modal_counter++;
     endforeach; ?>
+</section> -->
+
+<section id="slider-archive-single-front" class="container-fluid">
+    <div class="row">
+        <div class="col-12 px-0 columna-1">
+            <h2 class="titulo"><?= $titulo ?></h2>
+        </div>
+        <div class="col-12 px-0">
+			<div class="contenido-contenedor">
+				<div id="slider-archive-single">
+				<?php foreach ($slides as $slide) : ?>
+						<div class="tf-card">
+							<a href="<?= $slide["enlace"]; ?>">
+								<div class="td-card-front">
+									<div>
+										<img class="" src="<?= $slide["mediaUrlLogo"]; ?>" alt="Dibujo">
+									</div>
+									<div class="estado">
+										<p><?= $slide["nombre"]; ?></p>
+									</div>
+								</div>
+								<div class="tf-card-back">
+									<div>
+										<p class="nombre"><?= $slide["nombre"]; ?></p>
+										<p class="direccion"><?= $slide["direccion"]; ?></p>
+										<p class="distrito"><?= $slide["distrito"]; ?></p>
+										<p class="detalles"><?= $slide["detalles"]; ?></p>
+										<p class="metraje"><?= $slide["metraje"]; ?></p>
+										<p class="precio"><?= $slide["precio"]; ?></p>
+										<p class="estado"><?= $slide["estado"]; ?></p>
+										<img class="logo" src="<?= $slide["mediaUrl"]; ?>" alt="Dibujo">
+										<div class="d-flex justify-content-end align-items-center">
+											<p class="texto-enlace"><?= $slide["textoEnlace"]; ?></p>
+											<img src="<?= site_url("/").'wp-content/uploads/2022/06/Vector.png' ?>" alt="">
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+				<?php endforeach; ?>
+				</div>
+			</div>
+		</div>
+    </div>
 </section>

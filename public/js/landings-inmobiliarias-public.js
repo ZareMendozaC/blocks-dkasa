@@ -258,7 +258,7 @@
     ],
   });
 
-  $("#slider-archive-single-slider").on("init", function (event, slick) {
+  /*$("#slider-archive-single-slider").on("init", function (event, slick) {
     console.log("initialized");
     $(".black-back").insertAfter(
       "#slider-archive-single-slider .next.slick-arrow"
@@ -341,7 +341,7 @@
       AOS.init({});
     }
   );
-
+  */
   let numero = jQuery(".slick-vertical .slick-slide")
     .not(".slick-cloned")
     .children().length;
