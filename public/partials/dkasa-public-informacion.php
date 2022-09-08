@@ -42,7 +42,7 @@ $backgroundColor = $attributes['backgroundColor'];
 }
 </style>
 <div class="separador-87">
-        <div class="accordion" id="accordionInfo">
+        <div class="accordion" id="CotizaAqui">
                 <div class="card">
                     <div class="card-header banner-color " id="heading" style="background-color:<?= $backgroundColor; ?>" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
                         <h2 class="mb-0 my-container">
@@ -56,7 +56,7 @@ $backgroundColor = $attributes['backgroundColor'];
                             </div>
                         </h2>
                     </div>
-                    <div id="collapseTwo" class="collapse color-form" aria-labelledby="heading" data-parent="#accordionInfo">
+                    <div id="collapseTwo" class="collapse color-form" aria-labelledby="heading" data-parent="#CotizaAqui">
                     <div class="my-container">
                         <div class="card-body-form">
                             <?= $formulario;?>

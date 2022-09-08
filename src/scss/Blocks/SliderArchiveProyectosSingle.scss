@@ -401,6 +401,22 @@ height: size(649);
       margin-bottom: size(11);
     }
   }
+  .aclaracion{
+    display: none;
+    @media screen and (max-width: 767px) {
+      margin-right: size(16);
+      margin-left: size(16);
+      font-size: size(14);
+      line-height: size(22);
+      margin-bottom: size(11);
+      display: block;
+      text-align: center;
+      & span{
+        color: #a01127;
+        font-weight: bold;
+      }
+    }
+  }
   .texo-enlace-general {
     margin-right: size(342);
     margin-bottom: size(63);
@@ -458,6 +474,9 @@ width: size(19);
       }
       .slick-list {
         width: size(1142);
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
       }
       @media screen and (max-width: 767px) {
         display: block;
@@ -540,7 +559,7 @@ height: inherit;
         }
       }
       .tf-card-back {
-        width: size(318);
+        width: size(405);
         height: size(573);
         background: #3c3c3acc;
         color: white;

@@ -388,4 +388,59 @@
   $(".panoramica-modal").on("hide.bs.modal", function (event) {
     $("#panoramica-imagen").empty();
   });
+
+  function myFunction(x) {
+    if (x.matches) { // If media query matches
+      $("#slider-archive-single").slick({
+        pauseOnHover: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        speed: 2000,
+        infinite: true,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              arrows: true,
+              dots: false,
+              prevArrow: `<div class="prev" role="button" aria-label="Previous">
+              <svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 20.7568L11.7165 23L1.00536e-06 11.5L11.7165 -1.99626e-07L14 2.24319L4.5769 11.5L14 20.7568Z" fill="white"/>
+              </svg>          
+            </div>`,
+              nextArrow: `<div class="next" role="button" aria-label="Next">
+        <svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 2.24319L2.28346 0L14 11.5L2.28346 23L0 20.7568L9.4231 11.5L0 2.24319Z" fill="white"/>
+        </svg>    
+            </div>`,
+            },
+          },
+        ],
+      });
+
+      $('.tf-card').on('click',function(e){
+        e.preventDefault();
+        console.log("touched");
+        var url = $(this).find('a').attr('href');
+        $('.tf-card').removeClass('opened-info');
+        console.log(url);
+        if($(this).hasClass('opened-info') == true){
+          window.location = url;
+        }
+        if($(this).hasClass('slick-current') == true){
+          $(this).addClass('opened-info');
+        }
+      });
+
+    } else {
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 767px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes 
+
 })(jQuery);

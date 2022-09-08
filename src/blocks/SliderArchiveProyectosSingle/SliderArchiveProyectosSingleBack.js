@@ -242,6 +242,23 @@ const SliderArchiveProyectosSingleBack = (props) => {
                 style={{ backgroundColor: imageArr.backgroundColor }}
               >
                 <div>
+                <Text>
+                    <strong>Imagen de Logo:</strong>
+                  </Text>
+                  <Item percentage={100} classEle="lia-gap-8">
+                    <ImageUploadRepeater
+                      variables={props}
+                      details={{
+                        index: i,
+                        datum: imageArr,
+                        setData: setImagesArr,
+                        data: imagesArr,
+                        namePropertyId: "mediaId",
+                        namePropertyUrl: "mediaUrl",
+                        namePropertyData: "slides",
+                      }}
+                    />
+                  </Item>
                   <Text>
                     <strong>Imagen de Fondo:</strong>
                   </Text>

@@ -171,6 +171,7 @@ $modal_counter = 0;
     <div class="row">
         <div class="col-12 px-0 columna-1">
             <h2 class="titulo"><?= $titulo ?></h2>
+            <p class="aclaracion">Desliza a la <span>DERECHA</span> o <span>IZQUIERDA</span> para ver nuestros proyectos</p>
         </div>
         <div class="col-12 px-0">
 			<div class="contenido-contenedor">
@@ -189,10 +190,9 @@ $modal_counter = 0;
 								<div class="tf-card-back">
 									<div>
 										<p class="nombre"><?= $slide["nombre"]; ?></p>
-										<p class="direccion"><?= $slide["direccion"]; ?></p>
-										<p class="distrito"><?= $slide["distrito"]; ?></p>
-										<p class="detalles"><?= $slide["detalles"]; ?></p>
-										<p class="metraje"><?= $slide["metraje"]; ?></p>
+										<p class="direccion"><?= $slide["area"]; ?></p>
+										<p class="distrito"><?= $slide["dormitorios"]; ?></p>
+										<p class="detalles"><?= $slide["ubicacion"]; ?></p>
 										<p class="precio"><?= $slide["precio"]; ?></p>
 										<p class="estado"><?= $slide["estado"]; ?></p>
 										<img class="logo" src="<?= $slide["mediaUrl"]; ?>" alt="Dibujo">
