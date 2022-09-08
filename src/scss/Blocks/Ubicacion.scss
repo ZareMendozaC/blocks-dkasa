@@ -14,7 +14,7 @@
 
 .btn-pano,
 .btn-pano:hover {
-  position: absolute;
+  position: static;
   width: calc(100vw * (calc(276 / var(--width_base))));
   height: calc(100vw * (calc(52 / var(--width_base))));
   left: 49%;
@@ -91,6 +91,19 @@
           height: size(27);
           font-weight: normal;
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .bg-ubicacion{
+    #column-img{
+      display: flex;
+      justify-content: space-evenly !important;
+      flex-wrap: wrap;
+
+      img{
+        margin-bottom: size(20);
       }
     }
   }

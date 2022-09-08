@@ -24,15 +24,15 @@
         top: 0;
         bottom: 0;
         height: fit-content;
-        &.arrow-left{
+        &.arrow-left {
           left: size(25);
         }
-        &.arrow-right{
+        &.arrow-right {
           right: size(25);
         }
-        & .svg{
+        & .svg {
           height: size(35);
-width: size(19);
+          width: size(19);
         }
       }
       .slick-dots {
@@ -89,8 +89,11 @@ width: size(19);
             .datos {
               left: size(148);
               @media screen and (max-width: 767px) {
-                top: size(264);
-                left: size(16);
+                left: 0;
+                top: calc(100vw * (194 / var(--width_base)));
+                right: 0;
+                width: calc(100vw * (219 / var(--width_base)));
+                margin: auto;
               }
               .datos-principales {
                 width: size(454);
