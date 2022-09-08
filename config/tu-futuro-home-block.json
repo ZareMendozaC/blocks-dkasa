@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "dkasa/tu-futuro-home",
+  "version": "1",
+  "title": "Tu Futuro Home",
+  "category": "dkasa",
+  "icon": "building",
+  "description": "Tu Futuro Home - Dkasa",
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "default": ""
+    },
+    "projects": {
+      "type": "array",
+      "default": [
+        {
+          "mediaId": null,
+          "mediaUrl": "",
+          "estado": "",
+          "nombre": "",
+          "direccion": "",
+          "distrito":"",
+          "detalles": "",
+          "metraje": "",
+          "precio": "",
+          "mediaIdLogo": null,
+          "mediaUrlLogo": "",
+          "textoEnlace": "",
+          "enlace": ""
+        }
+      ]
+    }
+  }
+}

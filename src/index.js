@@ -11,6 +11,9 @@ import BannerRojoJson from '../config/banner-rojo-block.json';
 import TuFuturoBack from './blocks/TuFuturo/TuFuturo';
 import TuFuturoJson from '../config/tu-futuro-block.json';
 
+import TuFuturoHomeBack from './blocks/TuFuturoHome/TuFuturoHomeBack';
+import TuFuturoHomeJson from '../config/tu-futuro-home-block.json';
+
 import DescriptionBack from './blocks/Description/DescriptionBack';
 import DescriptionJson from '../config/description-block.json'; 
 
@@ -52,6 +55,7 @@ import AvanceJson from '../config/avance-block.json';
 	registerBlockType( DescriptionJson.name, { edit: DescriptionBack});
 	registerBlockType( BannerRojoJson.name, { edit: BannerRojoBack});
 	registerBlockType( TuFuturoJson.name, { edit: TuFuturoBack});
+	registerBlockType( TuFuturoHomeJson.name, { edit: TuFuturoHomeBack});
 	registerBlockType( DescriptionHogarJson.name, { edit: DescriptionHogarBack});
 	registerBlockType( DescriptionUbicacionJson.name, { edit: DescriptionUbicacionBack});
 	registerBlockType( SliderProyectoJson.name, { edit: SliderProyectoBack});

@@ -1,0 +1,496 @@
+.tu-futuro-back-card {
+  background-color: #eaeaea;
+  .logo-field {
+    width: 50%;
+  }
+}
+
+// FRONTEND
+#tu-futuro-front {
+  font-family: "Century Gothic", sans-serif;
+  .row {
+    background-image: url("/public/image/Background/fondo1-1.png"),
+      url("/public/image/Background/Fondo-1-2.png");
+    background-repeat: no-repeat;
+    background-position-x: 0, size(1616);
+    background-position-y: size(444), size(13);
+    background-size: size(265) size(421), size(235) size(218);
+  }
+  .titulo {
+    margin-left: size(207);
+    font-weight: 700;
+    font-size: size(48);
+    line-height: size(59);
+    color: #3c3c3a;
+    margin-bottom: size(63);
+    @media screen and (max-width: 767px) {
+      margin-right: size(16);
+      margin-left: size(16);
+      font-size: size(28);
+      line-height: size(28);
+      margin-bottom: size(11);
+    }
+  }
+  .texo-enlace-general {
+    margin-right: size(342);
+    margin-bottom: size(63);
+    a {
+      font-weight: 700;
+      font-size: size(20);
+      line-height: size(25);
+      color: #3c3c3a;
+      margin-bottom: 0;
+      margin-right: size(12);
+      text-decoration: none;
+    }
+  }
+  .contenido-contenedor {
+    display: block;
+    justify-content: center;
+    margin-bottom: size(32);
+    margin-left: size(277);
+    margin-right: size(277);
+    @media screen and (max-width: 767px) {
+      margin-right: size(16);
+      margin-left: size(16);
+      margin-bottom: 0;
+    }
+    #slider-tu-futuro {
+      display: flex;
+      justify-content: space-between;
+      .slick-arrow {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 767px) {
+          display: block;
+          position: absolute;
+          z-index: 3;
+          height: fit-content;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        &.next{
+          @media screen and (max-width: 767px) {
+            right: size(15);
+          }
+        }
+        &.prev{
+          @media screen and (max-width: 767px) {
+            left: size(15);
+          }
+        }
+        & .svg{
+          height: size(35);
+width: size(19);
+        }
+      }
+      .slick-list {
+        width: size(1142);
+      }
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+    .tf-card {
+      margin-right: size(47);
+      margin-left: size(47);
+      position: relative;
+      width: size(318);
+      height: size(567);
+      overflow: hidden;
+      @media screen and (max-width: 767px) {
+        width: size(343);
+        margin-bottom: size(26);
+        margin-left: 0;
+        margin-right: 0;
+      }
+      &:hover {
+        .td-card-front {
+          .estado {
+            transition: 0.75s all;
+            opacity: 0;
+          }
+        }
+        .tf-card-back {
+          transition: 0.75s all;
+          transform: translateY(calc(100vw * (-567 / var(--width_base))));
+          img, p{
+            transition: 0.75s all 0.75s;
+            opacity: 1;
+          }
+        }
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      .td-card-front {
+        width: size(318);
+        height: size(567);
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          height: 100%;
+          img{
+            width: 100%;
+          }
+      }
+      & > div{
+        height: inherit;
+      }
+      img{
+        width: 100%;
+        object-fit: cover;
+height: inherit;
+      }
+        .estado {
+          height: size(44);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          bottom: 0;
+          background-color: #3c3c3a;
+          width: 100%;
+          p {
+            font-weight: bold;
+            font-size: size(20);
+            line-height: size(25);
+            margin: 0;
+            color: #fff;
+          }
+        }
+      }
+      .tf-card-back {
+        width: size(318);
+        height: size(567);
+        background: #3c3c3acc;
+        color: white;
+        padding-top: size(67);
+        padding-right: size(32);
+        padding-bottom: size(32);
+        padding-left: size(39);
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          height: 100%;
+      }
+      img{
+        opacity: 0;
+      }
+      p{
+        opacity: 0;
+      }
+        .nombre {
+          font-weight: 700;
+          font-size: size(24);
+          line-height: size(29);
+          margin: 0;
+        }
+        .direccion {
+          font-size: size(16);
+          line-height: size(20);
+          margin: 0;
+        }
+        .distrito {
+          font-size: size(16);
+          line-height: size(20);
+          text-decoration: underline;
+          text-underline-position: under;
+          text-underline-offset: size(4);
+          text-decoration-thickness: size(1.5);
+          margin-bottom: size(64);
+        }
+        .detalles {
+          font-size: size(20);
+          line-height: size(25);
+          margin: 0;
+        }
+        .metraje {
+          font-size: size(20);
+          line-height: size(25);
+          margin: 0;
+        }
+        .precio {
+          font-size: size(20);
+          line-height: size(25);
+          margin-bottom: size(54);
+        }
+        .estado {
+          font-size: size(16);
+          line-height: size(20);
+          margin-bottom: size(12);
+        }
+        .logo {
+          margin-bottom: size(92);
+        }
+        .texto-enlace {
+          font-size: size(16);
+          line-height: size(20);
+          margin-bottom: 0;
+          margin-right: size(2);
+        }
+      }
+    }
+  }
+}
+// FRONTEND
+#slider-futuro-home-front {
+  font-family: "Century Gothic", sans-serif;
+  .row {
+    background-image: url("/public/image/Background/fondo1-1.png"),
+      url("/public/image/Background/Fondo-1-2.png");
+    background-repeat: no-repeat;
+    background-position-x: 0, size(1616);
+    background-position-y: size(444), size(13);
+    background-size: size(265) size(421), size(235) size(218);
+  }
+  .titulo {
+    margin-left: size(207);
+    font-weight: 700;
+    font-size: size(48);
+    line-height: size(59);
+    color: #3c3c3a;
+    margin-bottom: size(63);
+    @media screen and (max-width: 767px) {
+      margin-right: size(16);
+      margin-left: size(16);
+      font-size: size(28);
+      line-height: size(28);
+      margin-bottom: size(11);
+    }
+  }
+  .aclaracion{
+    display: none;
+    @media screen and (max-width: 767px) {
+      margin-right: size(16);
+      margin-left: size(16);
+      font-size: size(14);
+      line-height: size(22);
+      margin-bottom: size(11);
+      display: block;
+      text-align: center;
+      & span{
+        color: #a01127;
+        font-weight: bold;
+      }
+    }
+  }
+  .texo-enlace-general {
+    margin-right: size(342);
+    margin-bottom: size(63);
+    a {
+      font-weight: 700;
+      font-size: size(20);
+      line-height: size(25);
+      color: #3c3c3a;
+      margin-bottom: 0;
+      margin-right: size(12);
+      text-decoration: none;
+    }
+  }
+  .contenido-contenedor {
+    display: block;
+    justify-content: center;
+    margin-bottom: size(32);
+    margin-left: size(207);
+    margin-right: size(207);
+    @media screen and (max-width: 767px) {
+      margin-right: size(16);
+      margin-left: size(16);
+      margin-bottom: 0;
+    }
+    #slider-futuro-home {
+      display: flex;
+      justify-content: space-between;
+    flex-wrap: wrap;
+      .slick-arrow {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 767px) {
+          display: block;
+          position: absolute;
+          z-index: 3;
+          height: fit-content;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        &.next{
+          @media screen and (max-width: 767px) {
+            right: size(15);
+          }
+        }
+        &.prev{
+          @media screen and (max-width: 767px) {
+            left: size(15);
+          }
+        }
+        & .svg{
+          height: size(35);
+width: size(19);
+        }
+      }
+      .slick-list {
+        width: size(1142);
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+    .tf-card {
+      margin-right: 0;
+      margin-left: 0;
+      position: relative;
+      width: size(405);
+      height: size(573);
+      overflow: hidden;
+      margin-bottom: calc(100vw*(50/var(--width_base)));
+      cursor: pointer;
+      @media screen and (max-width: 767px) {
+        width: size(343);
+        margin-bottom: size(26);
+        margin-left: 0;
+        margin-right: 0;
+      }
+      &:hover {
+        .td-card-front {
+          .estado {
+            transition: 0.75s all;
+            opacity: 0;
+          }
+        }
+        .tf-card-back {
+          transition: 0.75s all;
+          transform: translateY(calc(100vw * (-573 / var(--width_base))));
+          img, p{
+            transition: 0.75s all 0.75s;
+            opacity: 1;
+          }
+        }
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      .td-card-front {
+        width: size(405);
+        height: 100%;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          height: 100%;
+          img{
+            width: 100%;
+          }
+      }
+      & > div{
+        height: inherit;
+      }
+      img{
+        width: 100%;
+        object-fit: cover;
+height: inherit;
+      }
+        .estado {
+          height: size(44);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          bottom: 0;
+          background-color: #3c3c3a;
+          width: 100%;
+          p {
+            font-weight: bold;
+            font-size: size(20);
+            line-height: size(25);
+            margin: 0;
+            color: #fff;
+          }
+        }
+      }
+      .tf-card-back {
+        width: size(405);
+        height: size(573);
+        background: #3c3c3acc;
+        color: white;
+        padding-top: size(67);
+        padding-right: size(32);
+        padding-bottom: size(32);
+        padding-left: size(39);
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          height: 100%;
+      }
+      img{
+        opacity: 0;
+      }
+      p{
+        opacity: 0;
+      }
+        .nombre {
+          font-weight: 700;
+          font-size: size(24);
+          line-height: size(29);
+          margin: 0;
+        }
+        .direccion {
+          font-size: size(16);
+          line-height: size(20);
+          margin: 0;
+        }
+        .distrito {
+          font-size: size(16);
+          line-height: size(20);
+          text-decoration: underline;
+          text-underline-position: under;
+          text-underline-offset: size(4);
+          text-decoration-thickness: size(1.5);
+          margin-bottom: size(64);
+        }
+        .detalles {
+          font-size: size(20);
+          line-height: size(25);
+          margin: 0;
+        }
+        .metraje {
+          font-size: size(20);
+          line-height: size(25);
+          margin: 0;
+        }
+        .precio {
+          font-size: size(20);
+          line-height: size(25);
+          margin-bottom: size(54);
+        }
+        .estado {
+          font-size: size(16);
+          line-height: size(20);
+          margin-bottom: size(12);
+        }
+        .logo {
+          margin-bottom: size(22);
+          width: size(180);
+        }
+        .texto-enlace {
+          font-size: size(16);
+          line-height: size(20);
+          margin-bottom: 0;
+          margin-right: size(2);
+        }
+      }
+    }
+  }
+}

@@ -21,7 +21,7 @@ $slider_counter = 0;
 $modal_counter = 0;
 ?>
 
-<!-- <section id="slider-archive-single-front" class="container-fluid">
+ <section id="slider-archive-single-front" class="container-fluid">
     <div class="row">
         <div class="col-12 px-0 columna-1">
             <h2 class="titulo"><?= $titulo ?></h2>
@@ -156,7 +156,6 @@ $modal_counter = 0;
                             <div id="panoramica-imagen" data-image-pan="<?= $slide['panoramica'] ?>">
 
                             </div>
-                            <!- <iframe width="100%" height="100%" src="<?= $slide['panoramica'] ?>" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ->
                         </div>
                     </div>
                 </div>
@@ -165,9 +164,9 @@ $modal_counter = 0;
 
     <?php $modal_counter++;
     endforeach; ?>
-</section> -->
+</section> 
 
-<section id="slider-archive-single-front" class="container-fluid">
+<!--<section id="slider-archive-single-front" class="container-fluid">
     <div class="row">
         <div class="col-12 px-0 columna-1">
             <h2 class="titulo"><?= $titulo ?></h2>
@@ -209,4 +208,4 @@ $modal_counter = 0;
 			</div>
 		</div>
     </div>
-</section>
+</section>-->

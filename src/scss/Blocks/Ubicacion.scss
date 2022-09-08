@@ -102,8 +102,11 @@
       justify-content: space-evenly !important;
       flex-wrap: wrap;
 
-      img{
+      & > img{
         margin-bottom: size(20);
+      }
+      .btn-res-u{
+        position: static;
       }
     }
   }
