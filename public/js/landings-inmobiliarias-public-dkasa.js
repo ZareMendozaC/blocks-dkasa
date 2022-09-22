@@ -215,8 +215,8 @@
     arrows: false,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 1850,
-    speed: 1850,
+    autoplaySpeed: 2750,
+    speed: 2750,
     infinite: true,
     responsive: [
       {
@@ -234,8 +234,8 @@
     arrows: true,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 4500,
-    speed: 4500,
+    autoplaySpeed: 2500,
+    speed: 2500,
     infinite: true,
     variableWidth: true,
     prevArrow: `<div class="prev" role="button" aria-label="Previous">
@@ -272,8 +272,8 @@
     dots: true,
     appendDots: $("#slider-archive-single-dots"),
     autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 2000,
+    autoplaySpeed: 2500,
+    speed: 2500,
     infinite: true,
     variableWidth: true,
     prevArrow: `<div class="prev" role="button" aria-label="Previous">
@@ -341,7 +341,7 @@
       AOS.init({});
     }
   );
-  
+
   let numero = jQuery(".slick-vertical .slick-slide")
     .not(".slick-cloned")
     .children().length;
@@ -390,7 +390,8 @@
   });
 
   function myFunction(x) {
-    if (x.matches) { // If media query matches
+    if (x.matches) {
+      // If media query matches
       $("#slider-futuro-home").slick({
         pauseOnHover: false,
         slidesToShow: 1,
@@ -420,13 +421,14 @@
           },
         ],
       });
-
+      $(".cotiza-btn a").click(function () {
+        $('.close-btn-toggler').click();
+      });
     } else {
     }
   }
-  
-  var x = window.matchMedia("(max-width: 767px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes 
 
+  var x = window.matchMedia("(max-width: 767px)");
+  myFunction(x); // Call listener function at run time
+  x.addListener(myFunction); // Attach listener function on state changes
 })(jQuery);
