@@ -115,6 +115,10 @@
   border: none !important;
   cursor: pointer;
 }
+.btn-quiero a{
+  color: #fff;
+  text-decoration: none;
+}
 .img-des {
   width: calc(100vw * (calc(751 / var(--width_base))));
   height: calc(100vw * (calc(445 / var(--width_base))));

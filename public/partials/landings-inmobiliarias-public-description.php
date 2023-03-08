@@ -32,7 +32,7 @@ $txtBtn = $attributes['txtBtn'];
 			<div class="col-md-6 col-12 no-padding pdt-93 order-1-res">
 				<h2 class="title-des per-res-one" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200"><?= $title;?></h2>
 				<p class="subtitle-des  per-res-two" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200"><?= $content?></p>
-				<div class="openForm btn-quiero only-desk-f" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200"><?= $txtBtn;?></div>
+				<div class="openForm btn-quiero only-desk-f" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200"><a target="_blank" href="<?= $urlBtn ?>"><?= $txtBtn;?></a></div>
 			</div>
 	</section>
 </div>

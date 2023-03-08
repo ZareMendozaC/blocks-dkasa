@@ -44,9 +44,9 @@ $backgroundColor = $attributes['backgroundColor'];
 <div class="separador-87">
         <div class="accordion" id="CotizaAqui">
                 <div class="card">
-                    <div class="card-header banner-color " id="heading" style="background-color:<?= $backgroundColor; ?>" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="card-header banner-color " id="heading" style="background-color:<?= $backgroundColor; ?>" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                         <h2 class="mb-0 my-container">
-                            <button id="titlebtnInf" class="btn btn-link banner-color-button text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <button id="titlebtnInf" class="btn btn-link banner-color-button text-left collapsed" type="button" >
                             Quiero más información
                             </button>
                             <div>

@@ -28,6 +28,7 @@ $txtBtnTwo = $attributes['txtBtnTwo'];
 $backgroundColor = $attributes['backgroundColor'];
 $vistapano = $attributes['vistapano'];
 $mediaPanUrl = $attributes['mediaPanUrl'];
+
 ?>
 <style>
 	.btn-white:hover {
@@ -88,7 +89,7 @@ $mediaPanUrl = $attributes['mediaPanUrl'];
 					<a href="<?= $mediaUrlpdf; ?>" class="btn-white" download="<?= $mediaName; ?>" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Descargar Brochure</a>
 				<?php endif; ?>
 				<?php if ($mediaPanUrl) : ?>
-					<a class="btn-pano" href="<?= $vistapano; ?>" data-bs-toggle="modal" data-bs-target="#verPanoramica">
+					<a class="btn-pano" href="#" data-toggle="modal" data-target="#verPanoramica">
 						Vista panorámica
 					</a>
 				<?php endif; ?>
@@ -144,6 +145,5 @@ $mediaPanUrl = $attributes['mediaPanUrl'];
 				</div>
 			</div>
 		</div>
-</div>
-</section>
+	</section>
 </div>
