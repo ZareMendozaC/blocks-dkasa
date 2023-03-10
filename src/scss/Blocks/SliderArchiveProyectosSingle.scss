@@ -374,7 +374,22 @@ height: size(649);
   height: 100%;
 }
 
-
+#listado-proyectos{
+  .columna-2{
+    .card-unique{
+      .div-logo{
+        .imagen-logo{
+          height: size(53);
+          max-height: size(53);
+          @media screen and (max-width: 767px) {
+            height: size(37);
+            max-height: size(37);
+          }
+        }
+      }
+    }
+  }
+}
 // FRONTEND
 /*
 #slider-archive-single-front {

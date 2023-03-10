@@ -21,27 +21,24 @@ $mediaUrl = $attributes['mediaUrl'];
 $inicio = 100;
 ?>
 
-<div class="my-container mrg-r-l">
-	<section class="row no-padding no-margin">
-			<div class="col-md-12 col-12 no-padding mrg-btm-57">
-				<h2 class="subtitle-general" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">Tu futuro Hogar</h2>
-			</div>
-			<div class="col-md-4 col-12 no-padding mrg-35_top order-2-res center-icons-f">
-				<div>
-					<?php foreach ($images as $image): ?>
-							<div class="col-md-12 col-6  box-carac_1"> 
-								<div class="into-carac box-carac" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="<?= $inicio;?>">
-									<img src="<?= $image['mediaUrl'];?>" alt="" class="" >
-									<h3 class="subtitle-carac"><?= $image['title'];?></h3>
-								</div>
-							</div>
-						<?php
-							$inicio= $inicio+100;
-							endforeach; ?>
-				</div>
-			</div>
-			<div class="col-md-8 col-12 no-padding order-1-res">
-			<img class="img-carac" src="<?= $mediaUrl;?>" alt="" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
-			</div>
-	</section>
-</div>
+<section class="container-fluid contenedor-futuro-hogar">
+    <div class="row contenido-part1">
+        <div class="col-12 px-0 columna-1">
+            <h2 class="title-futuro_h2">Tu futuro Hogar</h2>
+            <div class="line-h2"></div>
+        </div>
+        <div class="col-12 px-0 columna-1 column-tufuturo">
+            <?php foreach ($images as $image) : ?>
+                <div class="into-carac box-carac" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="<?= $inicio; ?>">
+                    <img src="<?= $image['mediaUrl']; ?>" alt="" class="">
+                    <h3 class="subtitle-carac"><?= $image['title']; ?></h3>
+                </div>
+            <?php
+                $inicio = $inicio + 100;
+            endforeach; ?>
+        </div>
+        <div class="col-12 px-0 columna-1">
+            <img class="img-future" src="https://www.dkasa.com.pe/wp-content/uploads/2023/03/image-122.png" alt="">
+        </div>
+    </div>
+</section>

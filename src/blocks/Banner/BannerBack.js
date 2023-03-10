@@ -124,6 +124,25 @@ const BannerBack = (props) => {
 						/>
 					</FlexItem>
 				</Flex>
+				<Flex>
+					<FlexItem>
+						<TextControl 
+							label="Formulario" 
+							onChange={(event) => eventChangeAttr(setAttr, {formulario: event})} 
+							value={attr.formulario}
+						/>
+					</FlexItem>
+				</Flex>
+				<Flex>
+					<FlexItem>
+						<TextEditor
+							tagEle="p"
+							eventEle={(event)=> eventChangeAttr(setAttr,{descripcion: event})}
+							data={ attr.descripcion }
+							placeholder="Descripcion"
+						/>
+					</FlexItem>
+				</Flex>
 			</SectionContainer>
 
 		</Section>

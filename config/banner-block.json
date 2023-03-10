@@ -50,6 +50,14 @@
 	"mediaUrlLogo": {
 		"type": "string",
 		"default": ""
+	},
+	"formulario": {
+		"type": "string",
+		"default": ""
+	},
+	"descripcion": {
+		"type": "string",
+		"default": ""
 	}
   }
 }

@@ -1,7 +1,85 @@
-.center-text{
-    text-align: center;
+.center-text {
+	text-align: center;
 }
-.separadores{
-    margin-top: calc(100vw * (calc(161 / var(--width_base))));
-    margin-bottom: calc(100vw * (calc(124 / var(--width_base))));
+.separadores {
+	margin-top: calc(100vw * (calc(161 / var(--width_base))));
+	margin-bottom: calc(100vw * (calc(124 / var(--width_base))));
+}
+
+#accordionForm {
+	.accordion-item {
+		border: none;
+		#headingOne {
+			border-radius: size(15);
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: size(70);
+			h2 {
+				font-family: "Century Gothic";
+				font-style: normal;
+				font-weight: 700;
+				font-size: size(25);
+				line-height: size(30);
+				color: #ffffff;
+				margin-bottom: 0;
+			}
+		}
+		#collapseOne {
+			.accordion-body {
+				padding-top: size(64);
+				padding-right: size(30);
+				padding-left: size(30);
+				label {
+					font-family: "Century Gothic";
+					font-style: normal;
+					font-weight: 700;
+					font-size: size(14);
+					line-height: size(17);
+					margin-bottom: size(13);
+					color: #000000;
+				}
+				input:not([type="checkbox"]) {
+					font-family: "Century Gothic";
+					font-style: normal;
+					font-weight: 400;
+					font-size: size(17);
+					line-height: size(22);
+					color: #000000;
+					border: none;
+					border-radius: 0;
+					border-bottom: size(2) solid rgba(60, 60, 58, 0.59);
+				}
+				#acceptance-form-footer {
+					label {
+						span {
+							font-family: "Century Gothic";
+							font-style: normal;
+							font-weight: 400;
+							font-size: size(14);
+							line-height: size(17);
+							color: #000000;
+							margin-left: size(20);
+						}
+					}
+				}
+				input[type="submit"] {
+					width: size(171);
+					height: size(46);
+					background: #be1621;
+					border-radius: size(15);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-family: "Century Gothic";
+					font-style: normal;
+					font-weight: 700;
+					font-size: size(18);
+					line-height: size(22);
+					color: #ffffff;
+				}
+			}
+		}
+	}
 }

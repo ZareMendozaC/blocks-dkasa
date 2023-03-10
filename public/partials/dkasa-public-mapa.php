@@ -22,12 +22,15 @@
 	
 ?>
 
-<div class="my-container" id="ubicacion-proyecto">
-    <section class="row no-padding no-margin" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
-            <div class="col-md-12 col-12 no-padding">
-            <a href="<?= $linkwaze;?>" ><img class="link-waze" src="<?= site_url('/').'wp-content/uploads/2022/06/Frame.png'?>" alt="waze"></a>
-            <div class="openForm btn-mapa"><a target="_blank" href="<?= $linkvisita;?>">¡Quiero visitarlo!</a></div>
-                <?= $shortcodemapa;?>
-            </div>
+<div class="container-fluid contenedor-inf-dondevivir" id="ubicacion-proyecto">
+    <section class="row contenido-part1  no-padding no-margin" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
+        <h2 class="title-des" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">Arquitectura que cautiva</h2>
+        <div class="line-h2"></div>
+        <div class="col-md-12 col-12 no-padding mrg-top-map">
+            <a href="<?= $linkwaze; ?>"><img class="link-waze" src="<?= site_url('/') . 'wp-content/uploads/2022/06/Frame.png' ?>" alt="waze"></a>
+            <div class="openForm btn-mapa"><a target="_blank" href="<?= $linkvisita; ?>">¡Quiero visitarlo!</a></div>
+
+            <?php echo do_shortcode('[put_wpgm id=4]'); ?>
+        </div>
     </section>
 </div>
