@@ -58,6 +58,19 @@
 	"descripcion": {
 		"type": "string",
 		"default": ""
-	}
+	},
+	"titulo": {
+		"type": "string",
+		"default": ""
+	},
+	"images": {
+        "type": "array",
+        "default": [
+          {
+            "mediaId": null,
+            "mediaUrl": ""
+          }
+        ]
+      }
   }
 }

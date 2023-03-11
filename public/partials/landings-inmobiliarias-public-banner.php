@@ -30,6 +30,10 @@ $ubicacion = $attributes['ubicacion'];
 $precio = $attributes['precio'];
 $formulario = $attributes['formulario'];
 $descripcion = $attributes['descripcion'];
+$titulo = $attributes['titulo'];
+
+$images = $attributes['images'];
+
 ?>
 <style>
 	#detalle-proyectos {
@@ -46,33 +50,25 @@ $descripcion = $attributes['descripcion'];
 	<img class="point-desk" src="https://www.dkasa.com.pe/wp-content/uploads/2023/03/publishmedia-dots-2-1.png" alt="">
 	<div class="row">
 		<div class="col-12 px-0 columna-1">
-			<h1 class="title-pro_1">Un vencindario apacible y bonito</h1>
+			<h1 class="title-pro_1"><?= $titulo?></h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-12 px-0">
 			<div class="contenido-detalle-proyecto">
 				<div class="contenido-part1">
-					<div class="slider slider-for-detalle">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-31.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-32.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-33.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-34.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-35.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-36.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-33.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-34.png" alt="">
-					</div>
-					<div class="slider slider-nav-detalle">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-31.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-32.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-33.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-34.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-35.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-36.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-33.png" alt="">
-						<img src="https://www.dkasa.com.pe/wp-content/uploads/2022/06/Recurso-34.png" alt="">
-					</div>
+					<?php if ($images) : ?>
+						<div class="slider slider-for-detalle">
+							<?php foreach ($images as $image) : ?>
+								<img src="<?= $image['mediaUrl']; ?>" alt="" class="">
+							<?php endforeach; ?>
+						</div>
+						<div class="slider slider-nav-detalle">
+							<?php foreach ($images as $image) : ?>
+								<img src="<?= $image['mediaUrl']; ?>" alt="" class="">
+							<?php endforeach; ?>
+						</div>
+					<?php endif; ?>
 					<div class="detalle-parrafo">
 						<p>
 							<?= $descripcion ?>
