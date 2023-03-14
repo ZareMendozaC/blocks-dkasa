@@ -28,7 +28,8 @@
           "mediaIdLogo": null,
           "mediaUrlLogo": "",
           "textoEnlace": "",
-          "enlace": ""
+          "enlace": "",
+          "backgroundColor":""
         }
       ]
     }

@@ -37,7 +37,7 @@ $link_transparencia = $attributes['link_transparencia'];
     <section class="row contenido-part1  no-padding no-margin">
         <div class="col-md-12 col-12 no-padding">
             <h2 class="subtitle-general" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">Avance de obra</h2>
-            <div class="line-h2"></div>
+            <div class="line-h2" style="background-color: <?= $attributes['backgroundColor']; ?>;"></div>
             <p class="subtitle-des mrg-top-map" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">Sé parte del día a día en el proceso de construcción de tu hogar. </p>
 
             <div id="slider-nav-avance" class="center-btn" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">

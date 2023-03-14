@@ -70,7 +70,7 @@ $mediaPanUrl = $attributes['mediaPanUrl'];
         </div>
         <div class="inf-dondevivir-2">
             <h2 class="title-des" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $title; ?></h2>
-            <div class="line-h2"></div>
+            <div class="line-h2" style="background-color: <?= $backgroundColor ?>;"></div>
             <p class="subtitle-des" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200"><?= $content ?></p>
             <div class="col-md-12 col-12 no-padding d-flex mrg-top-35 list-btns ">
                 <?php if ($mediaUrlpdf) : ?>

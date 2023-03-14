@@ -19,13 +19,15 @@
 $images = $attributes['images'];
 $mediaUrl = $attributes['mediaUrl'];
 $inicio = 100;
+$background=$attributes['backgroundColor'];
+
 ?>
 
 <section class="container-fluid contenedor-futuro-hogar">
     <div class="row contenido-part1">
         <div class="col-12 px-0 columna-1">
             <h2 class="title-futuro_h2">Tu futuro Hogar</h2>
-            <div class="line-h2"></div>
+            <div class="line-h2" style="background-color: <?= $background?>"></div>
         </div>
         <div class="col-12 px-0 columna-1 column-tufuturo">
             <?php foreach ($images as $image) : ?>
@@ -38,7 +40,7 @@ $inicio = 100;
             endforeach; ?>
         </div>
         <div class="col-12 px-0 columna-1">
-            <img class="img-future" src="https://www.dkasa.com.pe/wp-content/uploads/2023/03/image-122.png" alt="">
+            <img class="img-future" src="<?= $mediaUrl ?>" alt="">
         </div>
     </div>
 </section>

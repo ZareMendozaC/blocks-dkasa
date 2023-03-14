@@ -20,6 +20,10 @@
       "linkvisita": {
           "type": "string",
           "default": ""
+        },
+      "background": {
+          "type": "string",
+          "default": ""
         }
     }
   }

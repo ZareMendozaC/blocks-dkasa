@@ -135,7 +135,7 @@ $images = $attributes['images'];
 								<p class="texto-tarjeta-3"><?= $precio ?></p>
 							</div>
 							<div class="rp-logo" style="background-color:<?= $bgColor; ?>">
-								<img src="<?= $mediaUrlLogo ?>" alt="">
+								<img style="max-width: calc(100vw * 175/var(--width_base));" src="<?= $mediaUrlLogo ?>" alt="">
 							</div>
 						</div>
 					</div>

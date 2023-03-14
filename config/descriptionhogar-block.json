@@ -25,6 +25,11 @@
   },
   "mediaId": {
     "type": "number"
-  }
+  },
+  "backgroundColor": {
+      "type": "string",
+      "default": ""
+    }
+
   }
 }
